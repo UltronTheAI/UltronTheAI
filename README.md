@@ -1,4 +1,4 @@
-![Design and Development](https://github.com/adriantwarog/adriantwarog/blob/master/freeCodeCamp.jpg)
+![Design and Development](https://avatars.githubusercontent.com/u/79976106?s=48&v=4)
 
 # Swaraj
 I`am a 13 year old boy, I am a software engineering.
