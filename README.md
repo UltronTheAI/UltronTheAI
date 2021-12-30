@@ -1,5 +1,5 @@
 
-![Design and Development](https://ultrontheai.github.io/Linear-equations-in-one-variables-With-Python/y.gif)
+![Design and Development](https://c.tenor.com/JRp-ggTRHFMAAAAd/echo-logo.gif)
 
 
 # Swaraj
