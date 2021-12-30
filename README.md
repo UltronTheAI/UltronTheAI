@@ -1,5 +1,5 @@
 
-![Design and Development](y2mate.com - LS_1080p.gif)
+![Design and Development](./y2mate.com - LS_1080p.gif)
 
 
 # Swaraj
