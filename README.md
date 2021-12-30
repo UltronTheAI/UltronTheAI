@@ -1,5 +1,5 @@
 
-<img src="https://ultrontheai.github.io/Linear-equations-in-one-variables-With-Python/y2mate.com%20-%20LS_1080p.gif">
+<img src="https://ultrontheai.github.io/Linear-equations-in-one-variables-With-Python/y2mate.com%20-%20LS_1080p.gif" width="512">
 
 
 # Swaraj
