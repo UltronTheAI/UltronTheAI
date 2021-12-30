@@ -1,5 +1,5 @@
 
-![Design and Development](https://c.tenor.com/JRp-ggTRHFMAAAAd/echo-logo.gif)
+![Design and Development](https://st4.depositphotos.com/1001941/22640/v/450/depositphotos_226406714-stock-illustration-analyst-working-laptop-different-programing.jpg)
 
 
 # Swaraj
