@@ -13,5 +13,5 @@ I Have A YT Channel, Which Kind OF Video Did you Want On My YT Channel, <a href=
 * 💻 HTML, CSS, JS
 
 ## Examples of Work
-<img src="https://github.com/adriantwarog/adriantwarog/blob/master/covid19.gif" width="512" >
+<img src="https://raw.githubusercontent.com/UltronTheAI/Super-Maths/main/Demo.png" width="512" >
 
