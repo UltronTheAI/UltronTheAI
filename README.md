@@ -1,5 +1,5 @@
 
-![Design and Development](https://www.clio.com/wp-content/uploads/2020/08/Clio_2020-Blog_Image-Programming_for_Lawyers-550x275.png)
+![Design and Development](https://miro.medium.com/max/1400/1*HLGtY6O2vUHqIyEbWdmBgA.jpeg)
 
 
 # Swaraj
