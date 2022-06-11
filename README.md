@@ -1,5 +1,5 @@
 
-![Design and Development](https://st4.depositphotos.com/1001941/22640/v/450/depositphotos_226406714-stock-illustration-analyst-working-laptop-different-programing.jpg)
+![Design and Development](https://www.clio.com/wp-content/uploads/2020/08/Clio_2020-Blog_Image-Programming_for_Lawyers-550x275.png)
 
 
 # Swaraj
