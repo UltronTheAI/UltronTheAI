@@ -3,8 +3,7 @@
 
 
 # Swaraj
-I`m 14 year old, boy programmer <a href="https://www.instagram.com/pro_epic_programmer/">Insta</a>...
-
+I`m 14 year old, boy programmer <img style="width=30px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png">
 <a href="https://www.youtube.com/channel/UCgxCHhiP2ckGHQhdDWrFEwA">YoutubeChannel</a>
 
 ## Skills and Experience
