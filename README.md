@@ -18,7 +18,7 @@
 🌐 [Portfolio Website](https://swarajpuppalwar.onrender.com/)  
 🐦 [Twitter/X](https://twitter.com/PuppalwarSwaraj)  
 📸 [Instagram](https://www.instagram.com/proepiccoder)  
-📺 [YouTube](https://www.youtube.com/@pro_epic_programmer)  
+📺 [YouTube](https://www.youtube.com/@SwarajPuppalwar)  
 📘 [Facebook](https://www.facebook.com/profile.php?id=100069476384181)  
 
 📩 **Let's Collaborate & Build!** 🚀
