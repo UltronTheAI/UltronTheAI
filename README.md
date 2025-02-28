@@ -9,19 +9,19 @@ Hey there! I'm **Swaraj Puppalwar**, a **16-year-old Full-Stack Developer** pass
 ## 💻 Tech Stack
 
 ### 🔹 Frontend:
-- React.js, React Native, Next.js
-- HTML, CSS, JavaScript (ES6+)
+- ![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=white) ![React Native](https://img.shields.io/badge/-React%20Native-61DAFB?style=flat&logo=react&logoColor=white) ![Next.js](https://img.shields.io/badge/-Next.js-000?style=flat&logo=next.js&logoColor=white)
+- ![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/-CSS-1572B6?style=flat&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
 ### 🔹 Backend:
-- Node.js, Express.js
+- ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/-Express.js-000?style=flat&logo=express&logoColor=white)
 
 ### 🔹 Database:
-- MongoDB, PostgreSQL
+- ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat&logo=mongodb&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
 
 ### 🔹 DevOps & Tools:
-- Git & GitHub
-- Firebase
-- REST & GraphQL APIs
+- ![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white)
+- ![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
+- ![REST API](https://img.shields.io/badge/-REST%20API-000?style=flat&logo=rest&logoColor=white) ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=flat&logo=graphql&logoColor=white)
 
 ---
 
@@ -51,7 +51,7 @@ swaraj = {
     "name": "Swaraj Puppalwar",
     "age": 16,
     "role": "Full-Stack Developer",
-    "skills": ["Node.js", "Python", "React", "React Native"],
+    "skills": ["Node.js", "Python", "React", "React Native", "Next.js"],
     "interests": ["Web Development", "Mobile Apps", "AR/VR", "AI"]
 }
 
@@ -70,7 +70,6 @@ introduce(swaraj)
     "name": "Swaraj Puppalwar",
     "age": 16,
     "role": "Full-Stack Developer",
-    "skills": ["Node.js", "Python", "React", "React Native"],
+    "skills": ["Node.js", "Python", "React", "React Native", "Next.js"],
     "interests": ["Web Development", "Mobile Apps", "AR/VR", "AI"]
 }
-```
