@@ -2,7 +2,7 @@
 
 ## 👋 About Me
 
-Hey there! I'm **Swaraj Puppalwar**, a **16-year-old Full-Stack Developer** passionate about crafting scalable and efficient applications. I specialize in **Node.js, Python, React, and React Native**, building web and mobile solutions that make an impact. With a strong foundation in software development, I'm always exploring new technologies and collaborating on exciting projects. 
+Hey there! I'm **Swaraj Puppalwar**, a **17-year-old Full-Stack Developer** passionate about crafting scalable and efficient applications. I specialize in **Node.js, Python, React, and React Native**, building web and mobile solutions that make an impact. With a strong foundation in software development, I'm always exploring new technologies and collaborating on exciting projects. 
 
 ---
 
