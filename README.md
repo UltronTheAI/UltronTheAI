@@ -50,7 +50,7 @@ Hey there! I'm **Swaraj Puppalwar**, a **17-year-old Full-Stack Developer** pass
 ```python
 swaraj = {
     "name": "Swaraj Puppalwar",
-    "age": 16,
+    "age": 17,
     "role": "Full-Stack Developer",
     "skills": ["Node.js", "Python", "React", "React Native", "Next.js"],
     "interests": ["Web Development", "Mobile Apps", "AR/VR", "AI"]
@@ -69,7 +69,7 @@ introduce(swaraj)
 ```json
 {
     "name": "Swaraj Puppalwar",
-    "age": 16,
+    "age": 17,
     "role": "Full-Stack Developer",
     "skills": ["Node.js", "Python", "React", "React Native", "Next.js"],
     "interests": ["Web Development", "Mobile Apps", "AR/VR", "AI"]
