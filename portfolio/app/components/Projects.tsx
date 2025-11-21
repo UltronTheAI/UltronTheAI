@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import { X } from "lucide-react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 // ---------------- TYPES ----------------
 
@@ -55,7 +55,7 @@ const projects: Project[] = [
     title: "LioranDB",
     images: ["/liorandb/1.png"],
     tag: "public",
-    description: "LioranDB is a lightweight, file-based database solution designed for simplicity and ease of use. It offers a command-line interface (CLI) for server management, user authentication, and CORS configuration, alongside a Node.js connector with a MongoDB-like API for seamless programmatic interaction.",
+    description: "LioranDB is a lightweight, file-based database solution designed for simplicity and ease of use.",
     startedAt: "2025-8",
     developmentTime: "Ongoing",
     link: "https://github.com/YouthVibe/LioranDB",
@@ -66,112 +66,123 @@ const projects: Project[] = [
 
 export default function Projects() {
   const [galleryImages, setGalleryImages] = useState<string[] | null>(null);
-  const [activeImage, setActiveImage] = useState<string | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (galleryImages || activeIndex !== null) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [galleryImages, activeIndex]);
+
+  const closeAll = () => {
+    setGalleryImages(null);
+    setActiveIndex(null);
+  };
+
+  const nextImage = () => {
+    if (!galleryImages || activeIndex === null) return;
+    setActiveIndex((prev) =>
+      prev! + 1 >= galleryImages.length ? 0 : prev! + 1
+    );
+  };
+
+  const prevImage = () => {
+    if (!galleryImages || activeIndex === null) return;
+    setActiveIndex((prev) =>
+      prev! - 1 < 0 ? galleryImages.length - 1 : prev! - 1
+    );
+  };
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
       <h2 className="text-3xl font-semibold mb-8 tracking-tight">Projects</h2>
 
-      {/* FULLSCREEN GRID VIEW */}
-      {galleryImages && !activeImage && (
-        <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="relative w-full max-w-6xl bg-zinc-950 rounded-2xl p-5">
-            <button
-              onClick={() => setGalleryImages(null)}
-              className="absolute top-4 right-4 z-50 flex items-center justify-center h-10 w-10 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white"
-            >
-              <X size={20} />
-            </button>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {galleryImages.map((img, i) => (
-                <div
-                  key={i}
-                  onClick={() => setActiveImage(img)}
-                  className="relative h-48 sm:h-56 md:h-64 rounded-xl overflow-hidden cursor-pointer group"
-                >
-                  <Image
-                    src={img}
-                    alt="Project Image"
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* SINGLE IMAGE VIEW */}
-      {activeImage && (
-        <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-3">
+      {/* FULLSCREEN IMAGE VIEW (MOBILE + DESKTOP) */}
+      {galleryImages && activeIndex !== null && (
+        <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center">
           <button
-            onClick={() => setActiveImage(null)}
-            className="absolute top-4 right-4 flex items-center justify-center h-10 w-10 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white"
+            onClick={closeAll}
+            className="absolute top-4 right-4 z-50 h-10 w-10 flex items-center justify-center rounded-full bg-zinc-800 text-white"
           >
             <X size={20} />
           </button>
 
-          <div className="relative w-full max-w-5xl h-[70vh] sm:h-[80vh] rounded-2xl overflow-hidden">
+          <button
+            onClick={prevImage}
+            className="absolute left-2 sm:left-6 z-40 p-2 bg-black/60 rounded-full text-white"
+          >
+            <ChevronLeft />
+          </button>
+
+          <div className="relative w-full max-w-sm sm:max-w-3xl h-[70vh] sm:h-[85vh] flex items-center justify-center">
             <Image
-              src={activeImage}
-              alt="Full Image"
+              src={galleryImages[activeIndex]}
+              alt="Project Image"
               fill
               className="object-contain"
+              sizes="(max-width: 768px) 100vw, 80vw"
+              priority
             />
           </div>
+
+          <button
+            onClick={nextImage}
+            className="absolute right-2 sm:right-6 z-40 p-2 bg-black/60 rounded-full text-white"
+          >
+            <ChevronRight />
+          </button>
         </div>
       )}
 
       {/* PROJECT CARDS */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {projects.map((p) => (
           <div
             key={p.title}
-            className="group w-full h-[420px] flex flex-col rounded-2xl border border-zinc-800 bg-zinc-950 shadow-lg hover:shadow-2xl transition"
+            className="group w-full flex flex-col rounded-2xl border border-zinc-800 bg-zinc-950 shadow-lg"
           >
-            {/* IMAGE PREVIEW */}
-            <div className="relative h-48 w-full overflow-hidden rounded-t-2xl border-b border-zinc-800">
+            <div className="relative h-52 sm:h-60 w-full overflow-hidden rounded-t-2xl">
               <Image
                 src={p.images[0]}
                 alt={p.title}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110 md:group-hover:scale-125 lg:group-hover:scale-150"
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
               />
 
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
                 <button
-                  onClick={() => setGalleryImages(p.images)}
-                  className="px-6 py-2 rounded-full bg-white text-zinc-900 font-medium text-sm hover:bg-zinc-200"
+                  onClick={() => {
+                    setGalleryImages(p.images);
+                    setActiveIndex(0);
+                  }}
+                  className="px-5 py-2 rounded-full bg-white text-zinc-900 text-sm font-medium"
                 >
-                  View all images
+                  View Images
                 </button>
               </div>
 
               <span
-                className={`absolute top-3 left-3 text-xs font-medium uppercase tracking-wide rounded-full px-3 py-1 ${
+                className={`absolute top-3 left-3 text-xs font-medium uppercase rounded-full px-3 py-1 ${
                   p.tag === "public"
                     ? "bg-emerald-600/90"
                     : "bg-zinc-700/90"
-                } text-white backdrop-blur`}
+                } text-white`}
               >
                 {p.tag}
               </span>
             </div>
 
-            {/* CONTENT */}
-            <div className="p-5 flex-1 flex flex-col justify-between">
+            <div className="p-5 flex flex-col justify-between flex-1">
               <div className="space-y-2">
-                <h3 className="text-lg font-semibold text-white tracking-tight">
-                  {p.title}
-                </h3>
-                <p className="text-sm text-zinc-400 leading-relaxed line-clamp-3">
+                <h3 className="text-lg font-semibold">{p.title}</h3>
+                <p className="text-sm text-zinc-400 line-clamp-3">
                   {p.description}
                 </p>
               </div>
 
-              <div className="space-y-3 mt-3">
+              <div className="mt-4 space-y-2">
                 <div className="flex justify-between text-xs text-zinc-500">
                   <span>Started: {p.startedAt}</span>
                   <span>Dev: {p.developmentTime}</span>
@@ -182,7 +193,7 @@ export default function Projects() {
                     href={p.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block text-sm font-medium text-sky-400 hover:text-sky-300 transition"
+                    className="inline-block text-sm text-sky-400 hover:text-sky-300"
                   >
                     View Project →
                   </a>
