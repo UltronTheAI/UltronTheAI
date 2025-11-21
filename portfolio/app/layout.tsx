@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Swaraj Puppalwar | Developer & Startup Builder",
     description:
       "Explore the portfolio of Swaraj Puppalwar – building AI-powered tools, decentralized databases, and scalable applications.",
-    url: "https://swarajpuppalwar.onrender.com/",
+    url: "https://ultron-the-ai.vercel.app/",
     siteName: "Swaraj Puppalwar Portfolio",
     images: [
       {

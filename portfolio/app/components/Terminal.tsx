@@ -56,7 +56,7 @@ export default function Terminal() {
         break;
       case "projects":
         out.push("Projects: view full cards below, sample links:");
-        out.push("- Portfolio: https://swarajpuppalwar.onrender.com/");
+        out.push("- Portfolio: https://ultron-the-ai.vercel.app/");
         out.push("- YouTube @proepiccoder: https://www.youtube.com/@proepiccoder");
         break;
       case "socials":
