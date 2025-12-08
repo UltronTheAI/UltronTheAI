@@ -54,7 +54,7 @@ const projects: Project[] = [
   {
     title: "LioranDB",
     images: ["/liorandb/1.png"],
-    tag: "public",
+    tag: "private",
     description: "LioranDB is a lightweight, file-based database solution designed for simplicity and ease of use.",
     startedAt: "2025-8",
     developmentTime: "Ongoing",
