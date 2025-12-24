@@ -12,7 +12,7 @@ Rather than trying to do everything, I focus on being a **strong, reliable full�
 
 * 👨‍💻 **Professional Full‑Stack Web Developer**
 * 🧠 **CTO @ Lioran Groups** – system design, architecture, and technical leadership
-* 🌐 Strong focus on **scalable web platforms**, APIs, and cloud‑native systems
+* 🌐 Strong focus on **backend, scalable web platforms**, APIs, and cloud‑native systems
 * 🤝 Open to collaboration, open‑source contributions, and learning through real products
 
 ---
@@ -68,8 +68,8 @@ Below are some of the key products I’ve built or am actively developing. Each 
 
 ### 🌐 Vortexly
 
-**Tag:** Private  
-**Started:** March 2025  
+**Tag:** Private
+**Started:** March 2025
 **Development Time:** 2 Months
 
 A social media platform designed for meaningful connections between friends and family, with a focus on performance, privacy, and scalability.
@@ -82,9 +82,9 @@ A social media platform designed for meaningful connections between friends and 
 
 ### 📚 eBookAura
 
-**Tag:** Public  
-**Started:** April 2025  
-**Development Time:** 1.5 Months  
+**Tag:** Public
+**Started:** April 2025
+**Development Time:** 1.5 Months
 **Repository:** [https://github.com/LioranGroups/EbookAura](https://github.com/LioranGroups/EbookAura)
 
 A digital reading platform that allows users to read e‑books, organize their library, and track reading progress with a clean and modern UI.
@@ -97,9 +97,9 @@ A digital reading platform that allows users to read e‑books, organize their l
 
 ### ✍️ Post‑Acle
 
-**Tag:** Public  
-**Started:** May 2025  
-**Development Time:** 1 Month  
+**Tag:** Public
+**Started:** May 2025
+**Development Time:** 1 Month
 **Repository:** [https://github.com/LioranGroups/PostAcle](https://github.com/LioranGroups/PostAcle)
 
 A lightweight blogging platform where I share technical thoughts, ideas, and experiments. Built with performance and simplicity in mind.
@@ -110,13 +110,15 @@ A lightweight blogging platform where I share technical thoughts, ideas, and exp
 
 ---
 
-### 📊 Hushar Spreadsheet
+## 💰 SaaS & Income Products
 
-**Tag:** Private  
-**Started:** July 2025  
+### 📊 Hushar Spreadsheet + HostelBuddy
+
+**Tag:** Private
+**Started:** July 2025
 **Development Time:** Ongoing
 
-An **AI‑powered spreadsheet application** designed specifically for Zilla Parishad teachers. The goal is to reduce manual data entry and simplify complex Excel‑based workflows using natural language.
+An **AI‑powered spreadsheet and school management system** designed specifically for Zilla Parishad teachers. The goal is to reduce manual data entry, simplify complex Excel-based workflows using natural language, and manage school data efficiently.
 
 **Preview:**
 
@@ -124,13 +126,35 @@ An **AI‑powered spreadsheet application** designed specifically for Zilla Pari
 
 ---
 
+## 🏗️ System & Infrastructure Products
+
+As CTO, I lead **system design, architecture, and development teams** to build scalable infrastructure products for Lioran Groups.
+
 ### 🗄️ LioranDB
 
-**Tag:** Private (Open Repository)  
-**Started:** August 2025  
-**Development Time:** Ongoing  
+Lightweight, file-based database system focused on simplicity, speed, and ease of integration.
 
-A lightweight, file‑based database system focused on simplicity, speed, and ease of integration for small‑to‑medium applications.
+### 🔐 Lioran Auth
+
+Authentication and authorization system built for Lioran applications with high security standards.
+
+### 💳 Lioran Payments
+
+Secure and flexible payment processing system integrated across Lioran products.
+
+### ☁️ Lioran Cloud Services
+
+Cloud infrastructure platform to manage deployments, storage, and compute for internal and client applications.
+
+### 🚀 Lioran Deployments
+
+Automated deployment system with CI/CD pipelines for all Lioran products.
+
+### 🗃️ Lioran Storage
+
+Centralized file storage and management system for internal and SaaS products.
+
+*All these systems are architected by me, where I lead dev teams, plan system design, and ensure backend scalability and reliability.*
 
 ---
 
@@ -144,4 +168,4 @@ A lightweight, file‑based database system focused on simplicity, speed, and ea
 
 ---
 
-> I’m focused on growing as an engineer and as a CTO by building real products, learning from failures, and improving every single day.
+> I’m focused on growing as an engineer and as a CTO by building real products, leading systems and dev teams, learning from failures, and improving every single day.
