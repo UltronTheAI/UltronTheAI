@@ -76,15 +76,11 @@ A social media platform designed for meaningful connections between friends and 
 
 **Preview:**
 
-<div align="center">
-  <img src="https://ultron-the-ai.vercel.app/vortexly/1.jpg" width="45%" />
-  <img src="https://ultron-the-ai.vercel.app/vortexly/2.jpg" width="45%" />
-  <br/>
-  <img src="https://ultron-the-ai.vercel.app/vortexly/3.jpg" width="45%" />
-  <img src="https://ultron-the-ai.vercel.app/vortexly/4.jpg" width="45%" />
-  <br/>
-  <img src="https://ultron-the-ai.vercel.app/vortexly/5.jpg" width="45%" />
-</div>
+![Vortexly](https://ultron-the-ai.vercel.app/vortexly/1.jpg)
+![Vortexly](https://ultron-the-ai.vercel.app/vortexly/2.jpg)
+![Vortexly](https://ultron-the-ai.vercel.app/vortexly/3.jpg)
+![Vortexly](https://ultron-the-ai.vercel.app/vortexly/4.jpg)
+![Vortexly](https://ultron-the-ai.vercel.app/vortexly/5.jpg)
 
 ---
 
@@ -99,15 +95,11 @@ A digital reading platform that allows users to read e‑books, organize their l
 
 **Preview:**
 
-<div align="center">
-  <img src="https://ultron-the-ai.vercel.app/ebookaura/1.jpeg" width="45%" />
-  <img src="https://ultron-the-ai.vercel.app/ebookaura/2.jpeg" width="45%" />
-  <br/>
-  <img src="https://ultron-the-ai.vercel.app/ebookaura/3.jpeg" width="45%" />
-  <img src="https://ultron-the-ai.vercel.app/ebookaura/4.jpeg" width="45%" />
-  <br/>
-  <img src="https://ultron-the-ai.vercel.app/ebookaura/5.jpeg" width="45%" />
-</div>
+![eBookAura](https://ultron-the-ai.vercel.app/ebookaura/1.jpeg)
+![eBookAura](https://ultron-the-ai.vercel.app/ebookaura/2.jpeg)
+![eBookAura](https://ultron-the-ai.vercel.app/ebookaura/3.jpeg)
+![eBookAura](https://ultron-the-ai.vercel.app/ebookaura/4.jpeg)
+![eBookAura](https://ultron-the-ai.vercel.app/ebookaura/5.jpeg)
 
 ---
 
@@ -122,15 +114,11 @@ A lightweight blogging platform where I share technical thoughts, ideas, and exp
 
 **Preview:**
 
-<div align="center">
-  <img src="https://ultron-the-ai.vercel.app/postacle/1.jpeg" width="45%" />
-  <img src="https://ultron-the-ai.vercel.app/postacle/2.jpeg" width="45%" />
-  <br/>
-  <img src="https://ultron-the-ai.vercel.app/postacle/3.jpeg" width="45%" />
-  <img src="https://ultron-the-ai.vercel.app/postacle/4.jpeg" width="45%" />
-  <br/>
-  <img src="https://ultron-the-ai.vercel.app/postacle/5.jpeg" width="45%" />
-</div>
+![Post‑Acle](https://ultron-the-ai.vercel.app/postacle/1.jpeg)
+![Post‑Acle](https://ultron-the-ai.vercel.app/postacle/2.jpeg)
+![Post‑Acle](https://ultron-the-ai.vercel.app/postacle/3.jpeg)
+![Post‑Acle](https://ultron-the-ai.vercel.app/postacle/4.jpeg)
+![Post‑Acle](https://ultron-the-ai.vercel.app/postacle/5.jpeg)
 
 ---
 
@@ -144,9 +132,7 @@ An **AI‑powered spreadsheet application** designed specifically for Zilla Pari
 
 **Preview:**
 
-<div align="center">
-  <img src="https://ultron-the-ai.vercel.app/husharspreadsheet/1.jpeg" width="45%" />
-</div>
+![Hushar Spreadsheet](https://ultron-the-ai.vercel.app/husharspreadsheet/1.jpeg)
 
 ---
 
@@ -161,9 +147,7 @@ A lightweight, file‑based database system focused on simplicity, speed, and ea
 
 **Preview:**
 
-<div align="center">
-  <img src="https://ultron-the-ai.vercel.app/liorandb/1.png" width="45%" />
-</div>
+![LioranDB](https://ultron-the-ai.vercel.app/liorandb/1.png)
 
 ---
 
