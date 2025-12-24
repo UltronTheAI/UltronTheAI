@@ -32,7 +32,7 @@ const projects: Project[] = [
     description: "eBookAura is a platform for reading e-books and managing your reading library.",
     startedAt: "2025-4",
     developmentTime: "1.5 months",
-    link: "https://github.com/YouthVibe/EbookAura",
+    link: "https://github.com/LioranGroups/EbookAura",
   },
   {
     title: "Post-Acle",
@@ -41,7 +41,7 @@ const projects: Project[] = [
     description: "Post-Acle is a blog platform for sharing my thoughts and ideas.",
     startedAt: "2025-05",
     developmentTime: "1 month",
-    link: "https://github.com/YouthVibe/PostAcle",
+    link: "https://github.com/LioranGroups/PostAcle",
   },
   {
     title: "Hushar Spreadsheet",
@@ -54,11 +54,11 @@ const projects: Project[] = [
   {
     title: "LioranDB",
     images: ["/liorandb/1.png"],
-    tag: "public",
+    tag: "private",
     description: "LioranDB is a lightweight, file-based database solution designed for simplicity and ease of use.",
     startedAt: "2025-8",
     developmentTime: "Ongoing",
-    link: "https://github.com/YouthVibe/LioranDB",
+    link: "https://github.com/LioranGroups/LioranDB",
   }
 ];
 

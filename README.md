@@ -1,76 +1,164 @@
-# 🚀 Swaraj Puppalwar | UltronTheAI  
+# 🚀 Swaraj Puppalwar | UltronTheAI
 
 ## 👋 About Me
 
-Hey there! I'm **Swaraj Puppalwar**, a **17-year-old Full-Stack Developer** passionate about crafting scalable and efficient applications. I specialize in **Node.js, Python, React, and React Native**, building web and mobile solutions that make an impact. With a strong foundation in software development, I'm always exploring new technologies and collaborating on exciting projects. 
+Hi, I'm **Swaraj Puppalwar**, a **Full‑Stack Web Developer** and the **Founder & CTO of Lioran Groups**. I started my journey in tech at the age of **11**, driven by curiosity and a strong interest in how websites and applications work behind the scenes. Over the years, that curiosity turned into a deep passion for **web development**, system design, and building real‑world products.
+
+Rather than trying to do everything, I focus on being a **strong, reliable full‑stack developer**—someone who understands both frontend and backend deeply, writes clean and maintainable code, and designs systems that scale well. Today, I build production‑ready web and mobile applications while also leading technical vision and architecture at my own company.
+
+---
+
+## 💼 Role & Focus
+
+* 👨‍💻 **Professional Full‑Stack Web Developer**
+* 🧠 **CTO @ Lioran Groups** – system design, architecture, and technical leadership
+* 🌐 Strong focus on **scalable web platforms**, APIs, and cloud‑native systems
+* 🤝 Open to collaboration, open‑source contributions, and learning through real products
 
 ---
 
 ## 💻 Tech Stack
 
-### 🔹 Frontend:
-- ![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=white) ![React Native](https://img.shields.io/badge/-React%20Native-61DAFB?style=flat&logo=react&logoColor=white) ![Next.js](https://img.shields.io/badge/-Next.js-000?style=flat&logo=next.js&logoColor=white)
-- ![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/-CSS-1572B6?style=flat&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+### Frontend
 
-### 🔹 Backend:
-- ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/-Express.js-000?style=flat&logo=express&logoColor=white)
-- ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+* React, Next.js
+* React Native (for mobile apps)
+* Clean UI architecture and performance‑focused rendering
 
-### 🔹 Database:
-- ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat&logo=mongodb&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
+### Backend
 
-### 🔹 DevOps & Tools:
-- ![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white)
-- ![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
-- ![REST API](https://img.shields.io/badge/-REST%20API-000?style=flat&logo=rest&logoColor=white) ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=flat&logo=graphql&logoColor=white)
+* Node.js, Express.js
+* Python (APIs, automation, data processing)
+* REST & GraphQL APIs
+
+### Databases
+
+* MongoDB
+* PostgreSQL
+
+### AI & Data
+
+* Python, NumPy, Pandas
+* Scikit‑learn, TensorFlow
+* LangChain, LangGraph (LLM‑based systems)
+
+### DevOps & Infrastructure
+
+* Docker, Kubernetes
+* Nginx, PM2
+* CI/CD pipelines
+* Git & GitHub
 
 ---
 
-## 🚀 Projects & Contributions
-- 🌍 Building scalable **web & mobile applications**.
-- 🔧 Contributing to **open-source** projects.
-- 💡 Exploring **AR/VR development** & AI-driven solutions.
+## 🧠 What I Believe In
+
+* Writing **clean, understandable code** over over‑engineering
+* Building **real products** that solve real problems
+* Learning by **shipping and iterating**, not just theory
+* Designing systems that are **simple today and scalable tomorrow**
+
+---
+
+## 🚀 Projects
+
+Below are some of the key products I’ve built or am actively developing. Each project reflects my growth as a developer and my focus on real‑world usability.
+
+---
+
+### 🌐 Vortexly
+
+**Tag:** Private  
+**Started:** March 2025  
+**Development Time:** 2 Months
+
+A social media platform designed for meaningful connections between friends and family, with a focus on performance, privacy, and scalability.
+
+**Preview:**
+
+![Vortexly](https://ultron-the-ai.vercel.app/vortexly/1.jpg)
+![Vortexly](https://ultron-the-ai.vercel.app/vortexly/2.jpg)
+![Vortexly](https://ultron-the-ai.vercel.app/vortexly/3.jpg)
+![Vortexly](https://ultron-the-ai.vercel.app/vortexly/4.jpg)
+![Vortexly](https://ultron-the-ai.vercel.app/vortexly/5.jpg)
+
+---
+
+### 📚 eBookAura
+
+**Tag:** Public  
+**Started:** April 2025  
+**Development Time:** 1.5 Months  
+**Repository:** [https://github.com/LioranGroups/EbookAura](https://github.com/LioranGroups/EbookAura)
+
+A digital reading platform that allows users to read e‑books, organize their library, and track reading progress with a clean and modern UI.
+
+**Preview:**
+
+![eBookAura](https://ultron-the-ai.vercel.app/ebookaura/1.jpeg)
+![eBookAura](https://ultron-the-ai.vercel.app/ebookaura/2.jpeg)
+![eBookAura](https://ultron-the-ai.vercel.app/ebookaura/3.jpeg)
+![eBookAura](https://ultron-the-ai.vercel.app/ebookaura/4.jpeg)
+![eBookAura](https://ultron-the-ai.vercel.app/ebookaura/5.jpeg)
+
+---
+
+### ✍️ Post‑Acle
+
+**Tag:** Public  
+**Started:** May 2025  
+**Development Time:** 1 Month  
+**Repository:** [https://github.com/LioranGroups/PostAcle](https://github.com/LioranGroups/PostAcle)
+
+A lightweight blogging platform where I share technical thoughts, ideas, and experiments. Built with performance and simplicity in mind.
+
+**Preview:**
+
+![Post‑Acle](https://ultron-the-ai.vercel.app/postacle/1.jpeg)
+![Post‑Acle](https://ultron-the-ai.vercel.app/postacle/2.jpeg)
+![Post‑Acle](https://ultron-the-ai.vercel.app/postacle/3.jpeg)
+![Post‑Acle](https://ultron-the-ai.vercel.app/postacle/4.jpeg)
+![Post‑Acle](https://ultron-the-ai.vercel.app/postacle/5.jpeg)
+
+---
+
+### 📊 Hushar Spreadsheet
+
+**Tag:** Private  
+**Started:** July 2025  
+**Development Time:** Ongoing
+
+An **AI‑powered spreadsheet application** designed specifically for Zilla Parishad teachers. The goal is to reduce manual data entry and simplify complex Excel‑based workflows using natural language.
+
+**Preview:**
+
+![Hushar Spreadsheet](https://ultron-the-ai.vercel.app/husharspreadsheet/1.jpeg)
+
+---
+
+### 🗄️ LioranDB
+
+**Tag:** Private (Open Repository)  
+**Started:** August 2025  
+**Development Time:** Ongoing  
+**Repository:** [https://github.com/LioranGroups/LioranDB](https://github.com/LioranGroups/LioranDB)
+
+A lightweight, file‑based database system focused on simplicity, speed, and ease of integration for small‑to‑medium applications.
+
+**Preview:**
+
+![LioranDB](https://ultron-the-ai.vercel.app/liorandb/1.png)
 
 ---
 
 ## 📌 Connect With Me
 
-[![Portfolio](https://img.shields.io/badge/-Portfolio-000?style=for-the-badge&logo=vercel&logoColor=white)](https://swarajpuppalwar.onrender.com/)
-[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/PuppalwarSwaraj)
-[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/pro_epic_programmer/)
-[![YouTube](https://img.shields.io/badge/-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@proepiccoder)
-[![Facebook](https://img.shields.io/badge/-Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/profile.php?id=100069476384181)
-
-📩 **Let's collaborate and build something amazing!** 🚀
+* 🌐 Portfolio: [https://ultron-the-ai.vercel.app/](https://ultron-the-ai.vercel.app/)
+* 🐙 GitHub: [https://github.com/UltronTheAI](https://github.com/UltronTheAI)
+* 🐦 Twitter: [https://twitter.com/PuppalwarSwaraj](https://twitter.com/PuppalwarSwaraj)
+* 📸 Instagram: [https://www.instagram.com/pro_epic_programmer/](https://www.instagram.com/pro_epic_programmer/)
+* ▶️ YouTube: [https://www.youtube.com/@proepiccoder](https://www.youtube.com/@proepiccoder)
 
 ---
 
-## 🐍 About Me in Python
-
-```python
-swaraj = {
-    "name": "Swaraj Puppalwar",
-    "age": 17,
-    "role": "Full-Stack Developer",
-    "skills": ["Node.js", "Python", "React", "React Native", "Next.js"],
-    "interests": ["Web Development", "Mobile Apps", "AR/VR", "AI"]
-}
-
-def introduce(person):
-    print(f"Hello, I'm {person['name']}! I'm a {person['age']}-year-old {person['role']} passionate about {', '.join(person['interests'])}.")
-
-introduce(swaraj)
-```
-
----
-
-## 📜 JSON Representation
-
-```json
-{
-    "name": "Swaraj Puppalwar",
-    "age": 17,
-    "role": "Full-Stack Developer",
-    "skills": ["Node.js", "Python", "React", "React Native", "Next.js"],
-    "interests": ["Web Development", "Mobile Apps", "AR/VR", "AI"]
-}
+> I’m focused on growing as an engineer and as a CTO by building real products, learning from failures, and improving every single day.
