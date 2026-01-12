@@ -2,7 +2,7 @@
 
 ## 👋 About Me
 
-Hi, I'm **Swaraj Puppalwar**, a **Full‑Stack Web Developer** and the **Founder & CTO of Lioran Groups**. I started my journey in tech at the age of **11**, driven by curiosity and a strong interest in how websites and applications work behind the scenes. Over the years, that curiosity turned into a deep passion for **web development**, system design, and building real‑world products.
+Hi, I'm **Swaraj Puppalwar**, a **Full‑Stack Web Developer** and the **Founder & CTO of Lioran Group**. I started my journey in tech at the age of **11**, driven by curiosity and a strong interest in how websites and applications work behind the scenes. Over the years, that curiosity turned into a deep passion for **web development**, system design, and building real‑world products.
 
 Rather than trying to do everything, I focus on being a **strong, reliable full‑stack developer**—someone who understands both frontend and backend deeply, writes clean and maintainable code, and designs systems that scale well. Today, I build production‑ready web and mobile applications while also leading technical vision and architecture at my own company.
 
@@ -11,7 +11,7 @@ Rather than trying to do everything, I focus on being a **strong, reliable full�
 ## 💼 Role & Focus
 
 * 👨‍💻 **Professional Full‑Stack Web Developer**
-* 🧠 **CTO @ Lioran Groups** – system design, architecture, and technical leadership
+* 🧠 **CTO @ Lioran Group** – system design, architecture, and technical leadership
 * 🌐 Strong focus on **backend, scalable web platforms**, APIs, and cloud‑native systems
 * 🤝 Open to collaboration, open‑source contributions, and learning through real products
 
@@ -128,7 +128,7 @@ An **AI‑powered spreadsheet and school management system** designed specifical
 
 ## 🏗️ System & Infrastructure Products
 
-As CTO, I lead **system design, architecture, and development teams** to build scalable infrastructure products for Lioran Groups.
+As CTO, I lead **system design, architecture, and development teams** to build scalable infrastructure products for Lioran Group.
 
 ### 🗄️ LioranDB
 
