@@ -2,18 +2,40 @@
 
 ## 👋 About Me
 
-Hi, I'm **Swaraj Puppalwar**, a **Full-Stack Web Developer** and the **Founder & CTO of Lioran Group**. I started my journey in tech at the age of **11**, driven by curiosity and a strong interest in how websites and applications work behind the scenes. Over time, that curiosity evolved into a deep passion for **web development**, **system design**, and building **real-world products**.
+Hi, I'm **Swaraj Puppalwar**, a **Full-Stack Web Developer** and the **Founder & CTO of Lioran Group**. I started my journey in tech at the age of **11**, driven by curiosity and a deep interest in how software systems work under the hood. Over the years, that curiosity matured into a strong focus on **backend engineering, system architecture, and building production-grade platforms**.
 
-Rather than trying to do everything, I focus on being a **strong, reliable full-stack engineer**—someone who understands both frontend and backend deeply, writes clean and maintainable code, and designs systems that scale gracefully. Today, I build production-ready applications while also leading technical vision and architecture at my own company.
+Rather than chasing trends, I aim to be a **reliable, systems-oriented full-stack engineer**—someone who writes clean, maintainable code and designs systems that can evolve and scale without collapsing under complexity. Today, I actively build and operate real-world products while leading the technical vision at **Lioran Group**.
 
 ---
 
 ## 💼 Role & Focus
 
 * 👨‍💻 **Professional Full-Stack Web Developer**
-* 🧠 **Founder & CTO @ Lioran Group** — system design, architecture & technical leadership
-* 🌐 Strong focus on **backend systems**, scalable platforms, APIs & cloud-native services
-* 🤝 Open to collaboration, open-source contributions & learning through shipping products
+* 🧠 **Founder & CTO @ Lioran Group** — system design, architecture & infrastructure
+* 🌐 Strong focus on **backend systems**, APIs, cloud-native platforms & scalability
+* 🧪 Building, shipping, maintaining & iterating on real products
+* 🤝 Open to collaboration, open-source contributions & engineering discussions
+
+---
+
+## 📊 Platform Metrics (Live & Real Usage)
+
+* ✍️ **Post-Acle** — ~**100 monthly active readers**
+
+  * 🌍 Users from **India, USA, China**, and other regions
+  * 📈 Consistent returning readers
+
+* 🌐 **Vortexly (Private)**
+
+  * 👥 Used by **23 friends**
+  * 🟢 **17 active users**
+  * 📝 **98 posts** & 🎥 **16 reels** shared
+
+* 📊 **Hushar Spreadsheet (MVP)**
+
+  * 🏫 Used by **11 teachers** across **1 school**
+  * 💰 Generating **₹1,000 – ₹5,000/month** in profit
+  * 🚀 Actively evolving based on real teacher feedback
 
 ---
 
@@ -35,6 +57,7 @@ Rather than trying to do everything, I focus on being a **strong, reliable full-
 
 * MongoDB
 * PostgreSQL
+* Custom document database (**LioranDB**)
 
 ### AI & Data
 
@@ -51,18 +74,32 @@ Rather than trying to do everything, I focus on being a **strong, reliable full-
 
 ---
 
+## 🏗️ Lioran Group – Internal Infrastructure
+
+All major products are powered by **in-house infrastructure**, designed and architected by me:
+
+* 🗄️ **LioranDB** — Custom lightweight document database
+* 🔐 **Lioran Auth** — Authentication & authorization system
+* ☁️ **Lioran Bastion** — Secure storage & asset management layer
+* 🚀 **Lioran Deployments** — Automated CI/CD pipelines
+* ☁️ **Lioran Cloud Services** — Compute, storage & internal tooling
+
+> This approach allows full control over **security, performance, cost, and long-term scalability**.
+
+---
+
 ## 🧠 Engineering Philosophy
 
-* ✨ Clean, readable code over over-engineering
-* 🚢 Learning by **shipping and iterating**
+* ✨ Clean, readable code over unnecessary abstraction
+* 🚢 Learn by **shipping, failing, and iterating**
 * 🧩 Systems that are **simple today, scalable tomorrow**
-* 🎯 Products that solve **real problems for real users**
+* 🎯 Solve **real problems for real users**
 
 ---
 
 ## 🚀 Featured Projects
 
-Each project below reflects my growth as a developer and my focus on real-world usability. Instead of inline images, each project includes a **preview link** that opens the image in full quality.
+Each project below represents real-world learning, usage, and iteration. Preview buttons open full-quality images.
 
 ---
 
@@ -70,9 +107,14 @@ Each project below reflects my growth as a developer and my focus on real-world 
 
 **Tag:** Private
 **Started:** March 2025
-**Development Time:** ~2 months
+**Status:** Actively used (private network)
 
-A social media platform designed for **meaningful connections** between friends and family, with strong emphasis on **performance, privacy, and scalability**.
+A private social media platform built for **meaningful and distraction-free interaction** among close connections.
+
+* 👥 23 total users
+* 🟢 17 active users
+* 📝 98 posts
+* 🎥 16 reels
 
 🔗 **Preview Image:**
 👉 [View Vortexly Preview](https://ultron-the-ai.vercel.app/vortexly/4.jpg)
@@ -81,12 +123,18 @@ A social media platform designed for **meaningful connections** between friends 
 
 ### 📚 eBookAura
 
-**Tag:** Public
+**Tag:** Private
 **Started:** April 2025
-**Development Time:** ~1.5 months
-**Repository:** [https://github.com/LioranGroups/EbookAura](https://github.com/LioranGroups/EbookAura)
+**Status:** ❌ Closed
 
-A digital reading platform that allows users to read e-books, organize their personal library, and track reading progress with a clean and modern UI.
+A digital e-book reading platform focused on clean UI and reading experience.
+
+**Why it failed:**
+
+* Lack of consistent new content
+* Domain & sustainability issues
+
+> This project provided valuable lessons in **content strategy, maintenance cost, and long-term viability**.
 
 🔗 **Preview Image:**
 👉 [View eBookAura Preview](https://ultron-the-ai.vercel.app/ebookaura/3.jpeg)
@@ -97,43 +145,35 @@ A digital reading platform that allows users to read e-books, organize their per
 
 **Tag:** Public
 **Started:** May 2025
-**Development Time:** ~1 month
-**Repository:** [https://github.com/LioranGroups/PostAcle](https://github.com/LioranGroups/PostAcle)
+**Status:** Live
 
-A lightweight blogging platform where I share technical thoughts, experiments, and long-term learning. Built with **performance and simplicity** as core goals.
+A lightweight blogging platform where I document engineering thoughts, experiments, and long-term learnings.
+
+* 👀 ~100 monthly active readers
+* 🌍 Readers from India, USA, China & more
+* 🔁 Strong retention among early users
 
 🔗 **Preview Image:**
 👉 [View Post-Acle Preview](https://ultron-the-ai.vercel.app/postacle/2.jpeg)
 
 ---
 
-## 💰 SaaS & Income Products
+## 💰 SaaS Products
 
-### 📊 Hushar Spreadsheet + HostelBuddy
+### 📊 Hushar Spreadsheet
 
-**Tag:** Private
+**Tag:** Private (MVP)
 **Started:** July 2025
-**Status:** Ongoing
+**Status:** Early revenue
 
-An **AI-powered spreadsheet and school management system** designed specifically for **Zilla Parishad teachers**. The system converts natural-language input into structured spreadsheet data, dramatically reducing manual Excel work.
+An **AI-powered spreadsheet & school data system** built for **Zilla Parishad teachers**, converting natural-language input into structured data.
+
+* 🏫 Used by 1 school
+* 👩‍🏫 11 active teachers
+* 💰 ₹1k–₹5k monthly profit
 
 🔗 **Preview Image:**
 👉 [View Hushar Spreadsheet Preview](https://ultron-the-ai.vercel.app/husharspreadsheet/1.jpeg)
-
----
-
-## 🏗️ System & Infrastructure Products (Lioran Group)
-
-As CTO, I lead **system architecture, backend design, and development teams** for the following infrastructure products:
-
-* 🗄️ **LioranDB** — Lightweight, file-based database focused on simplicity and speed
-* 🔐 **Lioran Auth** — Secure authentication & authorization system
-* 💳 **Lioran Payments** — Flexible, secure payment processing platform
-* ☁️ **Lioran Cloud Services** — Deployment, storage & compute management
-* 🚀 **Lioran Deployments** — Automated CI/CD pipelines
-* 🗃️ **Lioran Storage** — Centralized file storage for SaaS products
-
-> All these systems are **architected and technically led by me**, with a strong focus on scalability, security, and long-term maintainability.
 
 ---
 
@@ -148,4 +188,4 @@ As CTO, I lead **system architecture, backend design, and development teams** fo
 
 ---
 
-> I’m focused on growing as an engineer and as a CTO by building real products, leading systems and dev teams, learning from failures, and improving every single day.
+> I focus on becoming a better engineer and CTO every day by building real systems, owning infrastructure, learning from failures, and improving through execution.
