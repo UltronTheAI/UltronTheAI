@@ -50,8 +50,8 @@ Rather than chasing trends, I aim to be a **reliable, systems-oriented full-stac
 ### Backend
 
 * Node.js, Express.js
-* Python (APIs, automation, data processing)
-* REST & GraphQL APIs
+* **TypeScript-first architecture (all major platforms)**
+* RESTful API systems
 
 ### Databases
 
@@ -61,9 +61,9 @@ Rather than chasing trends, I aim to be a **reliable, systems-oriented full-stac
 
 ### AI & Data
 
-* Python, NumPy, Pandas
-* Scikit-learn, TensorFlow
-* LangChain, LangGraph (LLM-based systems)
+* LangGraph-based agent systems
+* Groq.com hosted LLMs
+* Python (support tooling & data pipelines)
 
 ### DevOps & Infrastructure
 
@@ -84,7 +84,7 @@ All major products are powered by **in-house infrastructure**, designed and arch
 * 🚀 **Lioran Deployments** — Automated CI/CD pipelines
 * ☁️ **Lioran Cloud Services** — Compute, storage & internal tooling
 
-> This approach allows full control over **security, performance, cost, and long-term scalability**.
+> This approach provides full control over **security, performance, cost, and long-term scalability**.
 
 ---
 
@@ -99,7 +99,7 @@ All major products are powered by **in-house infrastructure**, designed and arch
 
 ## 🚀 Featured Projects
 
-Each project below represents real-world learning, usage, and iteration. Preview buttons open full-quality images.
+Each project below represents real-world learning, usage, and architectural decisions. System designs are shown using text-based diagrams.
 
 ---
 
@@ -119,6 +119,45 @@ A private social media platform built for **meaningful and distraction-free inte
 🔗 **Preview Image:**
 👉 [View Vortexly Preview](https://ultron-the-ai.vercel.app/vortexly/4.jpg)
 
+#### 🧩 Vortexly – Backend System Design (TypeScript)
+
+```txt
+[ Clients (Mobile/Web) ]
+          |
+          v
+     [ Load Balancer ]
+          |
+   -------------------
+   |                 |
+[ API Server 1 ]  [ API Server 2 ]   (Node.js + TypeScript)
+          |
+          v
+     [ Kafka Producer ]
+          |
+     [ Kafka Broker ]
+          |
+     [ Kafka Consumer ]
+          |
+     [ Worker Service ]
+     (Emails, Notifications)
+          |
+   ---------------------------
+   |                         |
+[ LioranDB ]          [ Lioran Bastion ]
+(Document DB)        (Media Storage)
+```
+
+#### 🎨 Vortexly – Frontend System Design
+
+```txt
+[ React Native App ]
+        |
+        v
+[ RESTful API Layer ]
+        |
+[ Vortexly Backend Services ]
+```
+
 ---
 
 ### 📚 eBookAura
@@ -134,7 +173,7 @@ A digital e-book reading platform focused on clean UI and reading experience.
 * Lack of consistent new content
 * Domain & sustainability issues
 
-> This project provided valuable lessons in **content strategy, maintenance cost, and long-term viability**.
+> This project provided important lessons in **content strategy, maintenance cost, and long-term product viability**.
 
 🔗 **Preview Image:**
 👉 [View eBookAura Preview](https://ultron-the-ai.vercel.app/ebookaura/3.jpeg)
@@ -166,7 +205,7 @@ A lightweight blogging platform where I document engineering thoughts, experimen
 **Started:** July 2025
 **Status:** Early revenue
 
-An **AI-powered spreadsheet & school data system** built for **Zilla Parishad teachers**, converting natural-language input into structured data.
+An **AI-powered spreadsheet & school data system** built for **Zilla Parishad teachers**, converting natural-language input into structured data using LLM agents.
 
 * 🏫 Used by 1 school
 * 👩‍🏫 11 active teachers
@@ -174,6 +213,50 @@ An **AI-powered spreadsheet & school data system** built for **Zilla Parishad te
 
 🔗 **Preview Image:**
 👉 [View Hushar Spreadsheet Preview](https://ultron-the-ai.vercel.app/husharspreadsheet/1.jpeg)
+
+#### 🧩 Hushar Spreadsheet – Backend System Design (TypeScript)
+
+```txt
+[ Users ]
+    |
+    v
+[ Load Balancer ]
+    |
+--------------------
+|                  |
+[ API Server 1 ]  [ API Server 2 ]
+(Node.js + TypeScript)
+    |
+    v
+[ Worker Service ]
+(Emails, Payments, Logs)
+    |
+---------------------------
+|            |            |
+[ LioranDB ] [ Payments ] [ Logs ]
+
+[ LangGraph Agent ]
+      |
+[ Groq LLM Models ]
+```
+
+#### 🎨 Hushar Spreadsheet – Frontend System Design
+
+```txt
+[ Users (Browser) ]
+        |
+        v
+     [ CDN ]
+        |
+   [ Load Balancer ]
+        |
+   ------------------
+   |                |
+[ Next.js Server 1 ] [ Next.js Server 2 ]
+        |
+        v
+[ REST API Backend ]
+```
 
 ---
 
