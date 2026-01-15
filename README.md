@@ -2,18 +2,18 @@
 
 ## 👋 About Me
 
-Hi, I'm **Swaraj Puppalwar**, a **Full‑Stack Web Developer** and the **Founder & CTO of Lioran Group**. I started my journey in tech at the age of **11**, driven by curiosity and a strong interest in how websites and applications work behind the scenes. Over the years, that curiosity turned into a deep passion for **web development**, system design, and building real‑world products.
+Hi, I'm **Swaraj Puppalwar**, a **Full-Stack Web Developer** and the **Founder & CTO of Lioran Group**. I started my journey in tech at the age of **11**, driven by curiosity and a strong interest in how websites and applications work behind the scenes. Over time, that curiosity evolved into a deep passion for **web development**, **system design**, and building **real-world products**.
 
-Rather than trying to do everything, I focus on being a **strong, reliable full‑stack developer**—someone who understands both frontend and backend deeply, writes clean and maintainable code, and designs systems that scale well. Today, I build production‑ready web and mobile applications while also leading technical vision and architecture at my own company.
+Rather than trying to do everything, I focus on being a **strong, reliable full-stack engineer**—someone who understands both frontend and backend deeply, writes clean and maintainable code, and designs systems that scale gracefully. Today, I build production-ready applications while also leading technical vision and architecture at my own company.
 
 ---
 
 ## 💼 Role & Focus
 
-* 👨‍💻 **Professional Full‑Stack Web Developer**
-* 🧠 **CTO @ Lioran Group** – system design, architecture, and technical leadership
-* 🌐 Strong focus on **backend, scalable web platforms**, APIs, and cloud‑native systems
-* 🤝 Open to collaboration, open‑source contributions, and learning through real products
+* 👨‍💻 **Professional Full-Stack Web Developer**
+* 🧠 **Founder & CTO @ Lioran Group** — system design, architecture & technical leadership
+* 🌐 Strong focus on **backend systems**, scalable platforms, APIs & cloud-native services
+* 🤝 Open to collaboration, open-source contributions & learning through shipping products
 
 ---
 
@@ -22,8 +22,8 @@ Rather than trying to do everything, I focus on being a **strong, reliable full�
 ### Frontend
 
 * React, Next.js
-* React Native (for mobile apps)
-* Clean UI architecture and performance‑focused rendering
+* React Native (mobile apps)
+* Performance-focused UI architecture
 
 ### Backend
 
@@ -39,8 +39,8 @@ Rather than trying to do everything, I focus on being a **strong, reliable full�
 ### AI & Data
 
 * Python, NumPy, Pandas
-* Scikit‑learn, TensorFlow
-* LangChain, LangGraph (LLM‑based systems)
+* Scikit-learn, TensorFlow
+* LangChain, LangGraph (LLM-based systems)
 
 ### DevOps & Infrastructure
 
@@ -51,18 +51,18 @@ Rather than trying to do everything, I focus on being a **strong, reliable full�
 
 ---
 
-## 🧠 What I Believe In
+## 🧠 Engineering Philosophy
 
-* Writing **clean, understandable code** over over‑engineering
-* Building **real products** that solve real problems
-* Learning by **shipping and iterating**, not just theory
-* Designing systems that are **simple today and scalable tomorrow**
+* ✨ Clean, readable code over over-engineering
+* 🚢 Learning by **shipping and iterating**
+* 🧩 Systems that are **simple today, scalable tomorrow**
+* 🎯 Products that solve **real problems for real users**
 
 ---
 
-## 🚀 Projects
+## 🚀 Featured Projects
 
-Below are some of the key products I’ve built or am actively developing. Each project reflects my growth as a developer and my focus on real‑world usability.
+Each project below reflects my growth as a developer and my focus on real-world usability. Instead of inline images, each project includes a **preview link** that opens the image in full quality.
 
 ---
 
@@ -70,13 +70,12 @@ Below are some of the key products I’ve built or am actively developing. Each 
 
 **Tag:** Private
 **Started:** March 2025
-**Development Time:** 2 Months
+**Development Time:** ~2 months
 
-A social media platform designed for meaningful connections between friends and family, with a focus on performance, privacy, and scalability.
+A social media platform designed for **meaningful connections** between friends and family, with strong emphasis on **performance, privacy, and scalability**.
 
-**Preview:**
-
-![Vortexly](https://ultron-the-ai.vercel.app/vortexly/4.jpg)
+🔗 **Preview Image:**
+👉 [View Vortexly Preview](https://ultron-the-ai.vercel.app/vortexly/4.jpg)
 
 ---
 
@@ -84,29 +83,27 @@ A social media platform designed for meaningful connections between friends and 
 
 **Tag:** Public
 **Started:** April 2025
-**Development Time:** 1.5 Months
+**Development Time:** ~1.5 months
 **Repository:** [https://github.com/LioranGroups/EbookAura](https://github.com/LioranGroups/EbookAura)
 
-A digital reading platform that allows users to read e‑books, organize their library, and track reading progress with a clean and modern UI.
+A digital reading platform that allows users to read e-books, organize their personal library, and track reading progress with a clean and modern UI.
 
-**Preview:**
-
-![eBookAura](https://ultron-the-ai.vercel.app/ebookaura/3.jpeg)
+🔗 **Preview Image:**
+👉 [View eBookAura Preview](https://ultron-the-ai.vercel.app/ebookaura/3.jpeg)
 
 ---
 
-### ✍️ Post‑Acle
+### ✍️ Post-Acle
 
 **Tag:** Public
 **Started:** May 2025
-**Development Time:** 1 Month
+**Development Time:** ~1 month
 **Repository:** [https://github.com/LioranGroups/PostAcle](https://github.com/LioranGroups/PostAcle)
 
-A lightweight blogging platform where I share technical thoughts, ideas, and experiments. Built with performance and simplicity in mind.
+A lightweight blogging platform where I share technical thoughts, experiments, and long-term learning. Built with **performance and simplicity** as core goals.
 
-**Preview:**
-
-![Post‑Acle](https://ultron-the-ai.vercel.app/postacle/2.jpeg)
+🔗 **Preview Image:**
+👉 [View Post-Acle Preview](https://ultron-the-ai.vercel.app/postacle/2.jpeg)
 
 ---
 
@@ -116,56 +113,38 @@ A lightweight blogging platform where I share technical thoughts, ideas, and exp
 
 **Tag:** Private
 **Started:** July 2025
-**Development Time:** Ongoing
+**Status:** Ongoing
 
-An **AI‑powered spreadsheet and school management system** designed specifically for Zilla Parishad teachers. The goal is to reduce manual data entry, simplify complex Excel-based workflows using natural language, and manage school data efficiently.
+An **AI-powered spreadsheet and school management system** designed specifically for **Zilla Parishad teachers**. The system converts natural-language input into structured spreadsheet data, dramatically reducing manual Excel work.
 
-**Preview:**
-
-![Hushar Spreadsheet](https://ultron-the-ai.vercel.app/husharspreadsheet/1.jpeg)
+🔗 **Preview Image:**
+👉 [View Hushar Spreadsheet Preview](https://ultron-the-ai.vercel.app/husharspreadsheet/1.jpeg)
 
 ---
 
-## 🏗️ System & Infrastructure Products
+## 🏗️ System & Infrastructure Products (Lioran Group)
 
-As CTO, I lead **system design, architecture, and development teams** to build scalable infrastructure products for Lioran Group.
+As CTO, I lead **system architecture, backend design, and development teams** for the following infrastructure products:
 
-### 🗄️ LioranDB
+* 🗄️ **LioranDB** — Lightweight, file-based database focused on simplicity and speed
+* 🔐 **Lioran Auth** — Secure authentication & authorization system
+* 💳 **Lioran Payments** — Flexible, secure payment processing platform
+* ☁️ **Lioran Cloud Services** — Deployment, storage & compute management
+* 🚀 **Lioran Deployments** — Automated CI/CD pipelines
+* 🗃️ **Lioran Storage** — Centralized file storage for SaaS products
 
-Lightweight, file-based database system focused on simplicity, speed, and ease of integration.
-
-### 🔐 Lioran Auth
-
-Authentication and authorization system built for Lioran applications with high security standards.
-
-### 💳 Lioran Payments
-
-Secure and flexible payment processing system integrated across Lioran products.
-
-### ☁️ Lioran Cloud Services
-
-Cloud infrastructure platform to manage deployments, storage, and compute for internal and client applications.
-
-### 🚀 Lioran Deployments
-
-Automated deployment system with CI/CD pipelines for all Lioran products.
-
-### 🗃️ Lioran Storage
-
-Centralized file storage and management system for internal and SaaS products.
-
-*All these systems are architected by me, where I lead dev teams, plan system design, and ensure backend scalability and reliability.*
+> All these systems are **architected and technically led by me**, with a strong focus on scalability, security, and long-term maintainability.
 
 ---
 
 ## 📌 Connect With Me
 
-* 🌐 Portfolio: [https://ultron-the-ai.vercel.app/](https://ultron-the-ai.vercel.app/)
-* 🌐 LioranGroups: [https://lioran.group/](https://lioran.group/)
-* 🐙 GitHub: [https://github.com/UltronTheAI](https://github.com/UltronTheAI)
-* 🐦 Twitter: [https://twitter.com/PuppalwarSwaraj](https://twitter.com/PuppalwarSwaraj)
-* 📸 Instagram: [https://www.instagram.com/pro_epic_programmer/](https://www.instagram.com/pro_epic_programmer/)
-* ▶️ YouTube: [https://www.youtube.com/@proepiccoder](https://www.youtube.com/@proepiccoder)
+* 🌐 **Portfolio:** [https://ultron-the-ai.vercel.app/](https://ultron-the-ai.vercel.app/)
+* 🌐 **Lioran Group:** [https://lioran.group/](https://lioran.group/)
+* 🐙 **GitHub:** [https://github.com/UltronTheAI](https://github.com/UltronTheAI)
+* 🐦 **Twitter:** [https://twitter.com/PuppalwarSwaraj](https://twitter.com/PuppalwarSwaraj)
+* 📸 **Instagram:** [https://www.instagram.com/pro_epic_programmer/](https://www.instagram.com/pro_epic_programmer/)
+* ▶️ **YouTube:** [https://www.youtube.com/@proepiccoder](https://www.youtube.com/@proepiccoder)
 
 ---
 
