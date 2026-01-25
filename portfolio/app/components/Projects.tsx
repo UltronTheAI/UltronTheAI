@@ -58,7 +58,6 @@ const projects: Project[] = [
     description: "LioranDB is a lightweight, file-based database solution designed for simplicity and ease of use.",
     startedAt: "2025-8",
     developmentTime: "Ongoing",
-    link: "https://github.com/LioranGroups/LioranDB",
   }
 ];
 

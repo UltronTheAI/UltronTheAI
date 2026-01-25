@@ -2,18 +2,40 @@
 
 ## 👋 About Me
 
-Hi, I'm **Swaraj Puppalwar**, a **Full‑Stack Web Developer** and the **Founder & CTO of Lioran Groups**. I started my journey in tech at the age of **11**, driven by curiosity and a strong interest in how websites and applications work behind the scenes. Over the years, that curiosity turned into a deep passion for **web development**, system design, and building real‑world products.
+Hi, I'm **Swaraj Puppalwar**, a **Full-Stack Web Developer** and the **Founder & CTO of Lioran Group**. I started my journey in tech at the age of **11**, driven by curiosity and a deep interest in how software systems work under the hood. Over the years, that curiosity matured into a strong focus on **backend engineering, system architecture, and building production-grade platforms**.
 
-Rather than trying to do everything, I focus on being a **strong, reliable full‑stack developer**—someone who understands both frontend and backend deeply, writes clean and maintainable code, and designs systems that scale well. Today, I build production‑ready web and mobile applications while also leading technical vision and architecture at my own company.
+Rather than chasing trends, I aim to be a **reliable, systems-oriented full-stack engineer**—someone who writes clean, maintainable code and designs systems that can evolve and scale without collapsing under complexity. Today, I actively build and operate real-world products while leading the technical vision at **Lioran Group**.
 
 ---
 
 ## 💼 Role & Focus
 
-* 👨‍💻 **Professional Full‑Stack Web Developer**
-* 🧠 **CTO @ Lioran Groups** – system design, architecture, and technical leadership
-* 🌐 Strong focus on **scalable web platforms**, APIs, and cloud‑native systems
-* 🤝 Open to collaboration, open‑source contributions, and learning through real products
+* 👨‍💻 **Professional Full-Stack Web Developer**
+* 🧠 **Founder & CTO @ Lioran Group** — system design, architecture & infrastructure
+* 🌐 Strong focus on **backend systems**, APIs, cloud-native platforms & scalability
+* 🧪 Building, shipping, maintaining & iterating on real products
+* 🤝 Open to collaboration, open-source contributions & engineering discussions
+
+---
+
+## 📊 Platform Metrics (Live & Real Usage)
+
+* ✍️ **Post-Acle** — ~**100 monthly active readers**
+
+  * 🌍 Users from **India, USA, China**, and other regions
+  * 📈 Consistent returning readers
+
+* 🌐 **Vortexly (Private)**
+
+  * 👥 Used by **23 friends**
+  * 🟢 **17 active users**
+  * 📝 **98 posts** & 🎥 **16 reels** shared
+
+* 📊 **Hushar Spreadsheet (MVP)**
+
+  * 🏫 Used by **11 teachers** across **1 school**
+  * 💰 Generating **₹1,000 – ₹5,000/month** in profit
+  * 🚀 Actively evolving based on real teacher feedback
 
 ---
 
@@ -22,25 +44,26 @@ Rather than trying to do everything, I focus on being a **strong, reliable full�
 ### Frontend
 
 * React, Next.js
-* React Native (for mobile apps)
-* Clean UI architecture and performance‑focused rendering
+* React Native (mobile apps)
+* Performance-focused UI architecture
 
 ### Backend
 
 * Node.js, Express.js
-* Python (APIs, automation, data processing)
-* REST & GraphQL APIs
+* **TypeScript-first architecture (all major platforms)**
+* RESTful API systems
 
 ### Databases
 
 * MongoDB
 * PostgreSQL
+* Custom document database (**LioranDB**)
 
 ### AI & Data
 
-* Python, NumPy, Pandas
-* Scikit‑learn, TensorFlow
-* LangChain, LangGraph (LLM‑based systems)
+* LangGraph-based agent systems
+* Groq.com hosted LLMs
+* Python (support tooling & data pipelines)
 
 ### DevOps & Infrastructure
 
@@ -51,97 +74,201 @@ Rather than trying to do everything, I focus on being a **strong, reliable full�
 
 ---
 
-## 🧠 What I Believe In
+## 🏗️ Lioran Group – Internal Infrastructure
 
-* Writing **clean, understandable code** over over‑engineering
-* Building **real products** that solve real problems
-* Learning by **shipping and iterating**, not just theory
-* Designing systems that are **simple today and scalable tomorrow**
+All major products are powered by **in-house infrastructure**, designed and architected by me:
+
+* 🗄️ **LioranDB** — Custom lightweight document database
+* 🔐 **Lioran Auth** — Authentication & authorization system
+* ☁️ **Lioran Bastion** — Secure storage & asset management layer
+* 🚀 **Lioran Deployments** — Automated CI/CD pipelines
+* ☁️ **Lioran Cloud Services** — Compute, storage & internal tooling
+
+> This approach provides full control over **security, performance, cost, and long-term scalability**.
 
 ---
 
-## 🚀 Projects
+## 🧠 Engineering Philosophy
 
-Below are some of the key products I’ve built or am actively developing. Each project reflects my growth as a developer and my focus on real‑world usability.
+* ✨ Clean, readable code over unnecessary abstraction
+* 🚢 Learn by **shipping, failing, and iterating**
+* 🧩 Systems that are **simple today, scalable tomorrow**
+* 🎯 Solve **real problems for real users**
+
+---
+
+## 🚀 Featured Projects
+
+Each project below represents real-world learning, usage, and architectural decisions. System designs are shown using text-based diagrams.
 
 ---
 
 ### 🌐 Vortexly
 
-**Tag:** Private  
-**Started:** March 2025  
-**Development Time:** 2 Months
+**Tag:** Private
+**Started:** March 2025
+**Status:** Actively used (private network)
 
-A social media platform designed for meaningful connections between friends and family, with a focus on performance, privacy, and scalability.
+A private social media platform built for **meaningful and distraction-free interaction** among close connections.
 
-**Preview:**
+* 👥 23 total users
+* 🟢 17 active users
+* 📝 98 posts
+* 🎥 16 reels
 
-![Vortexly](https://ultron-the-ai.vercel.app/vortexly/4.jpg)
+🔗 **Preview Image:**
+👉 [View Vortexly Preview](https://ultron-the-ai.vercel.app/vortexly/4.jpg)
+
+#### 🧩 Vortexly – Backend System Design (TypeScript)
+
+```txt
+[ Clients (Mobile/Web) ]
+          |
+          v
+     [ Load Balancer ]
+          |
+   -------------------
+   |                 |
+[ API Server 1 ]  [ API Server 2 ]   (Node.js + TypeScript)
+          |
+          v
+     [ Kafka Producer ]
+          |
+     [ Kafka Broker ]
+          |
+     [ Kafka Consumer ]
+          |
+     [ Worker Service ]
+     (Emails, Notifications)
+          |
+   ---------------------------
+   |                         |
+[ LioranDB ]          [ Lioran Bastion ]
+(Document DB)        (Media Storage)
+```
+
+#### 🎨 Vortexly – Frontend System Design
+
+```txt
+[ React Native App ]
+        |
+        v
+[ RESTful API Layer ]
+        |
+[ Vortexly Backend Services ]
+```
 
 ---
 
 ### 📚 eBookAura
 
-**Tag:** Public  
-**Started:** April 2025  
-**Development Time:** 1.5 Months  
-**Repository:** [https://github.com/LioranGroups/EbookAura](https://github.com/LioranGroups/EbookAura)
+**Tag:** Private
+**Started:** April 2025
+**Status:** ❌ Closed
 
-A digital reading platform that allows users to read e‑books, organize their library, and track reading progress with a clean and modern UI.
+A digital e-book reading platform focused on clean UI and reading experience.
 
-**Preview:**
+**Why it failed:**
 
-![eBookAura](https://ultron-the-ai.vercel.app/ebookaura/3.jpeg)
+* Lack of consistent new content
+* Domain & sustainability issues
+
+> This project provided important lessons in **content strategy, maintenance cost, and long-term product viability**.
+
+🔗 **Preview Image:**
+👉 [View eBookAura Preview](https://ultron-the-ai.vercel.app/ebookaura/3.jpeg)
+
+---
+
+### ✍️ Post-Acle
+
+**Tag:** Public
+**Started:** May 2025
+**Status:** Live
+
+A lightweight blogging platform where I document engineering thoughts, experiments, and long-term learnings.
+
+* 👀 ~100 monthly active readers
+* 🌍 Readers from India, USA, China & more
+* 🔁 Strong retention among early users
+
+🔗 **Preview Image:**
+👉 [View Post-Acle Preview](https://ultron-the-ai.vercel.app/postacle/2.jpeg)
 
 ---
 
-### ✍️ Post‑Acle
-
-**Tag:** Public  
-**Started:** May 2025  
-**Development Time:** 1 Month  
-**Repository:** [https://github.com/LioranGroups/PostAcle](https://github.com/LioranGroups/PostAcle)
-
-A lightweight blogging platform where I share technical thoughts, ideas, and experiments. Built with performance and simplicity in mind.
-
-**Preview:**
-
-![Post‑Acle](https://ultron-the-ai.vercel.app/postacle/2.jpeg)
-
----
+## 💰 SaaS Products
 
 ### 📊 Hushar Spreadsheet
 
-**Tag:** Private  
-**Started:** July 2025  
-**Development Time:** Ongoing
+**Tag:** Private (MVP)
+**Started:** July 2025
+**Status:** Early revenue
 
-An **AI‑powered spreadsheet application** designed specifically for Zilla Parishad teachers. The goal is to reduce manual data entry and simplify complex Excel‑based workflows using natural language.
+An **AI-powered spreadsheet & school data system** built for **Zilla Parishad teachers**, converting natural-language input into structured data using LLM agents.
 
-**Preview:**
+* 🏫 Used by 1 school
+* 👩‍🏫 11 active teachers
+* 💰 ₹1k–₹5k monthly profit
 
-![Hushar Spreadsheet](https://ultron-the-ai.vercel.app/husharspreadsheet/1.jpeg)
+🔗 **Preview Image:**
+👉 [View Hushar Spreadsheet Preview](https://ultron-the-ai.vercel.app/husharspreadsheet/1.jpeg)
 
----
+#### 🧩 Hushar Spreadsheet – Backend System Design (TypeScript)
 
-### 🗄️ LioranDB
+```txt
+[ Users ]
+    |
+    v
+[ Load Balancer ]
+    |
+--------------------
+|                  |
+[ API Server 1 ]  [ API Server 2 ]
+(Node.js + TypeScript)
+    |
+    v
+[ Worker Service ]
+(Emails, Payments, Logs)
+    |
+---------------------------
+|            |            |
+[ LioranDB ] [ Payments ] [ Logs ]
 
-**Tag:** Private (Open Repository)  
-**Started:** August 2025  
-**Development Time:** Ongoing  
+[ LangGraph Agent ]
+      |
+[ Groq LLM Models ]
+```
 
-A lightweight, file‑based database system focused on simplicity, speed, and ease of integration for small‑to‑medium applications.
+#### 🎨 Hushar Spreadsheet – Frontend System Design
+
+```txt
+[ Users (Browser) ]
+        |
+        v
+     [ CDN ]
+        |
+   [ Load Balancer ]
+        |
+   ------------------
+   |                |
+[ Next.js Server 1 ] [ Next.js Server 2 ]
+        |
+        v
+[ REST API Backend ]
+```
 
 ---
 
 ## 📌 Connect With Me
 
-* 🌐 Portfolio: [https://ultron-the-ai.vercel.app/](https://ultron-the-ai.vercel.app/)
-* 🐙 GitHub: [https://github.com/UltronTheAI](https://github.com/UltronTheAI)
-* 🐦 Twitter: [https://twitter.com/PuppalwarSwaraj](https://twitter.com/PuppalwarSwaraj)
-* 📸 Instagram: [https://www.instagram.com/pro_epic_programmer/](https://www.instagram.com/pro_epic_programmer/)
-* ▶️ YouTube: [https://www.youtube.com/@proepiccoder](https://www.youtube.com/@proepiccoder)
+* 🌐 **Portfolio:** [https://ultron-the-ai.vercel.app/](https://ultron-the-ai.vercel.app/)
+* 🌐 **Lioran Group:** [https://lioran.group/](https://lioran.group/)
+* 🐙 **GitHub:** [https://github.com/UltronTheAI](https://github.com/UltronTheAI)
+* 🐦 **Twitter:** [https://twitter.com/PuppalwarSwaraj](https://twitter.com/PuppalwarSwaraj)
+* 📸 **Instagram:** [https://www.instagram.com/pro_epic_programmer/](https://www.instagram.com/pro_epic_programmer/)
+* ▶️ **YouTube:** [https://www.youtube.com/@proepiccoder](https://www.youtube.com/@proepiccoder)
 
 ---
 
-> I’m focused on growing as an engineer and as a CTO by building real products, learning from failures, and improving every single day.
+> I focus on becoming a better engineer and CTO every day by building real systems, owning infrastructure, learning from failures, and improving through execution.
