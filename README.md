@@ -49,7 +49,7 @@ Rather than chasing trends, I aim to be a **reliable, systems-oriented full-stac
 
 ### Backend
 
-* Node.js, Express.js
+* Nest.js
 * **TypeScript-first architecture (all major platforms)**
 * RESTful API systems
 
