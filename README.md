@@ -56,6 +56,7 @@ Rather than chasing trends, I aim to be a **reliable, systems-oriented full-stac
 ### Databases
 
 * MongoDB
+* Redis
 * PostgreSQL
 * Custom document database (**LioranDB**)
 
@@ -71,6 +72,10 @@ Rather than chasing trends, I aim to be a **reliable, systems-oriented full-stac
 * Nginx, PM2
 * CI/CD pipelines
 * Git & GitHub
+
+### Others
+
+* Rust
 
 ---
 
