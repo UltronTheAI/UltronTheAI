@@ -64,6 +64,38 @@ Built it because I could. Yes it's fun.
 
 ---
 
+## 📰 Media Recognition & Achievements
+
+### Featured in Newspapers (2023)
+**1. Nagpur Post**
+📅 **23 May 2023**
+📰 Article: *"Swaraj's High Rise in Computers!"*
+
+**2. Navarashtra (Chandrapur Edition)**
+📅 **23 May 2023**
+📰 Article: *"स्वराजची संगणक क्षेत्रात उंच भरारी"*
+
+**3. Tarun Bharat (Purva Vidarbha Edition)**
+📅 **29 May 2023**
+📰 Article: *"'स्वराज'ची संगणकात गगनभरारी"*
+
+### Total Newspaper Features
+✅ **3 newspaper publications** across regional and English media.
+
+---
+
+## 👨‍💻 Academic & Technical Achievements
+
+- **Crest Cyber Olympiad** — Western Region Rank: **17**
+- **Cyber Olympiad** — State Rank: **1**
+- **International Computer Olympiad** — State Rank: **30**
+- **International Mathematics Olympiad** — State Rank: **30**
+- Participated in the **30th National Children's Science Congress**
+- **2nd Rank** in School Cyber / Software Olympiad
+- **Certificate of Excellence** in Exam Pe Charcha 2023
+
+---
+
 ## Random Developer Memes I Live By
 
 - "Works on my machine" → Production: `Segmentation Fault (core dumped)`
