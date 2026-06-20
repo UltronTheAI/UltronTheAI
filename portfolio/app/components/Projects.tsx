@@ -19,7 +19,7 @@ type Project = {
 const projects: Project[] = [
   {
     title: "AiCompanion",
-    images: ["/user.png"],
+    images: ["/general.png"],
     tag: "public",
     description: "Create and chat with AI companions — full-stack fun.",
     startedAt: "2025-06",
@@ -28,7 +28,7 @@ const projects: Project[] = [
   },
   {
     title: "MeetFound",
-    images: ["/user.png"],
+    images: ["/general.png"],
     tag: "public",
     description: "Private offline CRM for founders networking.",
     startedAt: "2026-04",
@@ -80,7 +80,7 @@ const projects: Project[] = [
   },
   {
     title: "AuthSystem",
-    images: ["/user.png"],
+    images: ["/general.png"],
     tag: "public",
     description: "Secure authentication system with JWT and verification flows.",
     startedAt: "2025-06",
@@ -89,7 +89,7 @@ const projects: Project[] = [
   },
   {
     title: "DEAD-CORRIDOR",
-    images: ["/user.png"],
+    images: ["/general.png"],
     tag: "public",
     description: "16-bit zombie side-scroller (because I sometimes miss pixels).",
     startedAt: "2026-02",
