@@ -59,14 +59,24 @@ export default function About() {
               <p className="mt-1 text-zinc-300">2 years of development experience</p>
               <p className="text-zinc-300">Founder & CTO at Lioran Group — I lead 2 devs (they still debug my jokes)</p>
 
-              <a
-                href="https://github.com/LioranGroupOfficial"
-                className="mt-3 inline-block text-sm text-sky-400 hover:text-sky-300"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LioranGroupOfficial (GitHub Org)
-              </a>
+              <div className="mt-3 space-y-2">
+                <a
+                  href="https://github.com/UltronTheAI"
+                  className="inline-block text-sm text-sky-400 hover:text-sky-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub: UltronTheAI
+                </a>
+                <a
+                  href="https://github.com/LioranGroupOfficial"
+                  className="inline-block text-sm text-sky-400 hover:text-sky-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Org: LioranGroupOfficial
+                </a>
+              </div>
               <div className="mt-2">
                 <a
                   href="https://github.com/gayanvoice/top-github-users/blob/main/markdown/public_contributions/india.md"
