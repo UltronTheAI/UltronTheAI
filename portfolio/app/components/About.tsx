@@ -18,47 +18,42 @@ export default function About() {
     ],
     datascience: [
       "https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white",
-            {/* achievements moved to separate section to avoid overlap */}
+      "https://img.shields.io/badge/-NumPy-013243?style=flat&logo=numpy&logoColor=white",
+      "https://img.shields.io/badge/-Pandas-150458?style=flat&logo=pandas&logoColor=white",
+      "https://img.shields.io/badge/-scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white",
+      "https://img.shields.io/badge/-Seaborn-30A2DA?style=flat&logo=seaborn&logoColor=white",
+      "https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white",
+    ],
+    ai: [
+      "https://img.shields.io/badge/-LangChain-222222?style=flat&logo=langchain&logoColor=white",
+      "https://img.shields.io/badge/-LangGraph-222222?style=flat&logo=langgraph&logoColor=white",
+    ],
+    tools: [
+      "https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white",
+      "https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white",
+      "https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase&logoColor=black",
+      "https://img.shields.io/badge/-REST%20API-000?style=flat&logo=rest&logoColor=white",
+      "https://img.shields.io/badge/-GraphQL-E10098?style=flat&logo=graphql&logoColor=white",
+      "https://img.shields.io/badge/-Nginx-009639?style=flat&logo=nginx&logoColor=white",
+      "https://img.shields.io/badge/-PM2-2B037A?style=flat&logo=pm2&logoColor=white",
+      "https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white",
+    ],
+  };
+
+  return (
+    <section className="w-full px-4 py-8 flex justify-center">
+      <div className="w-full max-w-6xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+          {/* Left Section */}
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+            <Image
+              src="/user.png"
+              alt="Swaraj Puppalwar"
+              width={140}
+              height={140}
               className="rounded-full object-cover"
             />
             <div className="text-center sm:text-left">
-
-      {/* Separate achievements section */}
-      <div className="w-full max-w-6xl mt-8">
-        <div className="p-6 bg-zinc-900 rounded-lg">
-          <h3 className="text-xl font-semibold mb-3">Media Recognition & Achievements</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-zinc-400">
-            <div>
-              <strong>Featured in Newspapers (2023)</strong>
-              <ul className="list-disc ml-5 mt-2">
-                <li>
-                  <strong>Nagpur Post</strong> — 23 May 2023 — "Swaraj's High Rise in Computers!"
-                </li>
-                <li>
-                  <strong>Navarashtra (Chandrapur Edition)</strong> — 23 May 2023 — "स्वराजची संगणक क्षेत्रात उंच भरारी"
-                </li>
-                <li>
-                  <strong>Tarun Bharat (Purva Vidarbha Edition)</strong> — 29 May 2023 — "'स्वराज'ची संगणकात गगनभरारी"
-                </li>
-              </ul>
-              <div className="mt-3 font-medium">Total Newspaper Features: <span className="text-green-400">3</span></div>
-            </div>
-
-            <div>
-              <strong>Academic & Technical Achievements</strong>
-              <ul className="list-disc ml-5 mt-2">
-                <li>Crest Cyber Olympiad — Western Region Rank: 17</li>
-                <li>Cyber Olympiad — State Rank: 1</li>
-                <li>International Computer Olympiad — State Rank: 30</li>
-                <li>International Mathematics Olympiad — State Rank: 30</li>
-                <li>Participant — 30th National Children's Science Congress</li>
-                <li>2nd Rank — School Cyber / Software Olympiad</li>
-                <li>Certificate of Excellence — Exam Pe Charcha 2023</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
               <h2 className="text-2xl md:text-3xl font-semibold">Swaraj Puppalwar</h2>
               <p className="text-zinc-400">18-year-old Full-Stack Developer — laughing, serious, scared</p>
               <p className="mt-1 text-zinc-300">2 years of development experience</p>
@@ -118,39 +113,6 @@ export default function About() {
                 />
               </div>
             </div>
-
-            <div className="mt-6 p-4 bg-zinc-900 rounded-lg">
-              <h3 className="text-lg font-medium mb-2">Media Recognition & Achievements</h3>
-              <div className="text-sm text-zinc-400 space-y-2">
-                <div>
-                  <strong>Featured in Newspapers (2023)</strong>
-                  <ul className="list-disc ml-5 mt-2">
-                    <li>
-                      <strong>Nagpur Post</strong> — 23 May 2023 — "Swaraj's High Rise in Computers!"
-                    </li>
-                    <li>
-                      <strong>Navarashtra (Chandrapur Edition)</strong> — 23 May 2023 — "स्वराजची संगणक क्षेत्रात उंच भरारी"
-                    </li>
-                    <li>
-                      <strong>Tarun Bharat (Purva Vidarbha Edition)</strong> — 29 May 2023 — "'स्वराज'ची संगणकात गगनभरारी"
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <strong>Academic & Technical Achievements</strong>
-                  <ul className="list-disc ml-5 mt-2">
-                    <li>Crest Cyber Olympiad — Western Region Rank: 17</li>
-                    <li>Cyber Olympiad — State Rank: 1</li>
-                    <li>International Computer Olympiad — State Rank: 30</li>
-                    <li>International Mathematics Olympiad — State Rank: 30</li>
-                    <li>Participant — 30th National Children's Science Congress</li>
-                    <li>2nd Rank — School Cyber / Software Olympiad</li>
-                    <li>Certificate of Excellence — Exam Pe Charcha 2023</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Right Section */}
@@ -184,6 +146,43 @@ export default function About() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Separate achievements section */}
+      <div className="w-full max-w-6xl mt-8">
+        <div className="p-6 bg-zinc-900 rounded-lg">
+          <h3 className="text-xl font-semibold mb-3">Media Recognition & Achievements</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-zinc-400">
+            <div>
+              <strong>Featured in Newspapers (2023)</strong>
+              <ul className="list-disc ml-5 mt-2">
+                <li>
+                  <strong>Nagpur Post</strong> — 23 May 2023 — "Swaraj's High Rise in Computers!"
+                </li>
+                <li>
+                  <strong>Navarashtra (Chandrapur Edition)</strong> — 23 May 2023 — "स्वराजची संगणक क्षेत्रात उंच भरारी"
+                </li>
+                <li>
+                  <strong>Tarun Bharat (Purva Vidarbha Edition)</strong> — 29 May 2023 — "'स्वराज'ची संगणकात गगनभरारी"
+                </li>
+              </ul>
+              <div className="mt-3 font-medium">Total Newspaper Features: <span className="text-green-400">3</span></div>
+            </div>
+
+            <div>
+              <strong>Academic & Technical Achievements</strong>
+              <ul className="list-disc ml-5 mt-2">
+                <li>Crest Cyber Olympiad — Western Region Rank: 17</li>
+                <li>Cyber Olympiad — State Rank: 1</li>
+                <li>International Computer Olympiad — State Rank: 30</li>
+                <li>International Mathematics Olympiad — State Rank: 30</li>
+                <li>Participant — 30th National Children's Science Congress</li>
+                <li>2nd Rank — School Cyber / Software Olympiad</li>
+                <li>Certificate of Excellence — Exam Pe Charcha 2023</li>
+              </ul>
             </div>
           </div>
         </div>
