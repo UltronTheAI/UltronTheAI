@@ -1,279 +1,112 @@
-# 🚀 Swaraj Puppalwar | UltronTheAI
+# UltronTheAI 👾
 
-## 👋 About Me
-
-Hi, I'm **Swaraj Puppalwar**, a **Full-Stack Web Developer** and the **Founder & CTO of Lioran Group**. I started my journey in tech at the age of **11**, driven by curiosity and a deep interest in how software systems work under the hood. Over the years, that curiosity matured into a strong focus on **backend engineering, system architecture, and building production-grade platforms**.
-
-Rather than chasing trends, I aim to be a **reliable, systems-oriented full-stack engineer**—someone who writes clean, maintainable code and designs systems that can evolve and scale without collapsing under complexity. Today, I actively build and operate real-world products while leading the technical vision at **Lioran Group**.
+**Swaraj Puppalwar** — *The guy who started coding at 11 and still hasn't touched grass since.*
 
 ---
 
-## 💼 Role & Focus
+## Huh, who am I? 
 
-* 👨‍💻 **Professional Full-Stack Web Developer**
-* 🧠 **Founder & CTO @ Lioran Group** — system design, architecture & infrastructure
-* 🌐 Strong focus on **backend systems**, APIs, cloud-native platforms & scalability
-* 🧪 Building, shipping, maintaining & iterating on real products
-* 🤝 Open to collaboration, open-source contributions & engineering discussions
+I’m that full-stack dev who actually ships stuff instead of just tweeting about it. 
 
----
+**2 years of real scars** (aka production experience). 
 
-## 📊 Platform Metrics (Live & Real Usage)
+I write TypeScript like it owes me money, break things in Rust "for science", and somehow keep multiple products alive. Currently **Founder & CTO @ Lioran Group** where I lead **2 brave developers** (pray for them) and give tech advice to my friends’ startups when they bribe me with chai.
 
-* ✍️ **Post-Acle** — ~**100 monthly active readers**
-
-  * 🌍 Users from **India, USA, China**, and other regions
-  * 📈 Consistent returning readers
-
-* 🌐 **Vortexly (Private)**
-
-  * 👥 Used by **23 friends**
-  * 🟢 **17 active users**
-  * 📝 **98 posts** & 🎥 **16 reels** shared
-
-* 📊 **Hushar Spreadsheet (MVP)**
-
-  * 🏫 Used by **11 teachers** across **1 school**
-  * 💰 Generating **₹1,000 – ₹5,000/month** in profit
-  * 🚀 Actively evolving based on real teacher feedback
+Portfolio: [swaraj.lioransolutions.com](https://swaraj.lioransolutions.com)
 
 ---
 
-## 💻 Tech Stack
+## My Engineering Vibe (aka "Philosophy")
 
-### Frontend
-
-* React, Next.js
-* React Native (mobile apps)
-* Performance-focused UI architecture
-
-### Backend
-
-* Nest.js
-* **TypeScript-first architecture (all major platforms)**
-* RESTful API systems
-
-### Databases
-
-* MongoDB
-* Redis
-* PostgreSQL
-* Custom document database (**LioranDB**)
-
-### AI & Data
-
-* LangGraph-based agent systems
-* Groq.com hosted LLMs
-* Python (support tooling & data pipelines)
-
-### DevOps & Infrastructure
-
-* Docker, Kubernetes
-* Nginx, PM2
-* CI/CD pipelines
-* Git & GitHub
-
-### Others
-
-* Rust
+- Clean code > fancy patterns (if it needs 17 layers of abstraction, I’m out)
+- Ship fast, cry later, fix on weekends
+- "It works on my machine" is not a deployment strategy (but sometimes it feels like one)
+- Indian data should stay in India. Period.
 
 ---
 
-## 🏗️ Lioran Group – Internal Infrastructure
+## Platform Metrics (Real Humans, Not Bots... Mostly)
 
-All major products are powered by **in-house infrastructure**, designed and architected by me:
-
-* 🗄️ **LioranDB** — Custom lightweight document database
-* 🔐 **Lioran Auth** — Authentication & authorization system
-* ☁️ **Lioran Bastion** — Secure storage & asset management layer
-* 🚀 **Lioran Deployments** — Automated CI/CD pipelines
-* ☁️ **Lioran Cloud Services** — Compute, storage & internal tooling
-
-> This approach provides full control over **security, performance, cost, and long-term scalability**.
+- **Post-Acle** — ~100 monthly readers who keep coming back (miracle)
+- **Vortexly** (private chaos network) — 23 friends, 17 actually active, 98 posts & 16 reels of questionable life choices
+- **Hushar Spreadsheet** — 11 teachers in 1 school, making ₹1k–₹5k/month. Teachers are now my favorite users.
 
 ---
 
-## 🧠 Engineering Philosophy
+## Tech Stack (What I Actually Use Daily)
 
-* ✨ Clean, readable code over unnecessary abstraction
-* 🚢 Learn by **shipping, failing, and iterating**
-* 🧩 Systems that are **simple today, scalable tomorrow**
-* 🎯 Solve **real problems for real users**
-
----
-
-## 🚀 Featured Projects
-
-Each project below represents real-world learning, usage, and architectural decisions. System designs are shown using text-based diagrams.
+**Frontend:** React, Next.js, React Native (yes, mobile too)  
+**Backend:** Nest.js + TypeScript (my spirit animal)  
+**Databases:** MongoDB, PostgreSQL, Redis, and my baby **LioranDB**  
+**AI Stuff:** LangGraph agents + Groq (fast & cheap, my two favorite words)  
+**Infra:** Docker, Kubernetes, Nginx, PM2, self-hosted everything because trust issues  
+**Others:** Rust (when I feel dangerous), Python (for the scripts that save my life)
 
 ---
 
-### 🌐 Vortexly
+## Lioran Group — Our "We Built This Because We Could" Infrastructure
 
-**Tag:** Private
-**Started:** March 2025
-**Status:** Actively used (private network)
+We said "screw vendor lock-in" and actually did something about it:
 
-A private social media platform built for **meaningful and distraction-free interaction** among close connections.
+- **LioranDB** — Our homemade NoSQL beast (now getting rewritten in Rust because why not suffer more)
+- **Lioran Auth** — Authentication that doesn't sell your soul
+- **Lioran Bastion** — Secure storage (no, your reels are safe)
+- **Lioran Deployments** — CI/CD that sometimes works on first try
 
-* 👥 23 total users
-* 🟢 17 active users
-* 📝 98 posts
-* 🎥 16 reels
-
-🔗 **Preview Image:**
-👉 [View Vortexly Preview](https://ultron-the-ai.vercel.app/vortexly/4.jpg)
-
-#### 🧩 Vortexly – Backend System Design (TypeScript)
-
-```txt
-[ Clients (Mobile/Web) ]
-          |
-          v
-     [ Load Balancer ]
-          |
-   -------------------
-   |                 |
-[ API Server 1 ]  [ API Server 2 ]   (Node.js + TypeScript)
-          |
-          v
-     [ Kafka Producer ]
-          |
-     [ Kafka Broker ]
-          |
-     [ Kafka Consumer ]
-          |
-     [ Worker Service ]
-     (Emails, Notifications)
-          |
-   ---------------------------
-   |                         |
-[ LioranDB ]          [ Lioran Bastion ]
-(Document DB)        (Media Storage)
-```
-
-#### 🎨 Vortexly – Frontend System Design
-
-```txt
-[ React Native App ]
-        |
-        v
-[ RESTful API Layer ]
-        |
-[ Vortexly Backend Services ]
-```
+All running on our own stack. Control freaks? Maybe. But at least we sleep better.
 
 ---
 
-### 📚 eBookAura
+## Best Hits (Projects That Didn't Get Abandoned... Yet)
 
-**Tag:** Private
-**Started:** April 2025
-**Status:** ❌ Closed
+### 🌐 **Vortexly** (Private Social Network)
+Distraction-free zone for close friends. No algorithm, just vibes.  
+**Status:** Actively used by 17 real humans.
 
-A digital e-book reading platform focused on clean UI and reading experience.
+### ✍️ **Post-Acle**
+Where I dump my engineering brain farts. Surprisingly people read it.  
+**Status:** Live & growing
 
-**Why it failed:**
+### 📊 **Hushar Spreadsheet** (MVP that actually makes money)
+AI-powered spreadsheet for Zilla Parishad teachers. Teachers type in Hindi, magic happens.  
+**Status:** Paying customers (insane)
 
-* Lack of consistent new content
-* Domain & sustainability issues
+### 🗄️ **LioranDB** (The one I'm most proud of)
+Lightweight, local-first, MongoDB-style document DB. Currently getting Rust-ified.  
+Handles real SaaS workloads. 10+ pilot clients already poking it.
 
-> This project provided important lessons in **content strategy, maintenance cost, and long-term product viability**.
+### 🤖 **AiCompanion**
+Full-stack app to create and chat with your own AI companions.  
+Built it because I could. Yes it's fun.
 
-🔗 **Preview Image:**
-👉 [View eBookAura Preview](https://ultron-the-ai.vercel.app/ebookaura/3.jpeg)
+### 🎮 **DEAD-CORRIDOR**
+16-bit zombie side-scroller. Because sometimes you just need to shoot pixels.
 
----
-
-### ✍️ Post-Acle
-
-**Tag:** Public
-**Started:** May 2025
-**Status:** Live
-
-A lightweight blogging platform where I document engineering thoughts, experiments, and long-term learnings.
-
-* 👀 ~100 monthly active readers
-* 🌍 Readers from India, USA, China & more
-* 🔁 Strong retention among early users
-
-🔗 **Preview Image:**
-👉 [View Post-Acle Preview](https://ultron-the-ai.vercel.app/postacle/2.jpeg)
+**Other cool stuff:** AuthSystem (secure af), MeetFound (founder CRM), P2P-Chat, Sanyam (self-discipline Android app), eBook-Generator-AI-Agent, etc.
 
 ---
 
-## 💰 SaaS Products
+## Random Developer Memes I Live By
 
-### 📊 Hushar Spreadsheet
-
-**Tag:** Private (MVP)
-**Started:** July 2025
-**Status:** Early revenue
-
-An **AI-powered spreadsheet & school data system** built for **Zilla Parishad teachers**, converting natural-language input into structured data using LLM agents.
-
-* 🏫 Used by 1 school
-* 👩‍🏫 11 active teachers
-* 💰 ₹1k–₹5k monthly profit
-
-🔗 **Preview Image:**
-👉 [View Hushar Spreadsheet Preview](https://ultron-the-ai.vercel.app/husharspreadsheet/1.jpeg)
-
-#### 🧩 Hushar Spreadsheet – Backend System Design (TypeScript)
-
-```txt
-[ Users ]
-    |
-    v
-[ Load Balancer ]
-    |
---------------------
-|                  |
-[ API Server 1 ]  [ API Server 2 ]
-(Node.js + TypeScript)
-    |
-    v
-[ Worker Service ]
-(Emails, Payments, Logs)
-    |
----------------------------
-|            |            |
-[ LioranDB ] [ Payments ] [ Logs ]
-
-[ LangGraph Agent ]
-      |
-[ Groq LLM Models ]
-```
-
-#### 🎨 Hushar Spreadsheet – Frontend System Design
-
-```txt
-[ Users (Browser) ]
-        |
-        v
-     [ CDN ]
-        |
-   [ Load Balancer ]
-        |
-   ------------------
-   |                |
-[ Next.js Server 1 ] [ Next.js Server 2 ]
-        |
-        v
-[ REST API Backend ]
-```
+- "Works on my machine" → Production: `Segmentation Fault (core dumped)`
+- Me explaining my code: "It just... knows"
+- When the DB query works on first try: *shocked pikachu face*
+- "I'll just add one more microservice" → 3 weeks later, questioning life choices
+- Indian devs when foreign SaaS prices drop: "Finally... wait no, still too expensive"
 
 ---
 
-## 📌 Connect With Me
+## Connect (If You Dare)
 
-* 🌐 **Portfolio:** [https://ultron-the-ai.vercel.app/](https://ultron-the-ai.vercel.app/)
-* 🌐 **Lioran Group:** [https://lioran.group/](https://lioran.group/)
-* 🐙 **GitHub:** [https://github.com/UltronTheAI](https://github.com/UltronTheAI)
-* 🐦 **Twitter:** [https://twitter.com/PuppalwarSwaraj](https://twitter.com/PuppalwarSwaraj)
-* 📸 **Instagram:** [https://www.instagram.com/pro_epic_programmer/](https://www.instagram.com/pro_epic_programmer/)
-* ▶️ **YouTube:** [https://www.youtube.com/@proepiccoder](https://www.youtube.com/@proepiccoder)
+- **Portfolio:** [swaraj.lioransolutions.com](https://swaraj.lioransolutions.com)
+- **Lioran Group:** [lioran.group](https://lioran.group)
+- **GitHub:** [UltronTheAI](https://github.com/UltronTheAI)
+- **Lioran Org:** [LioranGroupOfficial](https://github.com/LioranGroupOfficial)
+- **Twitter:** [@PuppalwarSwaraj](https://twitter.com/PuppalwarSwaraj)
 
 ---
 
-> I focus on becoming a better engineer and CTO every day by building real systems, owning infrastructure, learning from failures, and improving through execution.
+> "I don't always write perfect code... but when I do, it's after 47 failed attempts and one very strong coffee."  
+> — Swaraj (probably at 3 AM)
+
+*Made with love, sarcasm, and too much screen time.*
