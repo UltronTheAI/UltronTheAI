@@ -29,6 +29,7 @@ export default function About() {
       "https://img.shields.io/badge/-LangGraph-222222?style=flat&logo=langgraph&logoColor=white",
     ],
     tools: [
+      "https://img.shields.io/badge/-Rust-000?style=flat&logo=rust&logoColor=white",
       "https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white",
       "https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white",
       "https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase&logoColor=black",
