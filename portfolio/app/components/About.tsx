@@ -113,6 +113,39 @@ export default function About() {
                 />
               </div>
             </div>
+
+            <div className="mt-6 p-4 bg-zinc-900 rounded-lg">
+              <h3 className="text-lg font-medium mb-2">Media Recognition & Achievements</h3>
+              <div className="text-sm text-zinc-400 space-y-2">
+                <div>
+                  <strong>Featured in Newspapers (2023)</strong>
+                  <ul className="list-disc ml-5 mt-2">
+                    <li>
+                      <strong>Nagpur Post</strong> — 23 May 2023 — "Swaraj's High Rise in Computers!"
+                    </li>
+                    <li>
+                      <strong>Navarashtra (Chandrapur Edition)</strong> — 23 May 2023 — "स्वराजची संगणक क्षेत्रात उंच भरारी"
+                    </li>
+                    <li>
+                      <strong>Tarun Bharat (Purva Vidarbha Edition)</strong> — 29 May 2023 — "'स्वराज'ची संगणकात गगनभरारी"
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <strong>Academic & Technical Achievements</strong>
+                  <ul className="list-disc ml-5 mt-2">
+                    <li>Crest Cyber Olympiad — Western Region Rank: 17</li>
+                    <li>Cyber Olympiad — State Rank: 1</li>
+                    <li>International Computer Olympiad — State Rank: 30</li>
+                    <li>International Mathematics Olympiad — State Rank: 30</li>
+                    <li>Participant — 30th National Children's Science Congress</li>
+                    <li>2nd Rank — School Cyber / Software Olympiad</li>
+                    <li>Certificate of Excellence — Exam Pe Charcha 2023</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Right Section */}

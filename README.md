@@ -9,7 +9,6 @@
 I’m that full-stack dev who actually ships stuff instead of just tweeting about it. 
 
 **2 years of real scars** (aka production experience). 
-
 I write TypeScript like it owes me money, break things in Rust "for science", and somehow keep multiple products alive. Currently **Founder & CTO @ Lioran Group** where I lead **2 brave developers** (pray for them) and give tech advice to my friends’ startups when they bribe me with chai.
 
 Portfolio: [swaraj.lioransolutions.com](https://swaraj.lioransolutions.com)
@@ -29,37 +28,16 @@ Portfolio: [swaraj.lioransolutions.com](https://swaraj.lioransolutions.com)
 
 - **Post-Acle** — ~100 monthly readers who keep coming back (miracle)
 - **Vortexly** (private chaos network) — 23 friends, 17 actually active, 98 posts & 16 reels of questionable life choices
-- **Hushar Spreadsheet** — 11 teachers in 1 school, making ₹1k–₹5k/month. Teachers are now my favorite users.
 
 ---
 
-## Tech Stack (What I Actually Use Daily)
-
-**Frontend:** React, Next.js, React Native (yes, mobile too)  
-**Backend:** Nest.js + TypeScript (my spirit animal)  
-**Databases:** MongoDB, PostgreSQL, Redis, and my baby **LioranDB**  
-**AI Stuff:** LangGraph agents + Groq (fast & cheap, my two favorite words)  
-**Infra:** Docker, Kubernetes, Nginx, PM2, self-hosted everything because trust issues  
 **Others:** Rust (when I feel dangerous), Python (for the scripts that save my life)
-
 ---
 
-## Lioran Group — Our "We Built This Because We Could" Infrastructure
-
-We said "screw vendor lock-in" and actually did something about it:
-
-- **LioranDB** — Our homemade NoSQL beast (now getting rewritten in Rust because why not suffer more)
 - **Lioran Auth** — Authentication that doesn't sell your soul
-- **Lioran Bastion** — Secure storage (no, your reels are safe)
 - **Lioran Deployments** — CI/CD that sometimes works on first try
 
-All running on our own stack. Control freaks? Maybe. But at least we sleep better.
 
----
-
-## Best Hits (Projects That Didn't Get Abandoned... Yet)
-
-### 🌐 **Vortexly** (Private Social Network)
 Distraction-free zone for close friends. No algorithm, just vibes.  
 **Status:** Actively used by 17 real humans.
 
