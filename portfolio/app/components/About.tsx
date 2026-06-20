@@ -41,7 +41,7 @@ export default function About() {
   };
 
   return (
-    <section className="w-full px-4 py-8 flex justify-center">
+    <section className="w-full px-4 py-8 flex flex-col items-center">
       <div className="w-full max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           {/* Left Section */}
