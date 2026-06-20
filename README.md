@@ -68,7 +68,7 @@ Built it because I could. Yes it's fun.
 
 ## 📰 Media Recognition & Achievements
 
-![celebration](https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif)
+![celebration](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjM5cmI3MnJyazhtc2kwbDF3dWMzYnliYzFjaTduYzlrZ2xhejJkayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H1SM6E3YiR9DnEd7NJ/giphy.gif)
 
 ### Featured in Newspapers (2023)
 **1. Nagpur Post**
