@@ -65,6 +65,16 @@ export default function About() {
               >
                 Github Profile
               </a>
+              <div className="mt-2">
+                <a
+                  href="https://github.com/gayanvoice/top-github-users/blob/main/markdown/public_contributions/india.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-sky-400 hover:underline"
+                >
+                  Listed in Top Indian GitHub contributors & active devs
+                </a>
+              </div>
 
               {/* Social Buttons */}
               <div className="flex flex-wrap justify-center sm:justify-start gap-3 mt-4">

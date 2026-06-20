@@ -96,6 +96,11 @@ Built it because I could. Yes it's fun.
 
 ---
 
+## 🏅 Additional Recognition
+
+- Listed in the [Top Indian GitHub contributors & active developers](https://github.com/gayanvoice/top-github-users/blob/main/markdown/public_contributions/india.md) list — see the entry on the public contributions page.
+
+
 ## Random Developer Memes I Live By
 
 - "Works on my machine" → Production: `Segmentation Fault (core dumped)`
