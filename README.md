@@ -13,6 +13,8 @@ I write TypeScript like it owes me money, break things in Rust "for science", an
 
 Portfolio: [swaraj.lioransolutions.com](https://swaraj.lioransolutions.com)
 
+GitHub (org): [LioranGroupOfficial](https://github.com/LioranGroupOfficial) — view advanced products there.
+
 ---
 
 ## My Engineering Vibe (aka "Philosophy")
@@ -66,6 +68,8 @@ Built it because I could. Yes it's fun.
 
 ## 📰 Media Recognition & Achievements
 
+![celebration](https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif)
+
 ### Featured in Newspapers (2023)
 **1. Nagpur Post**
 📅 **23 May 2023**
@@ -80,7 +84,7 @@ Built it because I could. Yes it's fun.
 📰 Article: *"'स्वराज'ची संगणकात गगनभरारी"*
 
 ### Total Newspaper Features
-✅ **3 newspaper publications** across regional and English media.
+**3 newspaper publications** across regional and English media.
 
 ---
 
@@ -115,8 +119,7 @@ Built it because I could. Yes it's fun.
 
 - **Portfolio:** [swaraj.lioransolutions.com](https://swaraj.lioransolutions.com)
 - **Lioran Group:** [lioran.group](https://lioran.group)
-- **GitHub:** [UltronTheAI](https://github.com/UltronTheAI)
-- **Lioran Org:** [LioranGroupOfficial](https://github.com/LioranGroupOfficial)
+ - **GitHub Org:** [LioranGroupOfficial](https://github.com/LioranGroupOfficial) — view advanced products there
 - **Twitter:** [@PuppalwarSwaraj](https://twitter.com/PuppalwarSwaraj)
 
 ---

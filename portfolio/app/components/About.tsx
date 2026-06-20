@@ -60,10 +60,12 @@ export default function About() {
               <p className="text-zinc-300">Founder & CTO at Lioran Group — I lead 2 devs (they still debug my jokes)</p>
 
               <a
-                href="https://github.com/UltronTheAI"
+                href="https://github.com/LioranGroupOfficial"
                 className="mt-3 inline-block text-sm text-sky-400 hover:text-sky-300"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Github Profile
+                LioranGroupOfficial (GitHub Org)
               </a>
               <div className="mt-2">
                 <a
