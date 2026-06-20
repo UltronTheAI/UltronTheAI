@@ -62,7 +62,7 @@ export default function About() {
               <div className="mt-3 space-y-2">
                 <a
                   href="https://github.com/UltronTheAI"
-                  className="inline-block text-sm text-sky-400 hover:text-sky-300"
+                  className="block text-sm text-sky-400 hover:text-sky-300 mb-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -70,7 +70,7 @@ export default function About() {
                 </a>
                 <a
                   href="https://github.com/LioranGroupOfficial"
-                  className="inline-block text-sm text-sky-400 hover:text-sky-300"
+                  className="block text-sm text-sky-400 hover:text-sky-300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
