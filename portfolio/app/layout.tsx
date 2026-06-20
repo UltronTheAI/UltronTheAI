@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s | Swaraj Puppalwar",
   },
   description:
-    "Portfolio of Swaraj Puppalwar – 17-year-old Full Stack Developer & AI enthusiast building scalable web apps, decentralized systems, and futuristic startups like LioranDB and Hushar Spreadsheet.",
+    "Portfolio of Swaraj Puppalwar – 18-year-old Full Stack Developer & AI enthusiast building scalable web apps, decentralized systems, and startups like LioranDB and Hushar Spreadsheet.",
   keywords: [
     "Swaraj Puppalwar",
     "UltronTheAI",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Swaraj Puppalwar | Developer & Startup Builder",
     description:
       "Explore the portfolio of Swaraj Puppalwar – building AI-powered tools, decentralized databases, and scalable applications.",
-    url: "https://ultron-the-ai.vercel.app/",
+    url: "https://swaraj.lioransolutions.com/",
     siteName: "Swaraj Puppalwar Portfolio",
     images: [
       {
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Swaraj Puppalwar | UltronTheAI",
     description:
-      "Full Stack Developer & AI Builder creating futuristic software and scalable platforms.",
+      "Full Stack Developer & AI Builder creating pragmatic software, databases, and developer tooling.",
     images: ["/user.png"],
   },
 

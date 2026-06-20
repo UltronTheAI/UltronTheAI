@@ -55,9 +55,9 @@ export default function About() {
             />
             <div className="text-center sm:text-left">
               <h2 className="text-2xl md:text-3xl font-semibold">Swaraj Puppalwar</h2>
-              <p className="text-zinc-400">17-year-old Full-Stack Developer</p>
+              <p className="text-zinc-400">18-year-old Full-Stack Developer — laughing, serious, scared</p>
               <p className="mt-1 text-zinc-300">2 years of development experience</p>
-              <p className="text-zinc-300">Founder & CTO at Lioran Groups</p>
+              <p className="text-zinc-300">Founder & CTO at Lioran Group — I lead 2 devs (they still debug my jokes)</p>
 
               <a
                 href="https://github.com/UltronTheAI"
@@ -104,6 +104,13 @@ export default function About() {
                     unoptimized
                   />
                 </a>
+              </div>
+              <div className="mt-4">
+                <img
+                  src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif"
+                  alt="meme"
+                  className="mt-3 rounded-lg w-48"
+                />
               </div>
             </div>
           </div>
