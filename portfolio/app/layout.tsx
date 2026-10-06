@@ -136,7 +136,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
@@ -144,6 +144,7 @@ export default function RootLayout({
         />
       </head>
       <body
+        suppressHydrationWarning
         className={`${inter.variable} ${jetbrainsMono.variable} ${comicNeue.variable} font-sans antialiased bg-[#FFFFFF] text-[#111111] selection:bg-[#111111] selection:text-[#FFFFFF] min-h-screen`}
       >
         {children}

@@ -118,6 +118,7 @@ export default function Contact() {
                   id="contact-name"
                   type="text"
                   required
+                  suppressHydrationWarning
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="e.g. Linus Torvalds"
@@ -133,6 +134,7 @@ export default function Contact() {
                   id="contact-email"
                   type="email"
                   required
+                  suppressHydrationWarning
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="you@domain.com"
@@ -148,6 +150,7 @@ export default function Contact() {
                   id="contact-msg"
                   required
                   rows={5}
+                  suppressHydrationWarning
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="Tell me about your systems, questions, or ideas..."
@@ -158,6 +161,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={loading}
+                suppressHydrationWarning
                 className="sketch-btn-primary w-full justify-center disabled:opacity-50"
               >
                 <Send size={14} />

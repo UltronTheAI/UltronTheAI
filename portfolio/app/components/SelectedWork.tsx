@@ -355,6 +355,7 @@ export default function SelectedWork() {
                   {exp.images && exp.images.length > 0 && (
                     <button
                       type="button"
+                      suppressHydrationWarning
                       onClick={() =>
                         setActiveGallery({
                           title: exp.title,
