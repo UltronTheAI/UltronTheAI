@@ -269,9 +269,9 @@ export const SELECTED_PROJECTS: ProjectItem[] = [
     iconName: "ShieldCheck",
   },
   {
-    id: "ebook-aura",
+    id: "vasuki",
     title: "Vasuki / eBook-Generator-AI",
-    subtitle: "Autonomous Research & Structured eBook Pipeline",
+    subtitle: "AI-Powered Research & Structured eBook Generation Engine",
     tier: "selected-product",
     status: "Completed",
     period: "2025",
@@ -286,8 +286,8 @@ export const SELECTED_PROJECTS: ProjectItem[] = [
       "Preventing hallucination drift across consecutive chapters by feeding chapter summaries back into the global context.",
     ],
     stack: ["Python", "LangChain", "OpenAI APIs", "ReportLab", "Node.js"],
-    githubUrl: "https://github.com/UltronTheAI/eBook-Generator-AI-Agent",
-    images: ["/ebookaura/1.jpeg", "/ebookaura/2.jpeg", "/ebookaura/3.jpeg", "/ebookaura/4.jpeg", "/ebookaura/5.jpeg"],
+    githubUrl: "https://github.com/UltronTheAI/VasukiSquare",
+    images: ["/vasuki/1.jpeg"],
     iconName: "FileText",
   },
 ];
