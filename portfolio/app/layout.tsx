@@ -56,14 +56,6 @@ export const metadata: Metadata = {
     description:
       "Full-stack software engineer and Founder & CTO at Lioran Group. Building databases, storage engines, backend platforms and developer tooling with Rust and TypeScript.",
     siteName: "Swaraj Puppalwar Portfolio",
-    images: [
-      {
-        url: "/user.png",
-        width: 800,
-        height: 800,
-        alt: "Swaraj Puppalwar - Software Engineer",
-      },
-    ],
   },
 
   twitter: {
@@ -72,7 +64,6 @@ export const metadata: Metadata = {
     description:
       "Full-stack software engineer and Founder & CTO at Lioran Group, building databases, object storage, backend systems and developer infrastructure with Rust and TypeScript.",
     creator: "@PuppalwarSwaraj",
-    images: ["/user.png"],
   },
 
   icons: {
