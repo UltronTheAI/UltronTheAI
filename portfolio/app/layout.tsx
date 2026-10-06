@@ -1,61 +1,77 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Comic_Neue } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const comicNeue = Comic_Neue({
+  variable: "--font-sketch",
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://swaraj.lioransolutions.com"),
   title: {
-    default: "Swaraj Puppalwar | UltronTheAI",
+    default: "Swaraj Puppalwar — Software Engineer & Infrastructure Builder",
     template: "%s | Swaraj Puppalwar",
   },
   description:
-    "Portfolio of Swaraj Puppalwar – 18-year-old Full Stack Developer & AI enthusiast building scalable web apps, decentralized systems, and startups like LioranDB and Hushar Spreadsheet.",
+    "Full-stack software engineer and Founder & CTO at Lioran Group, building databases, object storage, backend systems and developer infrastructure with Rust and TypeScript.",
   keywords: [
     "Swaraj Puppalwar",
     "UltronTheAI",
-    "Full Stack Developer",
-    "Next.js Developer",
-    "React Developer",
-    "AI Developer",
-    "Indian Programmer",
-    "Startup Builder",
+    "Software Engineer",
+    "Developer Infrastructure",
+    "Rust Developer",
+    "TypeScript",
+    "Database Engineer",
     "LioranDB",
+    "Lioran S3",
+    "Lioran Bastion",
+    "Lioran Group",
+    "Systems Engineering",
+    "Backend Engineer",
   ],
-  authors: [{ name: "Swaraj Puppalwar" }],
+  authors: [{ name: "Swaraj Puppalwar", url: "https://swaraj.lioransolutions.com" }],
   creator: "Swaraj Puppalwar",
+  publisher: "Lioran Developer Solutions",
 
   openGraph: {
-    title: "Swaraj Puppalwar | Developer & Startup Builder",
+    type: "website",
+    locale: "en_IN",
+    url: "https://swaraj.lioransolutions.com",
+    title: "Swaraj Puppalwar — Software Engineer & Infrastructure Builder",
     description:
-      "Explore the portfolio of Swaraj Puppalwar – building AI-powered tools, decentralized databases, and scalable applications.",
-    url: "https://swaraj.lioransolutions.com/",
+      "Full-stack software engineer and Founder & CTO at Lioran Group. Building databases, storage engines, backend platforms and developer tooling with Rust and TypeScript.",
     siteName: "Swaraj Puppalwar Portfolio",
     images: [
       {
         url: "/user.png",
-        width: 512,
-        height: 512,
-        alt: "Swaraj Puppalwar",
+        width: 800,
+        height: 800,
+        alt: "Swaraj Puppalwar - Software Engineer",
       },
     ],
-    locale: "en_IN",
-    type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Swaraj Puppalwar | UltronTheAI",
+    title: "Swaraj Puppalwar — Software Engineer & Infrastructure Builder",
     description:
-      "Full Stack Developer & AI Builder creating pragmatic software, databases, and developer tooling.",
+      "Full-stack software engineer and Founder & CTO at Lioran Group, building databases, object storage, backend systems and developer infrastructure with Rust and TypeScript.",
+    creator: "@PuppalwarSwaraj",
     images: ["/user.png"],
   },
 
@@ -76,9 +92,60 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Structured data (Schema.org Person & Organization)
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://swaraj.lioransolutions.com/#person",
+        name: "Swaraj Puppalwar",
+        alternateName: "UltronTheAI",
+        jobTitle: "Founder & Chief Technology Officer",
+        worksFor: {
+          "@type": "Organization",
+          name: "Lioran Group",
+          url: "https://lioran.group",
+        },
+        url: "https://swaraj.lioransolutions.com",
+        sameAs: [
+          "https://github.com/UltronTheAI",
+          "https://github.com/LioranGroupOfficial",
+          "https://twitter.com/PuppalwarSwaraj",
+        ],
+        knowsAbout: [
+          "Rust",
+          "TypeScript",
+          "Database Architecture",
+          "Object Storage",
+          "Distributed Systems",
+          "Developer Infrastructure",
+          "Systems Engineering",
+        ],
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://swaraj.lioransolutions.com/#website",
+        url: "https://swaraj.lioransolutions.com",
+        name: "Swaraj Puppalwar — Software Engineer Portfolio",
+        publisher: {
+          "@id": "https://swaraj.lioransolutions.com/#person",
+        },
+      },
+    ],
+  };
+
   return (
-    <html lang="en" className="dark">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-zinc-200`}>
+    <html lang="en" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
+      <body
+        className={`${inter.variable} ${jetbrainsMono.variable} ${comicNeue.variable} font-sans antialiased bg-[#FFFFFF] text-[#111111] selection:bg-[#111111] selection:text-[#FFFFFF] min-h-screen`}
+      >
         {children}
       </body>
     </html>

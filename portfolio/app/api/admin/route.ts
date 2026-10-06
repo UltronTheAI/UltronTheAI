@@ -50,7 +50,7 @@ export async function GET(req: Request) {
       .toArray();
 
     return NextResponse.json({ success: true, mails });
-  } catch (err) {
+  } catch {
     return NextResponse.json({ error: "Server Error" }, { status: 500 });
   }
 }
@@ -73,7 +73,7 @@ export async function DELETE(req: Request) {
     const result = await collection.deleteMany({ _id: { $in: objectIds } });
 
     return NextResponse.json({ success: true, deleted: result.deletedCount });
-  } catch (err) {
+  } catch {
     return NextResponse.json({ error: "Delete failed" }, { status: 500 });
   }
 }

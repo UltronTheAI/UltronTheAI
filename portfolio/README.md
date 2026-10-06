@@ -1,38 +1,57 @@
-Welcome to the portfolio app for Swaraj Puppalwar — this Next.js site is the public face of my chaotic creations.
+# Swaraj Puppalwar — Engineering Portfolio
 
-Live site: [swaraj.lioransolutions.com](https://swaraj.lioransolutions.com)
+> **Full-Stack Software Engineer focused on Developer Infrastructure**  
+> Founder & CTO at [Lioran Group](https://lioran.group) / Lioran Developer Solutions
 
-This repo is a standard Next.js app (bootstrapped with `create-next-app`). The site embraces GIFs, memes, and developer humor — so expect weirdness.
+Live Portfolio: [swaraj.lioransolutions.com](https://swaraj.lioransolutions.com)
 
-## Quick Start (run locally)
+---
+
+## Overview
+
+This repository contains the personal engineering portfolio for **Swaraj Puppalwar**.
+
+The site follows the **Sthashta Editorial Monochrome Design System** (`DESIGN.md`):
+- Pure paper canvas (`#FFFFFF`) with deep ink typography (`#111111` / `#000000`).
+- Hand-drawn technical SVG architecture diagrams and notebook sketches.
+- Typography driven by **Inter**, **JetBrains Mono**, and **Comic Neue**.
+- Zero gradient noise, zero generic badge walls, zero terminal gimmicks.
+
+---
+
+## Featured Infrastructure Tracks (LDS)
+
+1. **LioranDB (Active / V2)**: Developer-first document database in Rust with custom storage engine, WAL, crash recovery, and B+ tree indexing.
+2. **Lioran S3 / Lioran Bastion (V1 Pre-Alpha)**: Single-node self-hosted object storage engine in Rust with bounded streaming I/O, RocksDB metadata, and 100 GiB durability testing.
+3. **Lioran Auth (Research)**: Self-hosted identity, Argon2id credential hashing, and scoped IAM engine.
+
+---
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router, Server Components)
+- **Language**: TypeScript 5
+- **Styling**: Tailwind CSS v4 + `@tailwindcss/postcss`
+- **Typography**: `next/font/google` (Inter, JetBrains Mono, Comic Neue)
+- **Iconography**: `lucide-react`
+- **Database / API**: MongoDB native driver (contact dispatch backend)
+
+---
+
+## Local Development
 
 ```bash
+# Install dependencies
 npm install
+
+# Start development server
 npm run dev
+
+# Build production bundle
+npm run build
+
+# Run linting
+npm run lint
 ```
 
-Open http://localhost:3000 to view locally.
-
-## Notes for Developers
-
-- The site intentionally uses animated GIFs and meme images — store them in `public/` and reference them from components.
-- Keep the tone irreverent: replace any AI-rocket emoji vibes with words like "hmm", "huh", "laughing", "serious", "scared" to match the persona.
-- Project highlights are curated from both `UltronTheAI` and `LioranGroupOfficial` orgs — update `components.json` when adding new projects.
-
-## Deploy
-
-Deploy as any Next.js app (Vercel recommended):
-
-```bash
-# push to GitHub, then connect the repo to Vercel
-# or use `vercel` CLI
-vercel --prod
-```
-
-## Where to tweak the memes
-
-- Main page: `app/page.tsx`
-- Components: `app/components/` and `portfolio/components.json`
-- Static media: `public/` (put GIFs here; avoid heavy files > 2MB)
-
-Have fun. Make devs laugh. If your CI complains, tell it to chill — it's learning.
+Open [http://localhost:3000](http://localhost:3000) to inspect the portfolio locally.
