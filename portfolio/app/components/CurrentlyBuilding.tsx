@@ -1,5 +1,5 @@
 import React from "react";
-import { Database, HardDrive, KeyRound, ArrowUpRight, Github, CheckCircle2, Shield, Cpu, Activity } from "lucide-react";
+import { Database, HardDrive, KeyRound, ArrowUpRight, Github, CheckSquare, Shield, Cpu, Activity } from "lucide-react";
 import { CURRENTLY_BUILDING } from "../data/portfolioData";
 import { DatabaseSketch, StorageSketch, IdentitySketch, HandDrawnUnderline } from "./SketchDrawings";
 
@@ -208,7 +208,7 @@ export default function CurrentlyBuilding() {
 
               <div className="p-4 bg-[#FAFAFA] border border-[#E5E5E5] rounded space-y-2">
                 <h4 className="font-mono text-xs font-bold uppercase tracking-wider text-[#111111] flex items-center gap-1.5">
-                  <CheckCircle2 size={13} />
+                  <CheckSquare size={13} />
                   <span>Durability & Scope Honest Note</span>
                 </h4>
                 <p className="text-xs text-[#555555] leading-relaxed">

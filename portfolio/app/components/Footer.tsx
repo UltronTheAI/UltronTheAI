@@ -20,7 +20,7 @@ export default function Footer() {
               Full-Stack Software Engineer & Founder/CTO at Lioran Group. Building databases, object storage, and developer infrastructure in Rust & TypeScript.
             </p>
             <div className="flex items-center gap-2 pt-1 font-mono text-[11px] text-[#666666]">
-              <span className="inline-block w-2 h-2 rounded-full bg-[#111111]" />
+              <span className="inline-block w-1.5 h-1.5 bg-[#111111]" />
               <span>Engineered in India 🇮🇳</span>
             </div>
           </div>

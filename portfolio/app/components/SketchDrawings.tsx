@@ -2,7 +2,7 @@ import React from "react";
 
 // ---------------------------------------------------------------------------
 // HAND-DRAWN SKETCH SYSTEM (Light-mode Monochrome: Paper #FFFFFF / Ink #000000)
-// Authentic technical notebook and systems architecture illustrations
+// Authentic technical notebook and systems architecture illustrations (Clean Geometry, No Circles)
 // ---------------------------------------------------------------------------
 
 export function DatabaseSketch({ className = "w-full h-auto" }: { className?: string }) {
@@ -14,13 +14,8 @@ export function DatabaseSketch({ className = "w-full h-auto" }: { className?: st
       className={className}
       aria-label="LioranDB Storage Engine & B+ Tree Architecture Diagram"
     >
-      {/* Background grid dots - faint paper style */}
-      <defs>
-        <pattern id="grid-pattern-db" width="20" height="20" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="0.8" fill="#E5E5E5" />
-        </pattern>
-      </defs>
-      <rect width="540" height="280" fill="url(#grid-pattern-db)" rx="6" />
+      {/* Solid Canvas Base */}
+      <rect width="540" height="280" fill="#FFFFFF" rx="6" />
 
       {/* Outer bounding frame - sketch style */}
       <rect
@@ -156,12 +151,7 @@ export function StorageSketch({ className = "w-full h-auto" }: { className?: str
       className={className}
       aria-label="Lioran S3 / Bastion Object Storage Architecture Diagram"
     >
-      <defs>
-        <pattern id="grid-pattern-storage" width="20" height="20" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="0.8" fill="#E5E5E5" />
-        </pattern>
-      </defs>
-      <rect width="540" height="280" fill="url(#grid-pattern-storage)" rx="6" />
+      <rect width="540" height="280" fill="#FFFFFF" rx="6" />
 
       {/* Outer frame */}
       <rect
@@ -283,12 +273,7 @@ export function IdentitySketch({ className = "w-full h-auto" }: { className?: st
       className={className}
       aria-label="Lioran Auth & Identity Infrastructure Flow Diagram"
     >
-      <defs>
-        <pattern id="grid-pattern-auth" width="20" height="20" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="0.8" fill="#E5E5E5" />
-        </pattern>
-      </defs>
-      <rect width="540" height="240" fill="url(#grid-pattern-auth)" rx="6" />
+      <rect width="540" height="240" fill="#FFFFFF" rx="6" />
 
       {/* Frame */}
       <rect
@@ -381,12 +366,7 @@ export function LioranEcosystemDiagram({ className = "w-full h-auto" }: { classN
       className={className}
       aria-label="Lioran Group & LDS Developer Infrastructure Ecosystem Tree"
     >
-      <defs>
-        <pattern id="grid-pattern-eco" width="20" height="20" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="0.8" fill="#E5E5E5" />
-        </pattern>
-      </defs>
-      <rect width="680" height="340" fill="url(#grid-pattern-eco)" rx="6" />
+      <rect width="680" height="340" fill="#FFFFFF" rx="6" />
 
       {/* Frame */}
       <rect
@@ -530,18 +510,18 @@ export function HandDrawnUnderline({ className = "w-full h-3 text-black" }: { cl
   );
 }
 
-// Small stickman founder sketch (Rahul / humble founder archetype as defined in DESIGN.md)
+// Hand-drawn founder sketch (Rahul archetype) with clean angular lines
 export function StickmanFounder({ className = "w-16 h-24 text-black" }: { className?: string }) {
   return (
     <svg viewBox="0 0 60 90" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
       {/* Head */}
-      <circle cx="30" cy="18" r="10" stroke="currentColor" strokeWidth="1.75" fill="#FFFFFF" />
+      <rect x="20" y="8" width="20" height="20" rx="3" stroke="currentColor" strokeWidth="1.75" fill="#FFFFFF" />
       {/* Short messy hair strokes */}
-      <path d="M 22 13 Q 26 8, 32 9 Q 36 10, 38 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      {/* Eyes & slight smile */}
-      <circle cx="26" cy="18" r="1" fill="currentColor" />
-      <circle cx="33" cy="18" r="1" fill="currentColor" />
-      <path d="M 27 22 Q 30 24, 33 22" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
+      <path d="M 21 8 Q 26 5, 32 6 Q 36 7, 39 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      {/* Eyes & smile */}
+      <rect x="25" y="15" width="2" height="2" fill="currentColor" />
+      <rect x="33" y="15" width="2" height="2" fill="currentColor" />
+      <path d="M 26 22 L 34 22" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
       {/* Body */}
       <line x1="30" y1="28" x2="30" y2="58" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       {/* Arms holding laptop */}

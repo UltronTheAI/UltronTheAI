@@ -160,12 +160,6 @@
   box-shadow: 1px 1px 0px #111111;
 }
 
-/* Subtle dot grid pattern */
-.bg-grid-dots {
-  background-image: radial-gradient(#E0E0E0 1px, transparent 1px);
-  background-size: 20px 20px;
-}
-
 /* Subtle technical divider line */
 .technical-rule {
   height: 1px;

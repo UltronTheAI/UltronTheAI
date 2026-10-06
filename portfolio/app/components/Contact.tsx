@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Mail, Github, Twitter, MapPin, Send, CheckCircle2, AlertCircle, ArrowUpRight } from "lucide-react";
+import { Mail, Github, Twitter, MapPin, Send, CheckSquare, AlertTriangle, ArrowUpRight } from "lucide-react";
 import { CONTACT_DATA } from "../data/portfolioData";
 import { HandDrawnUnderline } from "./SketchDrawings";
 
@@ -92,14 +92,14 @@ export default function Contact() {
               {/* Status Alert */}
               {status === "success" && (
                 <div className="p-3 bg-[#FAFAFA] border-2 border-[#111111] rounded flex items-center gap-2.5 text-xs text-[#111111]">
-                  <CheckCircle2 size={16} className="text-[#111111]" />
+                  <CheckSquare size={16} className="text-[#111111]" />
                   <span>Message recorded successfully. Thank you for reaching out.</span>
                 </div>
               )}
 
               {status === "error" && (
                 <div className="p-3 bg-[#FAFAFA] border-2 border-[#111111] rounded flex items-start gap-2.5 text-xs text-[#111111]">
-                  <AlertCircle size={16} className="text-[#111111] shrink-0 mt-0.5" />
+                  <AlertTriangle size={16} className="text-[#111111] shrink-0 mt-0.5" />
                   <div>
                     <span>{errorMessage}</span>
                     <span className="block mt-1">

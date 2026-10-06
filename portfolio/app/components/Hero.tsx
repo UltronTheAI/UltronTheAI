@@ -7,9 +7,6 @@ import { HandDrawnArrow } from "./SketchDrawings";
 export default function Hero() {
   return (
     <section id="home" className="relative pt-28 pb-16 md:pt-36 md:pb-24 border-b border-[#E5E5E5] bg-[#FFFFFF] overflow-hidden">
-      {/* Background paper dot grid */}
-      <div className="absolute inset-0 bg-grid-dots opacity-40 pointer-events-none" />
-
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           
@@ -21,7 +18,7 @@ export default function Hero() {
               <span className="font-mono text-xs font-bold uppercase tracking-widest text-[#111111] bg-[#FAFAFA] border border-[#111111] px-2.5 py-1 rounded">
                 {HERO_DATA.eyebrow}
               </span>
-              <span className="inline-block w-2 h-2 rounded-full bg-[#111111] animate-pulse" />
+              <span className="inline-block w-1.5 h-1.5 bg-[#111111] animate-pulse" />
               <span className="font-mono text-[11px] text-[#666666]">India 🇮🇳</span>
             </div>
 

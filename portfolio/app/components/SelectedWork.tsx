@@ -127,7 +127,7 @@ export default function SelectedWork() {
               <button
                 type="button"
                 onClick={prevImage}
-                className="absolute left-3 sm:left-6 z-40 p-3 bg-[#FFFFFF] text-[#000000] rounded-full hover:bg-[#E5E5E5] transition shadow-lg focus:outline-none"
+                className="absolute left-3 sm:left-6 z-40 p-3 bg-[#FFFFFF] text-[#000000] rounded border border-[#111111] hover:bg-[#E5E5E5] transition shadow-[2px_2px_0px_#111111] focus:outline-none"
                 aria-label="Previous Image"
               >
                 <ChevronLeft size={22} />
@@ -151,7 +151,7 @@ export default function SelectedWork() {
               <button
                 type="button"
                 onClick={nextImage}
-                className="absolute right-3 sm:right-6 z-40 p-3 bg-[#FFFFFF] text-[#000000] rounded-full hover:bg-[#E5E5E5] transition shadow-lg focus:outline-none"
+                className="absolute right-3 sm:right-6 z-40 p-3 bg-[#FFFFFF] text-[#000000] rounded border border-[#111111] hover:bg-[#E5E5E5] transition shadow-[2px_2px_0px_#111111] focus:outline-none"
                 aria-label="Next Image"
               >
                 <ChevronRight size={22} />
