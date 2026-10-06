@@ -52,8 +52,7 @@ AI-powered spreadsheet for Zilla Parishad teachers. Teachers type in Hindi, magi
 **Status:** Paying customers (insane)
 
 ### 🗄️ **LioranDB** (The one I'm most proud of)
-Lightweight, local-first, MongoDB-style document DB. Currently getting Rust-ified.  
-Handles real SaaS workloads. 10+ pilot clients already poking it.
+LioranDB V2 is a no-sql document database engineered from the ground up using Rust for high-performance, dependable database infrastructure. Built to serve modern applications without compromising simplicity, it is capable of scaling up to 10 million documents and processing 45,000 operations per second.
 
 ### 🤖 **AiCompanion**
 Full-stack app to create and chat with your own AI companions.  
