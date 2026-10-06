@@ -32,7 +32,7 @@ export default function LioranEcosystem() {
         {/* Hand-drawn Hierarchy & Architecture Diagram */}
         <div className="sketch-card p-6 sm:p-8 bg-[#FFFFFF] space-y-8">
           
-          <div className="border border-[#111111] rounded overflow-hidden bg-[#FAFAFA]">
+          <div className="w-full overflow-hidden">
             <LioranEcosystemDiagram className="w-full h-auto" />
           </div>
 

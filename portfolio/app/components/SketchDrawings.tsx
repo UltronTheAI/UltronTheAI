@@ -2,27 +2,25 @@ import React from "react";
 
 // ---------------------------------------------------------------------------
 // HAND-DRAWN SKETCH SYSTEM (Light-mode Monochrome: Paper #FFFFFF / Ink #000000)
-// Authentic technical notebook and systems architecture illustrations (Clean Geometry, No Circles)
+// Authentic technical notebook and systems architecture illustrations
+// Generous padding, clean geometry, and crisp breaking dashed boundary lines
 // ---------------------------------------------------------------------------
 
 export function DatabaseSketch({ className = "w-full h-auto" }: { className?: string }) {
   return (
     <svg
-      viewBox="0 0 540 280"
+      viewBox="0 0 560 310"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       aria-label="LioranDB Storage Engine & B+ Tree Architecture Diagram"
     >
-      {/* Solid Canvas Base */}
-      <rect width="540" height="280" fill="#FFFFFF" rx="6" />
-
-      {/* Outer bounding frame - sketch style */}
+      {/* Outer bounding frame - breaking / dashed sketch style with generous padding */}
       <rect
-        x="6"
-        y="6"
-        width="528"
-        height="268"
+        x="8"
+        y="8"
+        width="544"
+        height="294"
         stroke="#111111"
         strokeWidth="1.5"
         strokeDasharray="4 2"
@@ -31,112 +29,109 @@ export function DatabaseSketch({ className = "w-full h-auto" }: { className?: st
       />
 
       {/* Label - Top Left */}
-      <text x="24" y="32" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="600" fill="#111111" letterSpacing="0.8">
+      <text x="28" y="36" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="600" fill="#111111" letterSpacing="0.8">
         LIORANDB // STORAGE ENGINE INTERNALS (V2)
       </text>
 
       {/* Ingestion Layer: gRPC Request */}
-      <g transform="translate(24, 60)">
-        <rect x="0" y="0" width="110" height="58" stroke="#111111" strokeWidth="1.75" fill="#FAFAFA" rx="4" />
-        <text x="55" y="24" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="600" textAnchor="middle" fill="#111111">
+      <g transform="translate(28, 58)">
+        <rect x="0" y="0" width="112" height="62" stroke="#111111" strokeWidth="1.75" fill="#FAFAFA" rx="4" />
+        <text x="56" y="26" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="600" textAnchor="middle" fill="#111111">
           gRPC Transport
         </text>
-        <text x="55" y="42" fontFamily="var(--font-mono, monospace)" fontSize="9" textAnchor="middle" fill="#666666">
+        <text x="56" y="44" fontFamily="var(--font-mono, monospace)" fontSize="9" textAnchor="middle" fill="#666666">
           Unary / Sustained
         </text>
       </g>
 
       {/* Arrow from gRPC to Engine */}
-      <path d="M 134 89 L 168 89" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
-      <polygon points="168,89 160,85 160,93" fill="#111111" />
+      <path d="M 140 89 L 174 89" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
+      <polygon points="174,89 166,85 166,93" fill="#111111" />
 
       {/* WAL (Write-Ahead Log) Module */}
-      <g transform="translate(170, 52)">
-        <rect x="0" y="0" width="150" height="74" stroke="#111111" strokeWidth="2" fill="#FFFFFF" rx="4" />
-        {/* offset double sketch border */}
-        <rect x="3" y="3" width="144" height="68" stroke="#D0D0D0" strokeWidth="1" fill="none" rx="2" />
-        <text x="75" y="22" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="700" textAnchor="middle" fill="#111111">
+      <g transform="translate(176, 52)">
+        <rect x="0" y="0" width="154" height="74" stroke="#111111" strokeWidth="1.75" fill="#FFFFFF" rx="4" />
+        <text x="77" y="22" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="700" textAnchor="middle" fill="#111111">
           WAL & RECOVERY
         </text>
-        <line x1="12" y1="32" x2="138" y2="32" stroke="#E5E5E5" strokeWidth="1" />
-        <text x="75" y="46" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#333333">
+        <line x1="12" y1="32" x2="142" y2="32" stroke="#E5E5E5" strokeWidth="1" />
+        <text x="77" y="46" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#333333">
           Append-only Commit Log
         </text>
-        <text x="75" y="60" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#666666">
+        <text x="77" y="60" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#666666">
           Crash-safe fsync stream
         </text>
       </g>
 
       {/* MemTable Buffer */}
-      <g transform="translate(350, 52)">
-        <rect x="0" y="0" width="160" height="74" stroke="#111111" strokeWidth="1.75" fill="#FFFFFF" rx="4" />
-        <text x="80" y="22" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="700" textAnchor="middle" fill="#111111">
+      <g transform="translate(358, 52)">
+        <rect x="0" y="0" width="170" height="74" stroke="#111111" strokeWidth="1.75" fill="#FFFFFF" rx="4" />
+        <text x="85" y="22" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="700" textAnchor="middle" fill="#111111">
           MEMTABLE & MVCC
         </text>
-        <line x1="12" y1="32" x2="148" y2="32" stroke="#E5E5E5" strokeWidth="1" />
-        <text x="80" y="46" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#333333">
+        <line x1="12" y1="32" x2="158" y2="32" stroke="#E5E5E5" strokeWidth="1" />
+        <text x="85" y="46" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#333333">
           Lock-free In-Memory Index
         </text>
-        <text x="80" y="60" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#666666">
+        <text x="85" y="60" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#666666">
           Multi-Version Isolation
         </text>
       </g>
 
       {/* Connecting Arrow from WAL to MemTable */}
-      <path d="M 320 89 L 348 89" stroke="#111111" strokeWidth="1.5" strokeDasharray="3 3" />
+      <path d="M 330 89 L 356 89" stroke="#111111" strokeWidth="1.5" strokeDasharray="3 3" />
 
-      {/* Downward flush arrow */}
-      <path d="M 430 128 L 430 156" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
-      <polygon points="430,156 426,148 434,148" fill="#111111" />
-      <text x="442" y="146" fontFamily="var(--font-sketch, cursive)" fontSize="11" fill="#666666">
+      {/* Downward flush arrow with clear spacing */}
+      <path d="M 442 128 L 442 162" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
+      <polygon points="442,162 438,154 446,154" fill="#111111" />
+      <text x="454" y="148" fontFamily="var(--font-sketch, cursive)" fontSize="11" fill="#666666">
         flush / compact
       </text>
 
-      {/* B+ Tree Disk Storage Engine - Bottom Section */}
-      <g transform="translate(24, 160)">
-        <rect x="0" y="0" width="486" height="100" stroke="#111111" strokeWidth="2" fill="#FFFFFF" rx="4" />
-        <rect x="2" y="2" width="482" height="96" stroke="#111111" strokeWidth="0.5" strokeDasharray="2 2" fill="none" />
+      {/* B+ Tree Disk Storage Engine - Bottom Section with generous padding */}
+      <g transform="translate(28, 168)">
+        <rect x="0" y="0" width="504" height="114" stroke="#111111" strokeWidth="1.5" strokeDasharray="4 2" fill="#FFFFFF" rx="4" />
 
         <text x="20" y="24" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="700" fill="#111111">
           PERSISTENT STORAGE ENGINE // B+ TREE & SECONDARY INDEXES
         </text>
 
         {/* Tree Root Node */}
-        <g transform="translate(200, 36)">
-          <rect x="0" y="0" width="86" height="24" stroke="#111111" strokeWidth="1.25" fill="#FAFAFA" rx="2" />
-          <text x="43" y="16" fontFamily="var(--font-mono, monospace)" fontSize="9" textAnchor="middle" fill="#111111">
+        <g transform="translate(208, 36)">
+          <rect x="0" y="0" width="88" height="24" stroke="#111111" strokeWidth="1.25" fill="#FAFAFA" rx="2" />
+          <text x="44" y="16" fontFamily="var(--font-mono, monospace)" fontSize="9" textAnchor="middle" fill="#111111">
             Root: [K1 | K2]
           </text>
         </g>
 
         {/* Tree Branches */}
-        <path d="M 220 60 L 110 74" stroke="#111111" strokeWidth="1.2" strokeLinecap="round" />
-        <path d="M 243 60 L 243 74" stroke="#111111" strokeWidth="1.2" strokeLinecap="round" />
-        <path d="M 266 60 L 376 74" stroke="#111111" strokeWidth="1.2" strokeLinecap="round" />
+        <path d="M 226 60 L 115 78" stroke="#111111" strokeWidth="1.2" strokeLinecap="round" />
+        <path d="M 252 60 L 252 78" stroke="#111111" strokeWidth="1.2" strokeLinecap="round" />
+        <path d="M 278 60 L 389 78" stroke="#111111" strokeWidth="1.2" strokeLinecap="round" />
 
-        {/* Leaf Nodes */}
-        <g transform="translate(50, 74)">
-          <rect x="0" y="0" width="115" height="20" stroke="#111111" strokeWidth="1.2" fill="#FFFFFF" rx="2" />
-          <text x="57" y="14" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#111111">
+        {/* Leaf Nodes with ample bottom breathing room */}
+        <g transform="translate(45, 78)">
+          <rect x="0" y="0" width="125" height="22" stroke="#111111" strokeWidth="1.2" fill="#FFFFFF" rx="2" />
+          <text x="62.5" y="15" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#111111">
             Leaf: Page 0x01A
           </text>
         </g>
-        <g transform="translate(185, 74)">
-          <rect x="0" y="0" width="115" height="20" stroke="#111111" strokeWidth="1.2" fill="#FFFFFF" rx="2" />
-          <text x="57" y="14" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#111111">
+        <g transform="translate(190, 78)">
+          <rect x="0" y="0" width="125" height="22" stroke="#111111" strokeWidth="1.2" fill="#FFFFFF" rx="2" />
+          <text x="62.5" y="15" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#111111">
             Leaf: Page 0x01B
           </text>
         </g>
-        <g transform="translate(320, 74)">
-          <rect x="0" y="0" width="115" height="20" stroke="#111111" strokeWidth="1.2" fill="#FFFFFF" rx="2" />
-          <text x="57" y="14" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#111111">
+        <g transform="translate(335, 78)">
+          <rect x="0" y="0" width="125" height="22" stroke="#111111" strokeWidth="1.2" fill="#FFFFFF" rx="2" />
+          <text x="62.5" y="15" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#111111">
             Leaf: Page 0x01C
           </text>
         </g>
 
         {/* Linked list arrow between leaves */}
-        <path d="M 165 84 L 183 84" stroke="#111111" strokeWidth="1" strokeDasharray="2 1" />
-        <path d="M 300 84 L 318 84" stroke="#111111" strokeWidth="1" strokeDasharray="2 1" />
+        <path d="M 170 89 L 188 89" stroke="#111111" strokeWidth="1" strokeDasharray="2 1" />
+        <path d="M 315 89 L 333 89" stroke="#111111" strokeWidth="1" strokeDasharray="2 1" />
       </g>
     </svg>
   );
@@ -145,20 +140,18 @@ export function DatabaseSketch({ className = "w-full h-auto" }: { className?: st
 export function StorageSketch({ className = "w-full h-auto" }: { className?: string }) {
   return (
     <svg
-      viewBox="0 0 540 280"
+      viewBox="0 0 560 310"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       aria-label="Lioran S3 / Bastion Object Storage Architecture Diagram"
     >
-      <rect width="540" height="280" fill="#FFFFFF" rx="6" />
-
-      {/* Outer frame */}
+      {/* Outer frame - breaking / dashed with generous padding */}
       <rect
-        x="6"
-        y="6"
-        width="528"
-        height="268"
+        x="8"
+        y="8"
+        width="544"
+        height="294"
         stroke="#111111"
         strokeWidth="1.5"
         strokeDasharray="4 2"
@@ -167,97 +160,96 @@ export function StorageSketch({ className = "w-full h-auto" }: { className?: str
       />
 
       {/* Label */}
-      <text x="24" y="32" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="600" fill="#111111" letterSpacing="0.8">
+      <text x="28" y="36" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="600" fill="#111111" letterSpacing="0.8">
         LIORAN BASTION // SINGLE-NODE OBJECT STORAGE & STREAMING I/O
       </text>
 
       {/* Client / SDK */}
-      <g transform="translate(24, 60)">
-        <rect x="0" y="0" width="115" height="80" stroke="#111111" strokeWidth="1.75" fill="#FAFAFA" rx="4" />
-        <text x="57" y="24" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="700" textAnchor="middle" fill="#111111">
+      <g transform="translate(28, 58)">
+        <rect x="0" y="0" width="118" height="82" stroke="#111111" strokeWidth="1.75" fill="#FAFAFA" rx="4" />
+        <text x="59" y="24" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="700" textAnchor="middle" fill="#111111">
           @lioran/bastion
         </text>
-        <line x1="10" y1="34" x2="105" y2="34" stroke="#E5E5E5" strokeWidth="1" />
-        <text x="57" y="48" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#333333">
+        <line x1="10" y1="34" x2="108" y2="34" stroke="#E5E5E5" strokeWidth="1" />
+        <text x="59" y="48" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#333333">
           TypeScript SDK
         </text>
-        <text x="57" y="62" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#666666">
+        <text x="59" y="64" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#666666">
           Byte-Range / Presign
         </text>
       </g>
 
       {/* Arrow */}
-      <path d="M 140 100 L 175 100" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
-      <polygon points="175,100 167,96 167,104" fill="#111111" />
-      <text x="157" y="92" fontFamily="var(--font-sketch, cursive)" fontSize="10" textAnchor="middle" fill="#666666">
+      <path d="M 146 100 L 180 100" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
+      <polygon points="180,100 172,96 172,104" fill="#111111" />
+      <text x="163" y="92" fontFamily="var(--font-sketch, cursive)" fontSize="10" textAnchor="middle" fill="#666666">
         HTTP/REST
       </text>
 
       {/* Axum Server & Stream Router */}
-      <g transform="translate(178, 52)">
-        <rect x="0" y="0" width="160" height="96" stroke="#111111" strokeWidth="2" fill="#FFFFFF" rx="4" />
-        <rect x="3" y="3" width="154" height="90" stroke="#E0E0E0" strokeWidth="1" fill="none" rx="2" />
-        <text x="80" y="24" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="700" textAnchor="middle" fill="#111111">
+      <g transform="translate(182, 52)">
+        <rect x="0" y="0" width="168" height="96" stroke="#111111" strokeWidth="1.75" fill="#FFFFFF" rx="4" />
+        <text x="84" y="24" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="700" textAnchor="middle" fill="#111111">
           BASTION SERVER (RUST)
         </text>
-        <line x1="12" y1="34" x2="148" y2="34" stroke="#111111" strokeWidth="0.75" />
-        <text x="80" y="48" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#333333">
+        <line x1="12" y1="34" x2="156" y2="34" stroke="#111111" strokeWidth="0.75" />
+        <text x="84" y="48" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#333333">
           Axum HTTP / Auth Guard
         </text>
-        <text x="80" y="62" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#333333">
+        <text x="84" y="64" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#333333">
           Bounded Chunks (256 KiB)
         </text>
-        <text x="80" y="78" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#666666">
+        <text x="84" y="80" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#666666">
           Disk Headroom Guardrails
         </text>
       </g>
 
       {/* Split arrows to Metadata and Object Storage */}
-      <path d="M 338 80 L 372 70" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
-      <polygon points="372,70 363,68 367,75" fill="#111111" />
+      <path d="M 350 80 L 382 70" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
+      <polygon points="382,70 373,68 377,75" fill="#111111" />
 
-      <path d="M 338 120 L 372 130" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
-      <polygon points="372,130 367,125 363,132" fill="#111111" />
+      <path d="M 350 120 L 382 130" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
+      <polygon points="382,130 377,125 373,132" fill="#111111" />
 
       {/* RocksDB Metadata Engine */}
-      <g transform="translate(375, 42)">
-        <rect x="0" y="0" width="140" height="60" stroke="#111111" strokeWidth="1.75" fill="#FAFAFA" rx="4" />
-        <text x="70" y="22" fontFamily="var(--font-mono, monospace)" fontSize="9.5" fontWeight="700" textAnchor="middle" fill="#111111">
+      <g transform="translate(384, 42)">
+        <rect x="0" y="0" width="148" height="60" stroke="#111111" strokeWidth="1.75" fill="#FAFAFA" rx="4" />
+        <text x="74" y="22" fontFamily="var(--font-mono, monospace)" fontSize="9.5" fontWeight="700" textAnchor="middle" fill="#111111">
           ROCKSDB METADATA
         </text>
-        <text x="70" y="38" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#333333">
+        <text x="74" y="38" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#333333">
           Decoupled State Engine
         </text>
-        <text x="70" y="50" fontFamily="var(--font-mono, monospace)" fontSize="8" textAnchor="middle" fill="#666666">
+        <text x="74" y="50" fontFamily="var(--font-mono, monospace)" fontSize="8" textAnchor="middle" fill="#666666">
           Prefixes / Multipart State
         </text>
       </g>
 
       {/* Filesystem Payload Volume */}
-      <g transform="translate(375, 114)">
-        <rect x="0" y="0" width="140" height="60" stroke="#111111" strokeWidth="1.75" fill="#FFFFFF" rx="4" />
-        <text x="70" y="22" fontFamily="var(--font-mono, monospace)" fontSize="9.5" fontWeight="700" textAnchor="middle" fill="#111111">
+      <g transform="translate(384, 114)">
+        <rect x="0" y="0" width="148" height="60" stroke="#111111" strokeWidth="1.75" fill="#FFFFFF" rx="4" />
+        <text x="74" y="22" fontFamily="var(--font-mono, monospace)" fontSize="9.5" fontWeight="700" textAnchor="middle" fill="#111111">
           PAYLOAD STORAGE
         </text>
-        <text x="70" y="38" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#333333">
+        <text x="74" y="38" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#333333">
           Atomic File Commits
         </text>
-        <text x="70" y="50" fontFamily="var(--font-mono, monospace)" fontSize="8" textAnchor="middle" fill="#666666">
+        <text x="74" y="50" fontFamily="var(--font-mono, monospace)" fontSize="8" textAnchor="middle" fill="#666666">
           Strict `fsync` Durability
         </text>
       </g>
 
-      {/* Durability & Safety Banner - Bottom */}
-      <g transform="translate(24, 192)">
-        <rect x="0" y="0" width="492" height="68" stroke="#111111" strokeWidth="1.5" strokeDasharray="3 3" fill="#FAFAFA" rx="4" />
-        <text x="20" y="22" fontFamily="var(--font-mono, monospace)" fontSize="9.5" fontWeight="700" fill="#111111">
-          RELIABILITY BENCHMARK & DURABILITY SUITE
+      {/* Durability & Safety Banner - Bottom with generous padding */}
+      <g transform="translate(28, 194)">
+        <rect x="0" y="0" width="504" height="84" stroke="#111111" strokeWidth="1.5" strokeDasharray="4 2" fill="#FAFAFA" rx="4" />
+        <text x="18" y="24" fontFamily="var(--font-mono, monospace)" fontSize="9.5" fontWeight="700" fill="#111111" letterSpacing="0.5">
+          RELIABILITY & DURABILITY BENCHMARK
         </text>
-        <text x="20" y="40" fontFamily="var(--font-sans, sans-serif)" fontSize="12" fill="#333333">
-          • Durability tested on 100 GiB streaming workloads with intentional process crash/recovery cycles
+        <text x="18" y="45" fontFamily="var(--font-sans, sans-serif)" fontSize="10.5" fill="#333333">
+          • Durability tested on 100 GiB streaming workloads with crash/recovery cycles
         </text>
-        <text x="20" y="56" fontFamily="var(--font-sans, sans-serif)" fontSize="12" fill="#666666">
-          • Single-node pre-alpha architecture with zero in-memory payload buffering and Caddy automatic TLS
+        <text x="18" y="64" fontFamily="var(--font-sans, sans-serif)" fontSize="10.5" fill="#666666">
+          • Single-node pre-alpha architecture with zero in-memory buffering & Caddy TLS
         </text>
       </g>
     </svg>
@@ -267,20 +259,18 @@ export function StorageSketch({ className = "w-full h-auto" }: { className?: str
 export function IdentitySketch({ className = "w-full h-auto" }: { className?: string }) {
   return (
     <svg
-      viewBox="0 0 540 240"
+      viewBox="0 0 560 260"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       aria-label="Lioran Auth & Identity Infrastructure Flow Diagram"
     >
-      <rect width="540" height="240" fill="#FFFFFF" rx="6" />
-
-      {/* Frame */}
+      {/* Frame - breaking / dashed with generous padding */}
       <rect
-        x="6"
-        y="6"
-        width="528"
-        height="228"
+        x="8"
+        y="8"
+        width="544"
+        height="244"
         stroke="#111111"
         strokeWidth="1.5"
         strokeDasharray="4 2"
@@ -288,70 +278,69 @@ export function IdentitySketch({ className = "w-full h-auto" }: { className?: st
         rx="6"
       />
 
-      <text x="24" y="32" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="600" fill="#111111" letterSpacing="0.8">
+      <text x="28" y="36" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="600" fill="#111111" letterSpacing="0.8">
         LIORAN AUTH // IDENTITY, CREDENTIALS & SESSION POLICY
       </text>
 
       {/* Step 1: Inbound Request */}
-      <g transform="translate(24, 60)">
-        <rect x="0" y="0" width="130" height="86" stroke="#111111" strokeWidth="1.75" fill="#FAFAFA" rx="4" />
-        <text x="65" y="24" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="700" textAnchor="middle" fill="#111111">
+      <g transform="translate(28, 62)">
+        <rect x="0" y="0" width="136" height="88" stroke="#111111" strokeWidth="1.75" fill="#FAFAFA" rx="4" />
+        <text x="68" y="26" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="700" textAnchor="middle" fill="#111111">
           01 / CREDENTIAL
         </text>
-        <line x1="12" y1="34" x2="118" y2="34" stroke="#E5E5E5" strokeWidth="1" />
-        <text x="65" y="50" fontFamily="var(--font-mono, monospace)" fontSize="9" textAnchor="middle" fill="#333333">
+        <line x1="12" y1="36" x2="124" y2="36" stroke="#E5E5E5" strokeWidth="1" />
+        <text x="68" y="52" fontFamily="var(--font-mono, monospace)" fontSize="9" textAnchor="middle" fill="#333333">
           Argon2id Hash
         </text>
-        <text x="65" y="68" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#666666">
+        <text x="68" y="70" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#666666">
           Rate Limiter Guard
         </text>
       </g>
 
       {/* Connector */}
-      <path d="M 155 103 L 195 103" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
-      <polygon points="195,103 187,99 187,107" fill="#111111" />
+      <path d="M 164 106 L 200 106" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
+      <polygon points="200,106 192,102 192,110" fill="#111111" />
 
       {/* Step 2: Session & Cryptographic Token */}
-      <g transform="translate(198, 60)">
-        <rect x="0" y="0" width="144" height="86" stroke="#111111" strokeWidth="2" fill="#FFFFFF" rx="4" />
-        <rect x="3" y="3" width="138" height="80" stroke="#D0D0D0" strokeWidth="1" fill="none" rx="2" />
-        <text x="72" y="24" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="700" textAnchor="middle" fill="#111111">
+      <g transform="translate(202, 62)">
+        <rect x="0" y="0" width="152" height="88" stroke="#111111" strokeWidth="1.75" fill="#FFFFFF" rx="4" />
+        <text x="76" y="26" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="700" textAnchor="middle" fill="#111111">
           02 / TOKEN VAULT
         </text>
-        <line x1="12" y1="34" x2="132" y2="34" stroke="#111111" strokeWidth="0.75" />
-        <text x="72" y="50" fontFamily="var(--font-mono, monospace)" fontSize="9" textAnchor="middle" fill="#333333">
+        <line x1="12" y1="36" x2="140" y2="36" stroke="#111111" strokeWidth="0.75" />
+        <text x="76" y="52" fontFamily="var(--font-mono, monospace)" fontSize="9" textAnchor="middle" fill="#333333">
           HMAC-SHA256 Signed
         </text>
-        <text x="72" y="68" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#666666">
+        <text x="76" y="70" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#666666">
           Expiring Lease TTL
         </text>
       </g>
 
       {/* Connector */}
-      <path d="M 343 103 L 383 103" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
-      <polygon points="383,103 375,99 375,107" fill="#111111" />
+      <path d="M 354 106 L 390 106" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
+      <polygon points="390,106 382,102 382,110" fill="#111111" />
 
       {/* Step 3: Policy Enforcement */}
-      <g transform="translate(386, 60)">
-        <rect x="0" y="0" width="130" height="86" stroke="#111111" strokeWidth="1.75" fill="#FAFAFA" rx="4" />
-        <text x="65" y="24" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="700" textAnchor="middle" fill="#111111">
+      <g transform="translate(392, 62)">
+        <rect x="0" y="0" width="140" height="88" stroke="#111111" strokeWidth="1.75" fill="#FAFAFA" rx="4" />
+        <text x="70" y="26" fontFamily="var(--font-mono, monospace)" fontSize="10" fontWeight="700" textAnchor="middle" fill="#111111">
           03 / SCOPED IAM
         </text>
-        <line x1="12" y1="34" x2="118" y2="34" stroke="#E5E5E5" strokeWidth="1" />
-        <text x="65" y="50" fontFamily="var(--font-mono, monospace)" fontSize="9" textAnchor="middle" fill="#333333">
+        <line x1="12" y1="36" x2="128" y2="36" stroke="#E5E5E5" strokeWidth="1" />
+        <text x="70" y="52" fontFamily="var(--font-mono, monospace)" fontSize="9" textAnchor="middle" fill="#333333">
           Role-Based Access
         </text>
-        <text x="65" y="68" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#666666">
+        <text x="70" y="70" fontFamily="var(--font-mono, monospace)" fontSize="8.5" textAnchor="middle" fill="#666666">
           Target System API
         </text>
       </g>
 
       {/* Note bottom */}
-      <g transform="translate(24, 166)">
+      <g transform="translate(28, 184)">
         <text x="0" y="16" fontFamily="var(--font-sketch, cursive)" fontSize="13" fill="#333333">
           * Research track: sovereign, self-hosted identity without cloud vendor lock-in.
         </text>
-        <path d="M 0 22 Q 180 26 360 22" stroke="#111111" strokeWidth="0.75" fill="none" />
+        <path d="M 0 24 Q 180 28 360 24" stroke="#111111" strokeWidth="0.75" fill="none" />
       </g>
     </svg>
   );
@@ -360,20 +349,18 @@ export function IdentitySketch({ className = "w-full h-auto" }: { className?: st
 export function LioranEcosystemDiagram({ className = "w-full h-auto" }: { className?: string }) {
   return (
     <svg
-      viewBox="0 0 680 340"
+      viewBox="0 0 700 360"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       aria-label="Lioran Group & LDS Developer Infrastructure Ecosystem Tree"
     >
-      <rect width="680" height="340" fill="#FFFFFF" rx="6" />
-
-      {/* Frame */}
+      {/* Frame - breaking / dashed with generous padding */}
       <rect
-        x="6"
-        y="6"
-        width="668"
-        height="328"
+        x="8"
+        y="8"
+        width="684"
+        height="344"
         stroke="#111111"
         strokeWidth="1.5"
         strokeDasharray="4 2"
@@ -382,92 +369,91 @@ export function LioranEcosystemDiagram({ className = "w-full h-auto" }: { classN
       />
 
       {/* Header */}
-      <text x="28" y="34" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="700" fill="#111111" letterSpacing="0.8">
+      <text x="28" y="36" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="700" fill="#111111" letterSpacing="0.8">
         ORGANIZATION & INFRASTRUCTURE HIERARCHY
       </text>
 
       {/* Level 1: Lioran Group */}
-      <g transform="translate(240, 52)">
-        <rect x="0" y="0" width="200" height="48" stroke="#111111" strokeWidth="2" fill="#FAFAFA" rx="4" />
-        <rect x="2" y="2" width="196" height="44" stroke="#111111" strokeWidth="0.5" strokeDasharray="2 2" fill="none" rx="2" />
-        <text x="100" y="22" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="700" textAnchor="middle" fill="#111111">
+      <g transform="translate(245, 50)">
+        <rect x="0" y="0" width="210" height="50" stroke="#111111" strokeWidth="1.75" fill="#FAFAFA" rx="4" />
+        <text x="105" y="24" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="700" textAnchor="middle" fill="#111111">
           LIORAN GROUP
         </text>
-        <text x="100" y="38" fontFamily="var(--font-sans, sans-serif)" fontSize="10" textAnchor="middle" fill="#666666">
+        <text x="105" y="40" fontFamily="var(--font-sans, sans-serif)" fontSize="10" textAnchor="middle" fill="#666666">
           Parent Technology Org (India)
         </text>
       </g>
 
       {/* Connecting line downward */}
-      <path d="M 340 100 L 340 132" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
-      <polygon points="340,132 336,124 344,124" fill="#111111" />
+      <path d="M 350 100 L 350 132" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
+      <polygon points="350,132 346,124 354,124" fill="#111111" />
 
       {/* Level 2: LDS */}
-      <g transform="translate(200, 134)">
-        <rect x="0" y="0" width="280" height="52" stroke="#111111" strokeWidth="2" fill="#FFFFFF" rx="4" />
-        <text x="140" y="24" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="700" textAnchor="middle" fill="#111111">
+      <g transform="translate(205, 134)">
+        <rect x="0" y="0" width="290" height="54" stroke="#111111" strokeWidth="1.75" fill="#FFFFFF" rx="4" />
+        <text x="145" y="24" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="700" textAnchor="middle" fill="#111111">
           LIORAN DEVELOPER SOLUTIONS (LDS)
         </text>
-        <text x="140" y="42" fontFamily="var(--font-sans, sans-serif)" fontSize="10.5" textAnchor="middle" fill="#333333">
+        <text x="145" y="42" fontFamily="var(--font-sans, sans-serif)" fontSize="10.5" textAnchor="middle" fill="#333333">
           Systems Engineering & Developer Infrastructure
         </text>
       </g>
 
       {/* Tree Split lines to 3 products */}
-      <path d="M 340 186 L 340 216" stroke="#111111" strokeWidth="1.5" />
-      <path d="M 120 216 L 560 216" stroke="#111111" strokeWidth="1.5" />
+      <path d="M 350 188 L 350 218" stroke="#111111" strokeWidth="1.5" />
+      <path d="M 128 218 L 572 218" stroke="#111111" strokeWidth="1.5" />
       
       {/* 3 drops */}
-      <path d="M 120 216 L 120 236" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
-      <polygon points="120,236 116,228 124,228" fill="#111111" />
+      <path d="M 128 218 L 128 238" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
+      <polygon points="128,238 124,230 132,230" fill="#111111" />
 
-      <path d="M 340 216 L 340 236" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
-      <polygon points="340,236 336,228 344,228" fill="#111111" />
+      <path d="M 350 218 L 350 238" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
+      <polygon points="350,238 346,230 354,230" fill="#111111" />
 
-      <path d="M 560 216 L 560 236" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
-      <polygon points="560,236 556,228 564,228" fill="#111111" />
+      <path d="M 572 218 L 572 238" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
+      <polygon points="572,238 568,230 576,230" fill="#111111" />
 
       {/* Product 1: LioranDB */}
-      <g transform="translate(30, 238)">
-        <rect x="0" y="0" width="180" height="74" stroke="#111111" strokeWidth="1.75" fill="#FFFFFF" rx="4" />
-        <text x="90" y="22" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="700" textAnchor="middle" fill="#111111">
+      <g transform="translate(30, 240)">
+        <rect x="0" y="0" width="195" height="80" stroke="#111111" strokeWidth="1.75" fill="#FFFFFF" rx="4" />
+        <text x="97.5" y="24" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="700" textAnchor="middle" fill="#111111">
           LIORANDB
         </text>
-        <line x1="12" y1="32" x2="168" y2="32" stroke="#E5E5E5" strokeWidth="1" />
-        <text x="90" y="46" fontFamily="var(--font-sans, sans-serif)" fontSize="10" textAnchor="middle" fill="#333333">
+        <line x1="12" y1="36" x2="183" y2="36" stroke="#E5E5E5" strokeWidth="1" />
+        <text x="97.5" y="50" fontFamily="var(--font-sans, sans-serif)" fontSize="10" textAnchor="middle" fill="#333333">
           Rust Document Database
         </text>
-        <text x="90" y="62" fontFamily="var(--font-mono, monospace)" fontSize="9" textAnchor="middle" fill="#666666">
+        <text x="97.5" y="68" fontFamily="var(--font-mono, monospace)" fontSize="9" textAnchor="middle" fill="#666666">
           STATUS: ACTIVE / V2
         </text>
       </g>
 
       {/* Product 2: Lioran S3 / Bastion */}
-      <g transform="translate(250, 238)">
-        <rect x="0" y="0" width="180" height="74" stroke="#111111" strokeWidth="1.75" fill="#FFFFFF" rx="4" />
-        <text x="90" y="22" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="700" textAnchor="middle" fill="#111111">
+      <g transform="translate(252, 240)">
+        <rect x="0" y="0" width="195" height="80" stroke="#111111" strokeWidth="1.75" fill="#FFFFFF" rx="4" />
+        <text x="97.5" y="24" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="700" textAnchor="middle" fill="#111111">
           LIORAN S3 / BASTION
         </text>
-        <line x1="12" y1="32" x2="168" y2="32" stroke="#E5E5E5" strokeWidth="1" />
-        <text x="90" y="46" fontFamily="var(--font-sans, sans-serif)" fontSize="10" textAnchor="middle" fill="#333333">
+        <line x1="12" y1="36" x2="183" y2="36" stroke="#E5E5E5" strokeWidth="1" />
+        <text x="97.5" y="50" fontFamily="var(--font-sans, sans-serif)" fontSize="10" textAnchor="middle" fill="#333333">
           Self-Hosted Object Storage
         </text>
-        <text x="90" y="62" fontFamily="var(--font-mono, monospace)" fontSize="9" textAnchor="middle" fill="#666666">
+        <text x="97.5" y="68" fontFamily="var(--font-mono, monospace)" fontSize="9" textAnchor="middle" fill="#666666">
           STATUS: V1 PRE-ALPHA
         </text>
       </g>
 
       {/* Product 3: Lioran Auth */}
-      <g transform="translate(470, 238)">
-        <rect x="0" y="0" width="180" height="74" stroke="#111111" strokeWidth="1.75" fill="#FFFFFF" rx="4" />
-        <text x="90" y="22" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="700" textAnchor="middle" fill="#111111">
+      <g transform="translate(475, 240)">
+        <rect x="0" y="0" width="195" height="80" stroke="#111111" strokeWidth="1.75" fill="#FFFFFF" rx="4" />
+        <text x="97.5" y="24" fontFamily="var(--font-mono, monospace)" fontSize="11" fontWeight="700" textAnchor="middle" fill="#111111">
           LIORAN AUTH
         </text>
-        <line x1="12" y1="32" x2="168" y2="32" stroke="#E5E5E5" strokeWidth="1" />
-        <text x="90" y="46" fontFamily="var(--font-sans, sans-serif)" fontSize="10" textAnchor="middle" fill="#333333">
+        <line x1="12" y1="36" x2="183" y2="36" stroke="#E5E5E5" strokeWidth="1" />
+        <text x="97.5" y="50" fontFamily="var(--font-sans, sans-serif)" fontSize="10" textAnchor="middle" fill="#333333">
           Identity & Access Engine
         </text>
-        <text x="90" y="62" fontFamily="var(--font-mono, monospace)" fontSize="9" textAnchor="middle" fill="#666666">
+        <text x="97.5" y="68" fontFamily="var(--font-mono, monospace)" fontSize="9" textAnchor="middle" fill="#666666">
           STATUS: RESEARCH
         </text>
       </g>

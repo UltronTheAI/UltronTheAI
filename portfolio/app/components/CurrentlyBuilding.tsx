@@ -80,7 +80,7 @@ export default function CurrentlyBuilding() {
             
             {/* Architecture Diagram */}
             <div className="lg:col-span-7 space-y-4">
-              <div className="border border-[#111111] rounded overflow-hidden bg-[#FAFAFA]">
+              <div className="w-full overflow-hidden">
                 <DatabaseSketch className="w-full h-auto" />
               </div>
 
@@ -180,7 +180,7 @@ export default function CurrentlyBuilding() {
             
             {/* Architecture Diagram */}
             <div className="lg:col-span-7 space-y-4">
-              <div className="border border-[#111111] rounded overflow-hidden bg-[#FAFAFA]">
+              <div className="w-full overflow-hidden">
                 <StorageSketch className="w-full h-auto" />
               </div>
 
@@ -258,7 +258,7 @@ export default function CurrentlyBuilding() {
 
           <div className="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <div className="lg:col-span-7">
-              <div className="border border-[#111111] rounded overflow-hidden bg-[#FAFAFA]">
+              <div className="w-full overflow-hidden">
                 <IdentitySketch className="w-full h-auto" />
               </div>
             </div>
