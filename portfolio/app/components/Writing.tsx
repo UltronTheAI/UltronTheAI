@@ -1,7 +1,7 @@
 import React from "react";
 import { TECHNICAL_ARTICLES } from "../data/portfolioData";
 import { HandDrawnUnderline } from "./SketchDrawings";
-import { ArrowUpRight, Clock, Calendar } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Writing() {
   return (
@@ -35,66 +35,45 @@ export default function Writing() {
           {TECHNICAL_ARTICLES.map((article) => (
             <article
               key={article.id}
-              className="p-6 sm:p-8 hover:bg-[#FAFAFA] transition-colors group flex flex-col md:flex-row md:items-start justify-between gap-6"
+              className="p-6 sm:p-8 hover:bg-[#FAFAFA] transition-colors group space-y-2.5"
             >
-              {/* Left Column: Metadata & Category */}
-              <div className="md:w-56 shrink-0 space-y-2">
-                <span className="sketch-badge text-[10.5px]">
-                  {article.category}
-                </span>
+              <h3 className="text-lg sm:text-xl font-bold text-[#000000] tracking-tight group-hover:underline underline-offset-4 decoration-1 decoration-[#111111]">
+                <a
+                  href={article.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#000000] flex items-baseline justify-between gap-4"
+                >
+                  <span>{article.title}</span>
+                  <ArrowUpRight
+                    size={16}
+                    className="text-[#888888] group-hover:text-[#000000] transition-colors shrink-0"
+                  />
+                </a>
+              </h3>
 
-                <div className="flex flex-col text-xs font-mono text-[#666666] space-y-1">
-                  <div className="flex items-center gap-1.5">
-                    <Calendar size={12} />
-                    <span>{article.publishedDate}</span>
-                  </div>
-                  <div className="flex items-center gap-1.5">
-                    <Clock size={12} />
-                    <span>{article.readTime}</span>
-                  </div>
-                </div>
-              </div>
+              <p className="text-xs sm:text-sm text-[#444444] font-medium leading-relaxed">
+                {article.subtitle}
+              </p>
 
-              {/* Center / Main Column: Title & Abstract */}
-              <div className="flex-1 space-y-2">
-                <h3 className="text-lg sm:text-xl font-bold text-[#000000] tracking-tight group-hover:underline underline-offset-4 decoration-1 decoration-[#111111]">
-                  <a
-                    href={article.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#000000] flex items-baseline justify-between gap-2"
-                  >
-                    <span>{article.title}</span>
-                    <ArrowUpRight
-                      size={16}
-                      className="text-[#888888] group-hover:text-[#000000] transition-colors shrink-0"
-                    />
-                  </a>
-                </h3>
-
-                <p className="text-xs sm:text-sm text-[#555555] font-medium leading-relaxed">
-                  {article.subtitle}
-                </p>
-
-                <p className="text-xs sm:text-sm text-[#666666] leading-relaxed">
-                  {article.summary}
-                </p>
-              </div>
+              <p className="text-xs sm:text-sm text-[#666666] leading-relaxed">
+                {article.summary}
+              </p>
             </article>
           ))}
         </div>
 
         {/* Blog publication link */}
-        <div className="mt-8 flex items-center justify-between font-mono text-xs text-[#666666]">
-          <span>ENGINEERING DISPATCHES FROM POST-ACLE & REPOSITORIES</span>
+        <div className="mt-8 flex flex-wrap items-center justify-between gap-4 font-mono text-xs text-[#666666]">
+          <span>ENGINEERING DISPATCHES ON DEV.TO & SYSTEMS REPOSITORIES</span>
           <a
-            href="https://github.com/LioranGroupOfficial/PostAcle"
+            href="https://dev.to/ultrontheai"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#111111] hover:underline flex items-center gap-1"
+            className="text-[#111111] font-semibold hover:underline flex items-center gap-1"
           >
-            <span>Read all notes on Post-Acle</span>
-            <ArrowUpRight size={12} />
+            <span>Read all articles on Dev.to (@ultrontheai)</span>
+            <ArrowUpRight size={13} />
           </a>
         </div>
 

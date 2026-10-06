@@ -18,8 +18,6 @@ export default function Hero() {
               <span className="font-mono text-xs font-bold uppercase tracking-widest text-[#111111] bg-[#FAFAFA] border border-[#111111] px-2.5 py-1 rounded">
                 {HERO_DATA.eyebrow}
               </span>
-              <span className="inline-block w-1.5 h-1.5 bg-[#111111] animate-pulse" />
-              <span className="font-mono text-[11px] text-[#666666]">India 🇮🇳</span>
             </div>
 
             {/* Large Editorial Headline */}
