@@ -182,9 +182,6 @@ export function StorageSketch({ className = "w-full h-auto" }: { className?: str
       {/* Arrow */}
       <path d="M 146 100 L 180 100" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
       <polygon points="180,100 172,96 172,104" fill="#111111" />
-      <text x="163" y="92" fontFamily="var(--font-sketch, cursive)" fontSize="10" textAnchor="middle" fill="#666666">
-        HTTP/REST
-      </text>
 
       {/* Axum Server & Stream Router */}
       <g transform="translate(182, 52)">
