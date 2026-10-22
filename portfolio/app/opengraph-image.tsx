@@ -144,7 +144,7 @@ export default async function Image() {
                 height: "210px",
                 border: "3px solid #111111",
                 borderRadius: "6px",
-                backgroundColor: "#FAFAFA",
+                backgroundColor: "#FFFFFF",
                 boxShadow: "8px 8px 0px #111111",
                 display: "flex",
                 alignItems: "center",

@@ -112,14 +112,14 @@ export default function Hero() {
 
               {/* Sketched Frame around Portrait */}
               <div className="sketch-card p-2 bg-[#FFFFFF]">
-                <div className="relative w-full h-[260px] bg-[#F5F5F5] rounded overflow-hidden border border-[#E5E5E5]">
+                <div className="relative w-full h-[260px] bg-[#FFFFFF] rounded overflow-hidden">
                   <Image
                     src="/user.png"
                     alt="Swaraj Puppalwar — Software Engineer"
                     fill
                     priority
                     sizes="(max-width: 768px) 260px, 280px"
-                    className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-300"
+                    className="object-cover object-top"
                   />
                 </div>
 
