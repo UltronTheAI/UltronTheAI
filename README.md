@@ -1,129 +1,86 @@
-# UltronTheAI 👾
+# Swaraj Puppalwar
 
-**Swaraj Puppalwar** — *The guy who started coding at 11 and still hasn't touched grass since.*
+**Founder & Chief Technology Officer — Lioran Group | Lioran Developer Solutions**
 
----
+Software Engineer · Database Systems · Cloud Infrastructure · Distributed Systems
 
-## Huh, who am I? 
+I'm Swaraj Puppalwar, a software engineer and Founder & CTO of **Lioran Group**, where I lead the technical architecture, engineering, and infrastructure development of **Lioran Developer Solutions (LDS)**.
 
-I’m that full-stack dev who actually ships stuff instead of just tweeting about it. 
+I started programming at 11 and have spent the past several years building full-stack applications, backend systems, databases, and developer infrastructure.
 
-**2 years of real scars** (aka production experience). 
-I write TypeScript like it owes me money, break things in Rust "for science", and somehow keep multiple products alive. Currently **Founder & CTO @ Lioran Group** where I lead **2 brave developers** (pray for them) and give tech advice to my friends’ startups when they bribe me with chai.
+My primary focus is designing reliable, scalable, and efficient systems, with a long-term vision of building foundational developer infrastructure from India.
 
-Portfolio: [swaraj.lioransolutions.com](https://swaraj.lioransolutions.com)
+## Lioran Developer Solutions
 
-GitHub (org): [LioranGroupOfficial](https://github.com/LioranGroupOfficial) — view advanced products there.
+**Lioran Developer Solutions (LDS)** is the infrastructure and software engineering division of Lioran Group, focused on building developer-first infrastructure, databases, cloud platforms, and backend technologies.
 
----
+As Founder & CTO, I oversee:
 
-## My Engineering Vibe (aka "Philosophy")
+- **Infrastructure Architecture:** Designing database engines, cloud infrastructure, and distributed systems.
+- **Database Engineering:** Developing high-performance storage engines and database management systems.
+- **Cloud Platforms:** Building managed infrastructure, deployment systems, and developer services.
+- **Engineering Leadership:** Leading technical development, architecture decisions, and product engineering.
+- **Research & Development:** Exploring systems programming, concurrency, performance optimization, and infrastructure scalability.
 
-- Clean code > fancy patterns (if it needs 17 layers of abstraction, I’m out)
-- Ship fast, cry later, fix on weekends
-- "It works on my machine" is not a deployment strategy (but sometimes it feels like one)
-- Indian data should stay in India. Period.
+Our objective is to develop reliable, accessible, and independently engineered developer infrastructure from India.
 
----
+**Website:** https://lioransolutions.com  
+**Parent Organization:** https://lioran.group
 
-## Platform Metrics (Real Humans, Not Bots... Mostly)
+## Core Infrastructure & Products
 
-- **Post-Acle** — ~100 monthly readers who keep coming back (miracle)
-- **Vortexly** (private chaos network) — 23 friends, 17 actually active, 98 posts & 16 reels of questionable life choices
+### LioranDB
 
----
+A high-performance NoSQL document database engineered from the ground up in Rust.
 
-**Others:** Rust (when I feel dangerous), Python (for the scripts that save my life)
----
+LioranDB focuses on storage efficiency, concurrency, reliability, and scalable database infrastructure.
 
-- **Lioran Auth** — Authentication that doesn't sell your soul
-- **Lioran Deployments** — CI/CD that sometimes works on first try
+Its ecosystem includes a custom database engine, database server, client SDKs, management tools, and managed cloud services.
 
+- Website: https://liorandb.com
+- Documentation: https://docs.liorandb.com
+- Cloud Platform: https://app.liorandb.com
+- Studio: https://studio.liorandb.com
 
-Distraction-free zone for close friends. No algorithm, just vibes.  
-**Status:** Actively used by 17 real humans.
+### Other Infrastructure Projects
 
-### ✍️ **Post-Acle**
-Where I dump my engineering brain farts. Surprisingly people read it.  
-**Status:** Live & growing
+- **Lioran Auth:** Authentication and identity management infrastructure.
+- **Lioran Cloud Services:** Managed database hosting and infrastructure services.
+- **Lioran Deployments:** Application deployment and CI/CD infrastructure.
 
-### 📊 **Hushar Spreadsheet** (MVP that actually makes money)
-AI-powered spreadsheet for Zilla Parishad teachers. Teachers type in Hindi, magic happens.  
-**Status:** Paying customers (insane)
+Additional projects include Hushar Spreadsheet, Post-Acle, Vortexly, AI Companion, and several developer tools.
 
-### 🗄️ **LioranDB** (The one I'm most proud of)
-LioranDB V2 is a no-sql document database engineered from the ground up using Rust for high-performance, dependable database infrastructure. Built to serve modern applications without compromising simplicity, it is capable of scaling up to 10 million documents and processing 45,000 operations per second.
+## Technical Expertise
 
-### 🤖 **AiCompanion**
-Full-stack app to create and chat with your own AI companions.  
-Built it because I could. Yes it's fun.
+**Systems & Infrastructure:** Database Engines, Storage Systems, Distributed Systems, Cloud Infrastructure, Backend Architecture, Performance Engineering
 
-### 🎮 **DEAD-CORRIDOR**
-16-bit zombie side-scroller. Because sometimes you just need to shoot pixels.
+**Languages:** Rust, TypeScript, JavaScript, Python, C
 
-**Other cool stuff:** AuthSystem (secure af), MeetFound (founder CRM), P2P-Chat, Sanyam (self-discipline Android app), eBook-Generator-AI-Agent, etc.
+**Technologies:** Node.js, Next.js, PostgreSQL, MongoDB, Docker, Linux, Redis, REST, gRPC
 
----
+**Engineering Interests:** Concurrency, Database Internals, Networking, Infrastructure Automation, Scalability
 
-## 📰 Media Recognition & Achievements
+## Recognition & Achievements
 
-![celebration](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjM5cmI3MnJyazhtc2kwbDF3dWMzYnliYzFjaTduYzlrZ2xhejJkayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H1SM6E3YiR9DnEd7NJ/giphy.gif)
+- **State Rank 1** — Cyber Olympiad
+- **Western Region Rank 17** — CREST Cyber Olympiad
+- **Featured in three newspapers (2023):** Nagpur Post, Navarashtra, and Tarun Bharat, for achievements in computer science and technology.
+- **Recognized among active Indian GitHub contributors** in the [Top GitHub Users India](https://github.com/gayanvoice/top-github-users/blob/main/markdown/public_contributions/india.md) listing.
 
-### Featured in Newspapers (2023)
-**1. Nagpur Post**
-📅 **23 May 2023**
-📰 Article: *"Swaraj's High Rise in Computers!"*
+## GitHub & Source Code
 
-**2. Navarashtra (Chandrapur Edition)**
-📅 **23 May 2023**
-📰 Article: *"स्वराजची संगणक क्षेत्रात उंच भरारी"*
+My personal GitHub profile primarily contains independent projects, experiments, and selected public work.
 
-**3. Tarun Bharat (Purva Vidarbha Edition)**
-📅 **29 May 2023**
-📰 Article: *"'स्वराज'ची संगणकात गगनभरारी"*
+**Core infrastructure, production systems, and proprietary product source code are maintained privately under the official [LioranGroupOfficial](https://github.com/LioranGroupOfficial) GitHub organization.** Selected repositories, documentation, and development resources are publicly accessible.
 
-### Total Newspaper Features
-**3 newspaper publications** across regional and English media.
+## Connect
+
+- **Portfolio:** https://swaraj.lioransolutions.com
+- **Lioran Group:** https://lioran.group
+- **Lioran Developer Solutions:** https://lioransolutions.com
+- **GitHub Organization:** https://github.com/LioranGroupOfficial
+- **X / Twitter:** https://twitter.com/PuppalwarSwaraj
 
 ---
 
-## 👨‍💻 Academic & Technical Achievements
-
-- **Crest Cyber Olympiad** — Western Region Rank: **17**
-- **Cyber Olympiad** — State Rank: **1**
-- **International Computer Olympiad** — State Rank: **30**
-- **International Mathematics Olympiad** — State Rank: **30**
-- Participated in the **30th National Children's Science Congress**
-- **2nd Rank** in School Cyber / Software Olympiad
-- **Certificate of Excellence** in Exam Pe Charcha 2023
-
----
-
-## 🏅 Additional Recognition
-
-- Listed in the [Top Indian GitHub contributors & active developers](https://github.com/gayanvoice/top-github-users/blob/main/markdown/public_contributions/india.md) list — see the entry on the public contributions page.
-
-
-## Random Developer Memes I Live By
-
-- "Works on my machine" → Production: `Segmentation Fault (core dumped)`
-- Me explaining my code: "It just... knows"
-- When the DB query works on first try: *shocked pikachu face*
-- "I'll just add one more microservice" → 3 weeks later, questioning life choices
-- Indian devs when foreign SaaS prices drop: "Finally... wait no, still too expensive"
-
----
-
-## Connect (If You Dare)
-
-- **Portfolio:** [swaraj.lioransolutions.com](https://swaraj.lioransolutions.com)
-- **Lioran Group:** [lioran.group](https://lioran.group)
- - **GitHub Org:** [LioranGroupOfficial](https://github.com/LioranGroupOfficial) — view advanced products there
-- **Twitter:** [@PuppalwarSwaraj](https://twitter.com/PuppalwarSwaraj)
-
----
-
-> "I don't always write perfect code... but when I do, it's after 47 failed attempts and one very strong coffee."  
-> — Swaraj (probably at 3 AM)
-
-*Made with love, sarcasm, and too much screen time.*
+*Building developer infrastructure from India, for developers everywhere.*
