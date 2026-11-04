@@ -10,7 +10,9 @@ fs.mkdirSync(previewDir, { recursive: true });
 
 const sha = (data) => crypto.createHash('sha256').update(data).digest('hex');
 const idHash = sha(fs.readFileSync(path.join(root, 'id.png')));
-const pointingHash = sha(fs.readFileSync(path.join(root, 'right_pointing.png')));
+const pointingAsset = path.join(assetDir, 'right_pointing-cropped.png');
+if (!fs.existsSync(pointingAsset)) throw new Error('Missing cropped transparent pointing portrait asset');
+const pointingHash = sha(fs.readFileSync(pointingAsset));
 const slideFiles = ['hero.svg', 'about-life.svg', 'stack.svg', 'id-dashboard.svg', 'projects.svg', 'connect.svg'];
 const read = (file) => fs.readFileSync(file, 'utf8');
 
@@ -39,7 +41,7 @@ if (embedded.filter((hash) => hash === idHash).length < 2 || embedded.filter((ha
 
 const readme = read(path.join(root, 'README.md'));
 if ((readme.match(/<img\b/g) || []).length !== 1) throw new Error('README must contain exactly one contiguous portfolio image');
-if (!readme.includes('assets/portfolio.svg?v=4') || !/width="100%"/.test(readme)) throw new Error('README does not use the combined full-width asset');
+if (!readme.includes('assets/portfolio.svg?v=5') || !/width="100%"/.test(readme)) throw new Error('README does not use the combined full-width asset');
 if (/^\s*(?:#|<h[1-6]|\||[-*]\s)/m.test(readme)) throw new Error('README contains non-slide Markdown or headings');
 if (readme.trim().split(/\r?\n/).length !== 1) throw new Error('README contains empty or spacer Markdown lines');
 
@@ -50,8 +52,17 @@ for (const token of ['#ffffff', '#171717', '#60646c', '#dcdee0', '#0d74ce']) {
 for (const forbidden of ['#070b16', '#0b1222', '#247bff', '#ff354f', '#253452', 'linearGradient', 'textLength']) {
   if (designSvg.includes(forbidden)) throw new Error(`Legacy or forbidden visual token found: ${forbidden}`);
 }
-if ((portfolio.match(/<radialGradient/g) || []).length !== 1) throw new Error('Hero-only sky wash is missing or duplicated outside the hero');
+if (/<(?:radial|linear)Gradient/.test(designSvg)) throw new Error('Gradient definitions remain in generated SVGs');
 if (!designSvg.includes('UltronInter') || !designSvg.includes('UltronMono')) throw new Error('Inter / JetBrains Mono embedding missing');
+
+const orbitNodes = [...portfolio.matchAll(/data-orbit-node="([^"]+)" transform="translate\(([-\d.]+) ([-\d.]+)\)"/g)];
+if (orbitNodes.length !== 8) throw new Error(`Expected 8 controlled orbit nodes, found ${orbitNodes.length}`);
+if ((portfolio.match(/data-orbit-path=/g) || []).length !== 3) throw new Error('Expected exactly 3 orbital paths');
+for (const [, label, rawX, rawY] of orbitNodes) {
+  const x = Number(rawX); const y = Number(rawY);
+  if (x < 506 || x > 1076 || y < 260 || y > 536) throw new Error(`Orbit node outside graph bounds: ${label}`);
+  if (Math.hypot(x - 791, y - 398) < 88) throw new Error(`Orbit node too close to central label: ${label}`);
+}
 
 async function render() {
   const source = fs.readFileSync(path.join(assetDir, 'portfolio.svg'));

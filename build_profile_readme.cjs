@@ -33,7 +33,7 @@ const T = {
 
 const b64 = (file) => fs.readFileSync(file).toString('base64');
 const portrait = b64(path.join(ROOT, 'id.png'));
-const pointing = b64(path.join(ROOT, 'right_pointing.png'));
+const pointing = b64(path.join(ASSETS, 'right_pointing-cropped.png'));
 const inter = b64(path.join(ROOT, 'portfolio', '.next', 'static', 'media', '83afe278b6a6bb3c-s.p.3a6ba036.woff2'));
 const mono = b64(path.join(ROOT, 'portfolio', '.next', 'static', 'media', '70bc3e132a0a741e-s.p.15008bfb.woff2'));
 
@@ -62,10 +62,10 @@ function styles() {
   </style>`;
 }
 function defs(prefix, extra = '', hero = false) {
-  return `<defs>${hero ? `<radialGradient id="${prefix}-sky" cx="64%" cy="38%" r="72%"><stop offset="0" stop-color="${C.skyLight}" stop-opacity=".72"/><stop offset=".62" stop-color="${C.skyMid}" stop-opacity=".24"/><stop offset="1" stop-color="${C.canvas}" stop-opacity="0"/></radialGradient>` : ''}${extra}</defs>`;
+  return `<defs>${extra}</defs>`;
 }
 function background(prefix, hero = false) {
-  return `<rect width="${W}" height="${H}" fill="${C.canvas}"/>${hero ? `<rect width="${W}" height="${H}" fill="url(#${prefix}-sky)"/>` : ''}`;
+  return `<rect width="${W}" height="${H}" fill="${C.canvas}"/>`;
 }
 function card(x, y, w, h, cls = 'feature') {
   const fill = cls === 'dark' ? C.dark : C.canvas;
@@ -94,18 +94,37 @@ function about() {
   return slide(p, '01 / WHAT I BUILD', 'Built close to the metal.', 'Systems thinking, product taste, and a bias for dependable primitives.', content, 'The engineering areas Swaraj builds: databases, cloud infrastructure, and developer tooling.');
 }
 
-function orbitNode(x, y, label) { return `<g transform="translate(${x} ${y})"><circle r="28" fill="${C.darkElevated}" stroke="${C.onDarkSoft}" stroke-width="1"/>${text(0, 4, label, 'code on-dark', 'text-anchor="middle"')}</g>`; }
+function orbitNode(x, y, label, fullLabel) {
+  return `<g data-orbit-node="${esc(fullLabel)}" transform="translate(${x.toFixed(1)} ${y.toFixed(1)})"><circle r="28" fill="${C.darkElevated}" stroke="${C.onDarkSoft}" stroke-width="1"/>${text(0, 4, label, 'code on-dark', 'text-anchor="middle"')}</g>`;
+}
+function orbitPoint(cx, cy, rx, ry, angle) {
+  const radians = angle * Math.PI / 180;
+  return { x: cx + rx * Math.cos(radians), y: cy + ry * Math.sin(radians) };
+}
 function stack() {
   const p = 'ultron-stack';
+  const cx = 791;
+  const cy = 398;
+  const orbitPaths = [
+    { rx: 174, ry: 64, rotate: 0, stroke: C.onDarkSoft },
+    { rx: 174, ry: 64, rotate: 60, stroke: '#60646c' },
+    { rx: 174, ry: 64, rotate: 120, stroke: '#999999' },
+  ];
+  const nodeAngles = [
+    ['RUST', 'Rust', -157.5], ['TS', 'TypeScript', -112.5], ['NODE.JS', 'Node.js', -67.5], ['PG', 'PostgreSQL', -22.5],
+    ['REDIS', 'Redis', 22.5], ['DOCKER', 'Docker', 67.5], ['LINUX', 'Linux', 112.5], ['GRPC', 'gRPC', 157.5],
+  ];
+  const orbitGeometry = orbitPaths.map(({ rx, ry, rotate, stroke }) => `<ellipse data-orbit-path="${rotate}" cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="none" stroke="${stroke}" stroke-width="1" transform="rotate(${rotate} ${cx} ${cy})"/>`).join('');
+  const nodes = nodeAngles.map(([label, fullLabel, angle]) => { const point = orbitPoint(cx, cy, 205, 110, angle); return orbitNode(point.x, point.y, label, fullLabel); }).join('');
   const content = `<g>${card(96, 232, 354, 332)}${text(124, 272, 'LANGUAGES / RUNTIMES', 'overline muted')}${badge(124, 304, 88, 'RUST')}${badge(224, 304, 132, 'TYPESCRIPT')}${badge(124, 344, 112, 'JAVASCRIPT')}${badge(248, 344, 108, 'PYTHON')}${badge(124, 384, 88, 'C')}${badge(224, 384, 132, 'NODE.JS')}${text(124, 448, 'WEB / API', 'code body-color')}${text(124, 478, 'STORAGE / DATA', 'code body-color')}${text(124, 508, 'OPERATIONS / DISTRIBUTED SYSTEMS', 'code body-color')}</g>
-    <g>${card(478, 232, 626, 332, 'dark')}<ellipse cx="791" cy="398" rx="150" ry="52" fill="none" stroke="${C.onDarkSoft}" stroke-width="1" transform="rotate(-14 791 398)"/><ellipse cx="791" cy="398" rx="150" ry="52" fill="none" stroke="#60646c" stroke-width="1" transform="rotate(42 791 398)"/><ellipse cx="791" cy="398" rx="150" ry="52" fill="none" stroke="#999999" stroke-width="1" transform="rotate(90 791 398)"/><circle cx="791" cy="398" r="60" fill="${C.darkElevated}" stroke="${C.onDark}" stroke-width="1"/>${text(791, 394, 'LIORAN', 'sm on-dark', 'text-anchor="middle"')}${text(791, 418, 'INFRASTRUCTURE', 'overline on-dark-soft', 'text-anchor="middle"')}${orbitNode(594, 340, 'RUST')}${orbitNode(666, 286, 'TS')}${orbitNode(791, 272, 'NODE')}${orbitNode(916, 318, 'PG')}${orbitNode(988, 428, 'REDIS')}${orbitNode(880, 510, 'DOCKER')}${orbitNode(704, 510, 'LINUX')}${orbitNode(602, 446, 'GRPC')}</g>${text(478, 610, 'STACK / LANGUAGES / DATA / OPERATIONS', 'code body-color')}`;
+    <g>${card(478, 232, 626, 332, 'dark')}${orbitGeometry}<circle cx="${cx}" cy="${cy}" r="60" fill="${C.darkElevated}" stroke="${C.onDark}" stroke-width="1"/>${text(cx, 394, 'LIORAN', 'sm on-dark', 'text-anchor="middle"')}${text(cx, 418, 'INFRASTRUCTURE', 'overline on-dark-soft', 'text-anchor="middle"')}${nodes}</g>${text(478, 610, 'STACK / LANGUAGES / DATA / OPERATIONS', 'code body-color')}`;
   return slide(p, '02 / TECH STACK', 'A stack with gravity.', 'Languages, runtimes, data stores, and protocols orbiting one idea: reliable systems.', content, 'A bounded technology stack diagram for Lioran infrastructure.');
 }
 
 function profile() {
   const p = 'ultron-profile';
   const extra = `<clipPath id="${p}-portrait-clip"><rect x="124" y="360" width="200" height="170" rx="8"/></clipPath>`;
-  const content = `<g>${card(96, 224, 1008, 366, 'dark')}${text(124, 260, 'LIORAN GROUP / LDS', 'overline on-dark-soft')}${text(124, 300, 'SWARAJ PUPPALWAR', 'md on-dark')}${text(124, 324, 'FOUNDER & CHIEF TECHNOLOGY OFFICER', 'code on-dark-soft')}<path d="M124 346H1076" stroke="${C.onDarkSoft}" stroke-opacity=".28"/><rect x="124" y="360" width="200" height="170" rx="8" fill="${C.darkElevated}" stroke="${C.onDarkSoft}" stroke-opacity=".42"/><image x="124" y="360" width="200" height="170" preserveAspectRatio="xMidYMax slice" clip-path="url(#${p}-portrait-clip)" href="${image('portrait')}" xlink:href="${image('portrait')}"/>${text(360, 376, 'ENGINEERING IDENTITY', 'overline on-dark-soft')}${text(360, 416, 'Database engineer', 'title on-dark')}${text(360, 444, 'Infrastructure builder', 'title on-dark')}${text(360, 472, 'Full-stack developer', 'title on-dark')}<path d="M648 364V532" stroke="${C.onDarkSoft}" stroke-opacity=".28"/>${text(684, 376, 'VERIFIED ACHIEVEMENTS', 'overline on-dark-soft')}${text(684, 412, 'Newspaper features', 'title on-dark')}${text(684, 436, 'Nagpur Post / Navarashtra / Tarun Bharat', 'body-sm on-dark-soft')}${text(684, 458, '23 MAY / 23 MAY / 29 MAY 2023', 'code on-dark-soft')}${text(684, 492, 'Cyber Olympiad / Maharashtra state rank 1', 'body-sm on-dark')}${text(684, 516, 'Crest Cyber Olympiad / Western region rank 17', 'body-sm on-dark')}</g>${text(96, 620, 'PUBLIC WORK / DATED RECORD / SYSTEMS ENGINEERING', 'code body-color')}`;
+  const content = `<g>${card(96, 224, 1008, 366, 'dark')}${text(124, 260, 'LIORAN GROUP / LDS', 'overline on-dark-soft')}${text(124, 300, 'SWARAJ PUPPALWAR', 'md on-dark')}${text(124, 324, 'FOUNDER & CHIEF TECHNOLOGY OFFICER', 'code on-dark-soft')}<path d="M124 346H1076" stroke="${C.onDarkSoft}" stroke-opacity=".28"/><rect x="124" y="360" width="200" height="170" rx="8" fill="${C.darkElevated}" stroke="${C.onDarkSoft}" stroke-opacity=".42"/><image x="124" y="360" width="200" height="170" preserveAspectRatio="xMidYMid meet" clip-path="url(#${p}-portrait-clip)" href="${image('portrait')}" xlink:href="${image('portrait')}"/>${text(360, 376, 'ENGINEERING IDENTITY', 'overline on-dark-soft')}${text(360, 416, 'Database engineer', 'title on-dark')}${text(360, 444, 'Infrastructure builder', 'title on-dark')}${text(360, 472, 'Full-stack developer', 'title on-dark')}<path d="M648 364V532" stroke="${C.onDarkSoft}" stroke-opacity=".28"/>${text(684, 376, 'VERIFIED ACHIEVEMENTS', 'overline on-dark-soft')}${text(684, 412, 'Newspaper features', 'title on-dark')}${text(684, 436, 'Nagpur Post / Navarashtra / Tarun Bharat', 'body-sm on-dark-soft')}${text(684, 458, '23 MAY / 23 MAY / 29 MAY 2023', 'code on-dark-soft')}${text(684, 492, 'Cyber Olympiad / Maharashtra state rank 1', 'body-sm on-dark')}${text(684, 516, 'Crest Cyber Olympiad / Western region rank 17', 'body-sm on-dark')}</g>${text(96, 620, 'PUBLIC WORK / DATED RECORD / SYSTEMS ENGINEERING', 'code body-color')}`;
   return slide(p, '03 / DEVELOPER PROFILE', 'The builder\'s ID.', 'A small record of work that is dated, public, and worth keeping.', content, 'Developer profile with portrait, engineering identity, and dated achievements.', extra);
 }
 
@@ -119,9 +138,10 @@ function projects() {
 
 function linkTile(x, y, label, detail, glyph) { return `<g>${card(x, y, 244, 56, 'dark')}${text(x + 22, y + 25, glyph, 'code on-dark')}${text(x + 52, y + 23, label, 'title on-dark')}${text(x + 52, y + 43, detail, 'code on-dark-soft')}</g>`; }
 function connect() {
-  const content = `<g>${card(96, 232, 410, 332)}<image x="116" y="250" width="370" height="280" preserveAspectRatio="xMidYMax meet" href="${image('pointing')}" xlink:href="${image('pointing')}"/>${text(124, 542, 'CHANDRAPUR -> THE INTERNET', 'code body-color')}</g>
-    <g>${card(554, 232, 550, 332, 'dark')}${text(582, 272, 'CONTACT / COLLABORATION', 'overline on-dark-soft')}${text(582, 312, 'Open channels for the next layer.', 'sm on-dark')}${text(582, 338, 'Build, write, or partner around developer infrastructure.', 'body-sm on-dark-soft')}${linkTile(582, 368, 'GitHub', 'github.com/UltronTheAI', 'GH')}${linkTile(842, 368, 'Lioran Group', 'lioran.group', 'LG')}${linkTile(582, 440, 'LioranDB', 'liorandb.com', 'DB')}${linkTile(842, 440, 'Lioran Cloud', 'app.liorandb.com', 'LC')}${text(582, 522, 'OPEN-SOURCE COLLABORATION / INFRASTRUCTURE PARTNERSHIPS', 'code on-dark-soft')}</g>${button(96, 610, 158, 'SAY HELLO')}`;
-  return slide('ultron-connect', '05 / OPEN CHANNELS', 'Let\'s build together.', 'Real destinations, one open channel for the next layer.', content, 'Contact and collaboration links for GitHub, Lioran Group, LioranDB, Lioran Cloud, open source, and infrastructure partnerships.');
+  const extra = `<clipPath id="ultron-connect-portrait-clip"><rect x="96" y="232" width="410" height="360" rx="12"/></clipPath>`;
+  const content = `<g>${card(96, 232, 410, 360)}<image x="116" y="248" width="280" height="300" preserveAspectRatio="xMidYMid meet" clip-path="url(#ultron-connect-portrait-clip)" href="${image('pointing')}" xlink:href="${image('pointing')}"/>${text(124, 576, 'CHANDRAPUR -> THE INTERNET', 'code body-color')}</g>
+    <g>${card(554, 232, 550, 360, 'dark')}${text(582, 272, 'CONTACT / COLLABORATION', 'overline on-dark-soft')}${text(582, 312, 'Open channels for the next layer.', 'sm on-dark')}${text(582, 338, 'Build, write, or partner around developer infrastructure.', 'body-sm on-dark-soft')}${linkTile(582, 368, 'GitHub', 'github.com/UltronTheAI', 'GH')}${linkTile(842, 368, 'Lioran Group', 'lioran.group', 'LG')}${linkTile(582, 440, 'LioranDB', 'liorandb.com', 'DB')}${linkTile(842, 440, 'Lioran Cloud', 'app.liorandb.com', 'LC')}${text(582, 554, 'OPEN-SOURCE COLLABORATION / INFRASTRUCTURE PARTNERSHIPS', 'code on-dark-soft')}</g>${button(96, 610, 158, 'SAY HELLO')}`;
+  return slide('ultron-connect', '05 / OPEN CHANNELS', 'Let\'s build together.', 'Real destinations, one open channel for the next layer.', content, 'Contact and collaboration links for GitHub, Lioran Group, LioranDB, Lioran Cloud, open source, and infrastructure partnerships.', extra);
 }
 
 const pages = [['hero.svg', hero, 'hero'], ['about-life.svg', about, 'about'], ['stack.svg', stack, 'stack'], ['id-dashboard.svg', profile, 'profile'], ['projects.svg', projects, 'projects'], ['connect.svg', connect, 'connect']];
@@ -131,7 +151,7 @@ for (const [filename, builder, key] of pages) { const svg = standalone(builder()
 const combined = `<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${W}" height="${H * pages.length}" viewBox="0 0 ${W} ${H * pages.length}" role="img" aria-label="UltronTheAI engineering portfolio"><title>UltronTheAI engineering portfolio</title><desc>Six continuous design-system-driven slides for Swaraj Puppalwar.</desc><g transform="translate(0 0)">${hero()}</g><g transform="translate(0 ${H})">${about()}</g><g transform="translate(0 ${H * 2})">${stack()}</g><g transform="translate(0 ${H * 3})">${profile()}</g><g transform="translate(0 ${H * 4})">${projects()}</g><g transform="translate(0 ${H * 5})">${connect()}</g></svg>\n`;
 fs.writeFileSync(path.join(ASSETS, 'portfolio.svg'), combined, 'utf8');
 fs.writeFileSync(path.join(ASSETS, 'LICENSES.md'), '# Embedded asset licenses\n\n- Inter and JetBrains Mono are embedded from the local Next.js build output.\n- The portrait and pointing character are the supplied PNG assets, embedded as data URIs.\n- SVGs contain no scripts, foreignObject elements, external images, external fonts, or network requests.\n', 'utf8');
-fs.writeFileSync(path.join(ROOT, 'README.md'), '<div><img src="assets/portfolio.svg?v=4" alt="UltronTheAI engineering portfolio: six continuous design-system-driven slides" width="100%" /></div>\n', 'utf8');
-fs.writeFileSync(path.join(ROOT, 'preview.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>UltronTheAI README preview</title><style>html,body{margin:0;background:#fff}img{display:block;width:100%;height:auto}</style></head><body><img src="assets/portfolio.svg?v=4" alt="UltronTheAI engineering portfolio"></body></html>\n`, 'utf8');
+fs.writeFileSync(path.join(ROOT, 'README.md'), '<div><img src="assets/portfolio.svg?v=5" alt="UltronTheAI engineering portfolio: six continuous design-system-driven slides" width="100%" /></div>\n', 'utf8');
+fs.writeFileSync(path.join(ROOT, 'preview.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>UltronTheAI README preview</title><style>html,body{margin:0;background:#fff}img{display:block;width:100%;height:auto}</style></head><body><img src="assets/portfolio.svg?v=5" alt="UltronTheAI engineering portfolio"></body></html>\n`, 'utf8');
 fs.writeFileSync(path.join(VERIFICATION, 'README.md'), '# Verification notes\n\nThe README uses `assets/portfolio.svg`, a single 1200px-wide SVG containing six 660px-tall slides with no inter-slide gap. The six standalone SVGs remain available in `assets/` for individual inspection.\n', 'utf8');
 console.log(`Generated ${pages.length} design-system-driven SVG slides and one continuous portfolio.svg.`);
