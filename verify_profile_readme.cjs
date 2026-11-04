@@ -39,9 +39,19 @@ if (embedded.filter((hash) => hash === idHash).length < 2 || embedded.filter((ha
 
 const readme = read(path.join(root, 'README.md'));
 if ((readme.match(/<img\b/g) || []).length !== 1) throw new Error('README must contain exactly one contiguous portfolio image');
-if (!readme.includes('assets/portfolio.svg?v=3') || !/width="100%"/.test(readme)) throw new Error('README does not use the combined full-width asset');
+if (!readme.includes('assets/portfolio.svg?v=4') || !/width="100%"/.test(readme)) throw new Error('README does not use the combined full-width asset');
 if (/^\s*(?:#|<h[1-6]|\||[-*]\s)/m.test(readme)) throw new Error('README contains non-slide Markdown or headings');
 if (readme.trim().split(/\r?\n/).length !== 1) throw new Error('README contains empty or spacer Markdown lines');
+
+const designSvg = [...slideFiles, 'portfolio.svg'].map((name) => read(path.join(assetDir, name))).join('\n');
+for (const token of ['#ffffff', '#171717', '#60646c', '#dcdee0', '#0d74ce']) {
+  if (!designSvg.toLowerCase().includes(token)) throw new Error(`Design token missing from generated SVGs: ${token}`);
+}
+for (const forbidden of ['#070b16', '#0b1222', '#247bff', '#ff354f', '#253452', 'linearGradient', 'textLength']) {
+  if (designSvg.includes(forbidden)) throw new Error(`Legacy or forbidden visual token found: ${forbidden}`);
+}
+if ((portfolio.match(/<radialGradient/g) || []).length !== 1) throw new Error('Hero-only sky wash is missing or duplicated outside the hero');
+if (!designSvg.includes('UltronInter') || !designSvg.includes('UltronMono')) throw new Error('Inter / JetBrains Mono embedding missing');
 
 async function render() {
   const source = fs.readFileSync(path.join(assetDir, 'portfolio.svg'));
