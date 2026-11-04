@@ -1,85 +1,104 @@
 # Swaraj Puppalwar
 
-**Founder & Chief Technology Officer — Lioran Group | Lioran Developer Solutions**
+**Founder & Chief Technology Officer — [Lioran Group](https://lioran.group) | [Lioran Developer Solutions](https://lioransolutions.com)**
 
-Software Engineer · Database Systems · Cloud Infrastructure · Distributed Systems
+Database Systems · Storage Engines · Distributed Systems · Cloud Infrastructure
 
-I'm Swaraj Puppalwar, a software engineer and Founder & CTO of **Lioran Group**, where I lead the technical architecture, engineering, and infrastructure development of **Lioran Developer Solutions (LDS)**.
+---
 
-I started programming at 11 and have spent the past several years building full-stack applications, backend systems, databases, and developer infrastructure.
+I build developer infrastructure from India.
 
-My primary focus is designing reliable, scalable, and efficient systems, with a long-term vision of building foundational developer infrastructure from India.
+I'm the Founder & CTO of **Lioran Group**, leading engineering and infrastructure development at **Lioran Developer Solutions (LDS)**.
 
-## Lioran Developer Solutions
+My primary work is **[LioranDB](https://liorandb.com)**, a NoSQL document database built around a Rust-based storage engine, alongside its managed cloud infrastructure.
 
-**Lioran Developer Solutions (LDS)** is the infrastructure and software engineering division of Lioran Group, focused on building developer-first infrastructure, databases, cloud platforms, and backend technologies.
+My engineering focus includes storage architecture, concurrency, durability, query execution, networking, and infrastructure operations.
 
-As Founder & CTO, I oversee:
+I aim to build reliable, efficient, independently engineered infrastructure that developers and businesses can deploy and operate.
 
-- **Infrastructure Architecture:** Designing database engines, cloud infrastructure, and distributed systems.
-- **Database Engineering:** Developing high-performance storage engines and database management systems.
-- **Cloud Platforms:** Building managed infrastructure, deployment systems, and developer services.
-- **Engineering Leadership:** Leading technical development, architecture decisions, and product engineering.
-- **Research & Development:** Exploring systems programming, concurrency, performance optimization, and infrastructure scalability.
+## 01 / LioranDB
 
-Our objective is to develop reliable, accessible, and independently engineered developer infrastructure from India.
+**Document Database · Rust · Storage Engine**
 
-**Website:** https://lioransolutions.com  
-**Parent Organization:** https://lioran.group
+LioranDB is a NoSQL document database developed under Lioran Developer Solutions.
 
-## Core Infrastructure & Products
+Its Rust engine is designed around custom storage and database internals rather than wrapping an existing database engine.
 
-### LioranDB
+**Core engineering areas**
 
-A high-performance NoSQL document database engineered from the ground up in Rust.
+- **Storage & Durability:** B+ tree storage, write-ahead logging, checkpoints, and recovery.
+- **Query & Indexing:** Document queries, secondary indexes, and full-text search.
+- **Concurrency:** Multi-core execution, concurrent workloads, and resource management.
+- **Distributed Architecture:** Multi-node systems, partitioning, and infrastructure scalability.
+- **Database Operations:** Server APIs, metrics, backup and restore, and management tooling.
 
-LioranDB focuses on storage efficiency, concurrency, reliability, and scalable database infrastructure.
+[Website](https://liorandb.com) · [Documentation](https://docs.liorandb.com) · [GitHub](https://github.com/LioranGroupOfficial)
 
-Its ecosystem includes a custom database engine, database server, client SDKs, management tools, and managed cloud services.
+## 02 / Lioran Cloud Services
 
-- Website: https://liorandb.com
-- Documentation: https://docs.liorandb.com
-- Cloud Platform: https://app.liorandb.com
-- Studio: https://studio.liorandb.com
+**Managed Infrastructure · Database Hosting · Cloud Operations**
 
-### Other Infrastructure Projects
+Lioran Cloud Services is the managed infrastructure platform built around the Lioran ecosystem.
 
-- **Lioran Auth:** Authentication and identity management infrastructure.
-- **Lioran Cloud Services:** Managed database hosting and infrastructure services.
-- **Lioran Deployments:** Application deployment and CI/CD infrastructure.
+The platform focuses on hosted database instances, infrastructure provisioning, access controls, administration, and database operations.
 
-Additional projects include Hushar Spreadsheet, Post-Acle, Vortexly, AI Companion, and several developer tools.
+**Platform components**
 
-## Technical Expertise
+- Managed LioranDB instances
+- Shared and dedicated hosting infrastructure
+- Database administration and access controls
+- Monitoring and operational tooling
+- Backup and recovery infrastructure
+- Developer-facing management interfaces
 
-**Systems & Infrastructure:** Database Engines, Storage Systems, Distributed Systems, Cloud Infrastructure, Backend Architecture, Performance Engineering
+[Cloud Platform](https://app.liorandb.com) · [Database Studio](https://studio.liorandb.com)
 
-**Languages:** Rust, TypeScript, JavaScript, Python, C
+## 03 / Lioran Developer Solutions
 
-**Technologies:** Node.js, Next.js, PostgreSQL, MongoDB, Docker, Linux, Redis, REST, gRPC
+**Infrastructure Engineering · Research & Development**
 
-**Engineering Interests:** Concurrency, Database Internals, Networking, Infrastructure Automation, Scalability
+Lioran Developer Solutions is the engineering division of Lioran Group.
 
-## Recognition & Achievements
+Our work focuses on developing foundational technologies across database systems, cloud infrastructure, authentication, deployment tooling, and backend platforms.
 
-- **State Rank 1** — Cyber Olympiad
-- **Western Region Rank 17** — CREST Cyber Olympiad
-- **Featured in three newspapers (2023):** Nagpur Post, Navarashtra, and Tarun Bharat, for achievements in computer science and technology.
-- **Recognized among active Indian GitHub contributors** in the [Top GitHub Users India](https://github.com/gayanvoice/top-github-users/blob/main/markdown/public_contributions/india.md) listing.
+My responsibilities include:
 
-## GitHub & Source Code
+- Systems and infrastructure architecture
+- Database engine development
+- Technical research and development
+- Platform engineering and operations
+- Engineering direction and product development
 
-My personal GitHub profile primarily contains independent projects, experiments, and selected public work.
+**Our mission is to build developer infrastructure from India, for developers everywhere.**
 
-**Core infrastructure, production systems, and proprietary product source code are maintained privately under the official [LioranGroupOfficial](https://github.com/LioranGroupOfficial) GitHub organization.** Selected repositories, documentation, and development resources are publicly accessible.
+[Official Website](https://lioransolutions.com) · [Parent Organization](https://lioran.group)
+
+---
+
+## Engineering Focus
+
+| Domain | Technologies & Areas |
+| :--- | :--- |
+| Database Engineering | Storage Engines, B+ Trees, WAL, Indexing, Recovery |
+| Systems Programming | Rust, Concurrency, Memory Management, Networking |
+| Distributed Systems | Replication, Partitioning, Coordination, Fault Tolerance |
+| Cloud Infrastructure | Linux, Docker, Infrastructure Operations, Observability |
+| Backend Engineering | TypeScript, Node.js, REST, gRPC |
+| Data Infrastructure | PostgreSQL, MongoDB, Redis |
+
+## Source Code & Development
+
+My personal repositories contain selected public projects, engineering experiments, and development work.
+
+Lioran's core infrastructure projects and technical resources are maintained primarily through the official **[LioranGroupOfficial](https://github.com/LioranGroupOfficial)** GitHub organization.
+
+Selected source code and documentation are publicly available. Proprietary platform components and operational infrastructure remain private.
+
+Performance and benchmark results are evaluated against their workload, hardware, configuration, and durability settings.
 
 ## Connect
 
-- **Portfolio:** https://swaraj.lioransolutions.com
-- **Lioran Group:** https://lioran.group
-- **Lioran Developer Solutions:** https://lioransolutions.com
-- **GitHub Organization:** https://github.com/LioranGroupOfficial
-- **X / Twitter:** https://twitter.com/PuppalwarSwaraj
+[Portfolio](https://swaraj.lioransolutions.com) · [Lioran Group](https://lioran.group) · [Lioran Developer Solutions](https://lioransolutions.com) · [GitHub Organization](https://github.com/LioranGroupOfficial) · [X / Twitter](https://twitter.com/PuppalwarSwaraj)
 
 ---
 
