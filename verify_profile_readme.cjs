@@ -34,14 +34,12 @@ const portfolio = read(path.join(assetDir, 'portfolio.svg'));
 if (!/<svg[^>]+width="1200" height="3960" viewBox="0 0 1200 3960"/.test(portfolio)) throw new Error('Combined portfolio canvas is not 1200 x 3960');
 if ((portfolio.match(/data-slide=/g) || []).length !== 6) throw new Error('Combined portfolio does not contain exactly six slides');
 if ((portfolio.match(/translate\(0 660\)/g) || []).length !== 1 || (portfolio.match(/translate\(0 3300\)/g) || []).length !== 1) throw new Error('Combined slide offsets are not contiguous');
-if ((portfolio.match(/id="ultron-portrait"/g) || []).length !== 1 || (portfolio.match(/id="ultron-pointing"/g) || []).length !== 1) throw new Error('Combined image definitions are not deduplicated');
-
 const embedded = [...portfolio.matchAll(/data:image\/png;base64,([^"']+)/g)].map((match) => sha(Buffer.from(match[1], 'base64')));
-if (!embedded.includes(idHash) || !embedded.includes(pointingHash)) throw new Error('Combined portrait assets are not byte-for-byte embedded');
+if (embedded.filter((hash) => hash === idHash).length < 2 || embedded.filter((hash) => hash === pointingHash).length < 1) throw new Error('Combined portrait assets are not byte-for-byte embedded');
 
 const readme = read(path.join(root, 'README.md'));
 if ((readme.match(/<img\b/g) || []).length !== 1) throw new Error('README must contain exactly one contiguous portfolio image');
-if (!readme.includes('assets/portfolio.svg?v=2') || !/width="100%"/.test(readme)) throw new Error('README does not use the combined full-width asset');
+if (!readme.includes('assets/portfolio.svg?v=3') || !/width="100%"/.test(readme)) throw new Error('README does not use the combined full-width asset');
 if (/^\s*(?:#|<h[1-6]|\||[-*]\s)/m.test(readme)) throw new Error('README contains non-slide Markdown or headings');
 if (readme.trim().split(/\r?\n/).length !== 1) throw new Error('README contains empty or spacer Markdown lines');
 
