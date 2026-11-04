@@ -313,10 +313,58 @@ function profile() {
 function projectCard(x, label, title, description, meta, urlLines, status = '') {
   return `<g>${card(x, 232, 320, 332)}${text(x + 24, 270, label, 'overline muted')}${text(x + 24, 310, title, 'title ink')}${block(x + 24, 350, description, 29, 'body-sm body-color', 22)}<path d="M${x + 24} 446H${x + 296}" stroke="${C.hairline}"/>${text(x + 24, 478, meta, 'overline muted')}${status ? text(x + 296, 478, status, 'overline success', 'text-anchor="end"') : ''}${urlLines.map((line, i) => text(x + 24, 514 + i * 20, line, 'code link')).join('')}</g>`;
 }
+
 function projects() {
-  const content = `${projectCard(96, 'RUST / DATABASE', 'LioranDB', 'Rust document database with a custom storage engine, WAL, indexing, and concurrency primitives.', 'ACTIVE / V2', ['liorandb.com'], 'ACTIVE')}${projectCard(440, 'CLOUD / MANAGED DATA', 'Lioran Cloud', 'Managed LioranDB instances with deployment and administration surfaces for developer infrastructure.', 'LIORAN CLOUD SERVICES', ['app.liorandb.com'])}${projectCard(784, 'SYSTEMS / CONTENT', 'Post-Acle', 'Technical publication platform for systems engineering teardowns, storage internals, and architecture notes.', 'CODE AVAILABLE', ['github.com / LioranGroupOfficial', '/ PostAcle'])}${text(96, 610, 'DATABASES / CLOUD / DEVELOPER PLATFORMS', 'code body-color')}`;
-  return slide('ultron-projects', '04 / SELECTED PROJECTS', 'Systems worth shipping.', 'Databases, cloud services, and developer platforms built in public.', content, 'Selected projects: LioranDB, Lioran Cloud, and Post-Acle.');
+  const content = `
+    ${projectCard(
+      96,
+      'RUST / DATABASE',
+      'LioranDB',
+      'Rust document database with a custom storage engine, WAL, indexing, and concurrency primitives.',
+      'ACTIVE / V2',
+      ['liorandb.com'],
+      'ACTIVE'
+    )}
+
+    ${projectCard(
+      440,
+      'CLOUD / MANAGED DATA',
+      'Lioran Cloud',
+      'Managed LioranDB instances with deployment and administration surfaces for developer infrastructure.',
+      'LIORAN CLOUD SERVICES',
+      ['app.liorandb.com']
+    )}
+
+    ${projectCard(
+      784,
+      'OBJECT / STORAGE',
+      'LioranS3',
+      'S3-compatible object storage with bucket management, object APIs, and developer tooling.',
+      'PRE-ALPHA',
+      [
+        'liorans3.sbs',
+        'docs.liorans3.sbs'
+      ]
+    )}
+
+    ${text(
+      96,
+      610,
+      'DATABASES / CLOUD / OBJECT STORAGE',
+      'code body-color'
+    )}
+  `;
+
+  return slide(
+    'ultron-projects',
+    '04 / SELECTED PROJECTS',
+    'Systems worth shipping.',
+    'Databases, cloud services, and developer infrastructure built in public.',
+    content,
+    'Selected projects: LioranDB, Lioran Cloud, and LioranS3.'
+  );
 }
+
 
 function linkTile(x, y, label, detail, glyph) { return `<g>${card(x, y, 244, 56, 'dark')}${text(x + 22, y + 25, glyph, 'code on-dark')}${text(x + 52, y + 23, label, 'title on-dark')}${text(x + 52, y + 43, detail, 'code on-dark-soft')}</g>`; }
 
