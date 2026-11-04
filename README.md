@@ -1,129 +1,55 @@
-# UltronTheAI 👾
+<p align="center">
+  <img src="assets/hero.svg?v=1" alt="Swaraj Puppalwar — founder, database engineer, and infrastructure builder" width="100%" />
+</p>
 
-**Swaraj Puppalwar** — *The guy who started coding at 11 and still hasn't touched grass since.*
+<p align="center">
+  <img src="assets/about-life.svg?v=1" alt="About Swaraj Puppalwar and his engineering interests" width="100%" />
+</p>
 
----
+<p align="center">
+  <img src="assets/stack.svg?v=1" alt="Swaraj Puppalwar's technology stack" width="100%" />
+</p>
 
-## Huh, who am I? 
+<p align="center">
+  <img src="assets/id-dashboard.svg?v=1" alt="Swaraj Puppalwar proof-of-work dashboard" width="100%" />
+</p>
 
-I’m that full-stack dev who actually ships stuff instead of just tweeting about it. 
+<h2>Selected work</h2>
 
-**2 years of real scars** (aka production experience). 
-I write TypeScript like it owes me money, break things in Rust "for science", and somehow keep multiple products alive. Currently **Founder & CTO @ Lioran Group** where I lead **2 brave developers** (pray for them) and give tech advice to my friends’ startups when they bribe me with chai.
+| Project | What it is | Links |
+| --- | --- | --- |
+| **LioranDB** | A high-performance NoSQL document database built from scratch in Rust, with a custom storage engine, WAL, indexing, concurrency, and database tooling. | [Website](https://liorandb.com) · [GitHub](https://github.com/LioranGroupOfficial/Liorandb) |
+| **Lioran Cloud Services (LCS)** | Managed database infrastructure for hosted LioranDB instances, administration, instance management, and cloud deployment. | [Open LCS](https://app.liorandb.com) |
+| **Post-Acle** | An AI-powered, SEO-optimized blogging platform built with Next.js and Tailwind CSS. | [GitHub](https://github.com/LioranGroupOfficial/PostAcle) |
 
-Portfolio: [swaraj.lioransolutions.com](https://swaraj.lioransolutions.com)
+<h2>What I work with</h2>
 
-GitHub (org): [LioranGroupOfficial](https://github.com/LioranGroupOfficial) — view advanced products there.
+Rust · TypeScript · JavaScript · Python · C · Node.js · Next.js · React · PostgreSQL · MongoDB · Redis · Docker · Linux · gRPC · REST APIs · distributed systems · storage engines · cloud infrastructure
 
----
+<h2>Recognition</h2>
 
-## My Engineering Vibe (aka "Philosophy")
+- **3 newspaper features in May 2023:** Nagpur Post (23 May), Navarashtra (23 May), and Tarun Bharat (29 May).
+- **Top GitHub Users India public-contributions ranking:** listed when checked on 4 November 2026.
+- **Cyber Olympiad:** State Rank 1.
+- **CREST Cyber Olympiad:** Western Region Rank 17.
 
-- Clean code > fancy patterns (if it needs 17 layers of abstraction, I’m out)
-- Ship fast, cry later, fix on weekends
-- "It works on my machine" is not a deployment strategy (but sometimes it feels like one)
-- Indian data should stay in India. Period.
+<p align="center">
+  <img src="assets/connect.svg?v=1" alt="Connect with Swaraj Puppalwar" width="100%" />
+</p>
 
----
+<h2>Connect</h2>
 
-## Platform Metrics (Real Humans, Not Bots... Mostly)
+- [GitHub — UltronTheAI](https://github.com/UltronTheAI)
+- [GitHub Organization — LioranGroupOfficial](https://github.com/LioranGroupOfficial)
+- [X / Twitter — @PuppalwarSwaraj](https://twitter.com/PuppalwarSwaraj)
+- [Portfolio — swaraj.lioransolutions.com](https://swaraj.lioransolutions.com)
+- [Lioran Group](https://lioran.group)
+- [Lioran Developer Solutions](https://lioransolutions.com)
+- [LioranDB](https://liorandb.com)
+- [Lioran Cloud Services](https://app.liorandb.com)
 
-- **Post-Acle** — ~100 monthly readers who keep coming back (miracle)
-- **Vortexly** (private chaos network) — 23 friends, 17 actually active, 98 posts & 16 reels of questionable life choices
+<h2>About the build</h2>
 
----
+The five visuals are self-contained SVGs with inline WOFF2 fonts and inline PNGs. They use CSS + SMIL only, include reduced-motion handling, and make no network requests when rendered. GitHub link targets are kept in Markdown because links embedded inside an SVG image are not clickable in a README.
 
-**Others:** Rust (when I feel dangerous), Python (for the scripts that save my life)
----
-
-- **Lioran Auth** — Authentication that doesn't sell your soul
-- **Lioran Deployments** — CI/CD that sometimes works on first try
-
-
-Distraction-free zone for close friends. No algorithm, just vibes.  
-**Status:** Actively used by 17 real humans.
-
-### ✍️ **Post-Acle**
-Where I dump my engineering brain farts. Surprisingly people read it.  
-**Status:** Live & growing
-
-### 📊 **Hushar Spreadsheet** (MVP that actually makes money)
-AI-powered spreadsheet for Zilla Parishad teachers. Teachers type in Hindi, magic happens.  
-**Status:** Paying customers (insane)
-
-### 🗄️ **LioranDB** (The one I'm most proud of)
-LioranDB V2 is a no-sql document database engineered from the ground up using Rust for high-performance, dependable database infrastructure. Built to serve modern applications without compromising simplicity, it is capable of scaling up to 10 million documents and processing 45,000 operations per second.
-
-### 🤖 **AiCompanion**
-Full-stack app to create and chat with your own AI companions.  
-Built it because I could. Yes it's fun.
-
-### 🎮 **DEAD-CORRIDOR**
-16-bit zombie side-scroller. Because sometimes you just need to shoot pixels.
-
-**Other cool stuff:** AuthSystem (secure af), MeetFound (founder CRM), P2P-Chat, Sanyam (self-discipline Android app), eBook-Generator-AI-Agent, etc.
-
----
-
-## 📰 Media Recognition & Achievements
-
-![celebration](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjM5cmI3MnJyazhtc2kwbDF3dWMzYnliYzFjaTduYzlrZ2xhejJkayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H1SM6E3YiR9DnEd7NJ/giphy.gif)
-
-### Featured in Newspapers (2023)
-**1. Nagpur Post**
-📅 **23 May 2023**
-📰 Article: *"Swaraj's High Rise in Computers!"*
-
-**2. Navarashtra (Chandrapur Edition)**
-📅 **23 May 2023**
-📰 Article: *"स्वराजची संगणक क्षेत्रात उंच भरारी"*
-
-**3. Tarun Bharat (Purva Vidarbha Edition)**
-📅 **29 May 2023**
-📰 Article: *"'स्वराज'ची संगणकात गगनभरारी"*
-
-### Total Newspaper Features
-**3 newspaper publications** across regional and English media.
-
----
-
-## 👨‍💻 Academic & Technical Achievements
-
-- **Crest Cyber Olympiad** — Western Region Rank: **17**
-- **Cyber Olympiad** — State Rank: **1**
-- **International Computer Olympiad** — State Rank: **30**
-- **International Mathematics Olympiad** — State Rank: **30**
-- Participated in the **30th National Children's Science Congress**
-- **2nd Rank** in School Cyber / Software Olympiad
-- **Certificate of Excellence** in Exam Pe Charcha 2023
-
----
-
-## 🏅 Additional Recognition
-
-- Listed in the [Top Indian GitHub contributors & active developers](https://github.com/gayanvoice/top-github-users/blob/main/markdown/public_contributions/india.md) list — see the entry on the public contributions page.
-
-
-## Random Developer Memes I Live By
-
-- "Works on my machine" → Production: `Segmentation Fault (core dumped)`
-- Me explaining my code: "It just... knows"
-- When the DB query works on first try: *shocked pikachu face*
-- "I'll just add one more microservice" → 3 weeks later, questioning life choices
-- Indian devs when foreign SaaS prices drop: "Finally... wait no, still too expensive"
-
----
-
-## Connect (If You Dare)
-
-- **Portfolio:** [swaraj.lioransolutions.com](https://swaraj.lioransolutions.com)
-- **Lioran Group:** [lioran.group](https://lioran.group)
- - **GitHub Org:** [LioranGroupOfficial](https://github.com/LioranGroupOfficial) — view advanced products there
-- **Twitter:** [@PuppalwarSwaraj](https://twitter.com/PuppalwarSwaraj)
-
----
-
-> "I don't always write perfect code... but when I do, it's after 47 failed attempts and one very strong coffee."  
-> — Swaraj (probably at 3 AM)
-
-*Made with love, sarcasm, and too much screen time.*
+Font and asset notes: [assets/LICENSES.md](assets/LICENSES.md) · local preview: [preview.html](preview.html)
