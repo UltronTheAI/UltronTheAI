@@ -94,32 +94,214 @@ function about() {
   return slide(p, '01 / WHAT I BUILD', 'Built close to the metal.', 'Systems thinking, product taste, and a bias for dependable primitives.', content, 'The engineering areas Swaraj builds: databases, cloud infrastructure, and developer tooling.');
 }
 
+
 function orbitNode(x, y, label, fullLabel) {
-  return `<g data-orbit-node="${esc(fullLabel)}" transform="translate(${x.toFixed(1)} ${y.toFixed(1)})"><circle r="28" fill="${C.darkElevated}" stroke="${C.onDarkSoft}" stroke-width="1"/>${text(0, 4, label, 'code on-dark', 'text-anchor="middle"')}</g>`;
+  const widths = {
+    'RUST': 68,
+    'TS': 54,
+    'NODE.JS': 92,
+    'PG': 54,
+    'REDIS': 76,
+    'DOCKER': 92,
+    'LINUX': 76,
+    'GRPC': 68,
+  };
+
+  const w = widths[label] || 76;
+  const h = 30;
+
+  return `
+    <g
+      data-orbit-node="${esc(fullLabel)}"
+      transform="translate(${x.toFixed(1)} ${y.toFixed(1)})"
+    >
+      <rect
+        x="${-w / 2}"
+        y="${-h / 2}"
+        width="${w}"
+        height="${h}"
+        rx="15"
+        fill="${C.darkElevated}"
+        stroke="${C.onDarkSoft}"
+        stroke-width="1"
+      />
+      ${text(
+        0,
+        4.5,
+        label,
+        'code on-dark',
+        'text-anchor="middle"'
+      )}
+    </g>
+  `;
 }
+
 function orbitPoint(cx, cy, rx, ry, angle) {
   const radians = angle * Math.PI / 180;
-  return { x: cx + rx * Math.cos(radians), y: cy + ry * Math.sin(radians) };
+
+  return {
+    x: cx + rx * Math.cos(radians),
+    y: cy + ry * Math.sin(radians),
+  };
 }
+
 function stack() {
   const p = 'ultron-stack';
+
+  // Right card boundaries:
+  // x: 478 to 1104
+  // y: 232 to 564
+  //
+  // Reserve generous padding around the orbit.
+
   const cx = 791;
   const cy = 398;
-  const orbitPaths = [
-    { rx: 174, ry: 64, rotate: 0, stroke: C.onDarkSoft },
-    { rx: 174, ry: 64, rotate: 60, stroke: '#60646c' },
-    { rx: 174, ry: 64, rotate: 120, stroke: '#999999' },
+
+  const rx = 238;
+  const ry = 112;
+
+  const technologies = [
+    ['RUST', 'Rust', -157.5],
+    ['TS', 'TypeScript', -112.5],
+    ['NODE.JS', 'Node.js', -67.5],
+    ['PG', 'PostgreSQL', -22.5],
+    ['REDIS', 'Redis', 22.5],
+    ['DOCKER', 'Docker', 67.5],
+    ['LINUX', 'Linux', 112.5],
+    ['GRPC', 'gRPC', 157.5],
   ];
-  const nodeAngles = [
-    ['RUST', 'Rust', -157.5], ['TS', 'TypeScript', -112.5], ['NODE.JS', 'Node.js', -67.5], ['PG', 'PostgreSQL', -22.5],
-    ['REDIS', 'Redis', 22.5], ['DOCKER', 'Docker', 67.5], ['LINUX', 'Linux', 112.5], ['GRPC', 'gRPC', 157.5],
-  ];
-  const orbitGeometry = orbitPaths.map(({ rx, ry, rotate, stroke }) => `<ellipse data-orbit-path="${rotate}" cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="none" stroke="${stroke}" stroke-width="1" transform="rotate(${rotate} ${cx} ${cy})"/>`).join('');
-  const nodes = nodeAngles.map(([label, fullLabel, angle]) => { const point = orbitPoint(cx, cy, 205, 110, angle); return orbitNode(point.x, point.y, label, fullLabel); }).join('');
-  const content = `<g>${card(96, 232, 354, 332)}${text(124, 272, 'LANGUAGES / RUNTIMES', 'overline muted')}${badge(124, 304, 88, 'RUST')}${badge(224, 304, 132, 'TYPESCRIPT')}${badge(124, 344, 112, 'JAVASCRIPT')}${badge(248, 344, 108, 'PYTHON')}${badge(124, 384, 88, 'C')}${badge(224, 384, 132, 'NODE.JS')}${text(124, 448, 'WEB / API', 'code body-color')}${text(124, 478, 'STORAGE / DATA', 'code body-color')}${text(124, 508, 'OPERATIONS / DISTRIBUTED SYSTEMS', 'code body-color')}</g>
-    <g>${card(478, 232, 626, 332, 'dark')}${orbitGeometry}<circle cx="${cx}" cy="${cy}" r="60" fill="${C.darkElevated}" stroke="${C.onDark}" stroke-width="1"/>${text(cx, 394, 'LIORAN', 'sm on-dark', 'text-anchor="middle"')}${text(cx, 418, 'INFRASTRUCTURE', 'overline on-dark-soft', 'text-anchor="middle"')}${nodes}</g>${text(478, 610, 'STACK / LANGUAGES / DATA / OPERATIONS', 'code body-color')}`;
-  return slide(p, '02 / TECH STACK', 'A stack with gravity.', 'Languages, runtimes, data stores, and protocols orbiting one idea: reliable systems.', content, 'A bounded technology stack diagram for Lioran infrastructure.');
+
+  // One geometrically consistent orbital path.
+  // No intersecting decorative ellipses.
+
+  const orbitGeometry = `
+    <ellipse
+      data-orbit-path="primary"
+      cx="${cx}"
+      cy="${cy}"
+      rx="${rx}"
+      ry="${ry}"
+      fill="none"
+      stroke="${C.onDarkSoft}"
+      stroke-opacity="0.45"
+      stroke-width="1"
+    />
+  `;
+
+  // Position all nodes on the SAME ellipse.
+  const nodes = technologies.map(
+    ([label, fullLabel, angle]) => {
+      const point = orbitPoint(
+        cx,
+        cy,
+        rx,
+        ry,
+        angle
+      );
+
+      return orbitNode(
+        point.x,
+        point.y,
+        label,
+        fullLabel
+      );
+    }
+  ).join('');
+
+  const core = `
+    <circle
+      cx="${cx}"
+      cy="${cy}"
+      r="72"
+      fill="${C.dark}"
+      stroke="${C.onDarkSoft}"
+      stroke-opacity="0.6"
+      stroke-width="1"
+    />
+
+    ${text(
+      cx,
+      cy - 7,
+      'LIORAN',
+      'sm on-dark',
+      'text-anchor="middle"'
+    )}
+
+    ${text(
+      cx,
+      cy + 19,
+      'INFRASTRUCTURE',
+      'overline on-dark-soft',
+      'text-anchor="middle"'
+    )}
+  `;
+
+  const content = `
+    <g>
+      ${card(96, 232, 354, 332)}
+
+      ${text(
+        124, 272,
+        'LANGUAGES / RUNTIMES',
+        'overline muted'
+      )}
+
+      ${badge(124, 304, 88, 'RUST')}
+      ${badge(224, 304, 132, 'TYPESCRIPT')}
+
+      ${badge(124, 344, 112, 'JAVASCRIPT')}
+      ${badge(248, 344, 108, 'PYTHON')}
+
+      ${badge(124, 384, 88, 'C')}
+      ${badge(224, 384, 132, 'NODE.JS')}
+
+      ${text(
+        124, 448,
+        'WEB / API',
+        'code body-color'
+      )}
+
+      ${text(
+        124, 478,
+        'STORAGE / DATA',
+        'code body-color'
+      )}
+
+      ${text(
+        124, 508,
+        'OPERATIONS / DISTRIBUTED SYSTEMS',
+        'code body-color'
+      )}
+    </g>
+
+    <g>
+      ${card(478, 232, 626, 332, 'dark')}
+
+      ${orbitGeometry}
+
+      ${core}
+
+      ${nodes}
+    </g>
+
+    ${text(
+      478,
+      610,
+      'STACK / LANGUAGES / DATA / OPERATIONS',
+      'code body-color'
+    )}
+  `;
+
+  return slide(
+    p,
+    '02 / TECH STACK',
+    'A stack with gravity.',
+    'Languages, runtimes, data stores, and protocols orbiting one idea: reliable systems.',
+    content,
+    'A clean technology orbit representing Lioran infrastructure.'
+  );
 }
+
 
 function profile() {
   const p = 'ultron-profile';
@@ -137,12 +319,113 @@ function projects() {
 }
 
 function linkTile(x, y, label, detail, glyph) { return `<g>${card(x, y, 244, 56, 'dark')}${text(x + 22, y + 25, glyph, 'code on-dark')}${text(x + 52, y + 23, label, 'title on-dark')}${text(x + 52, y + 43, detail, 'code on-dark-soft')}</g>`; }
+
 function connect() {
-  const extra = `<clipPath id="ultron-connect-portrait-clip"><rect x="96" y="232" width="410" height="360" rx="12"/></clipPath>`;
-  const content = `<g>${card(96, 232, 410, 360)}<image x="116" y="248" width="280" height="300" preserveAspectRatio="xMidYMid meet" clip-path="url(#ultron-connect-portrait-clip)" href="${image('pointing')}" xlink:href="${image('pointing')}"/>${text(124, 576, 'CHANDRAPUR -> THE INTERNET', 'code body-color')}</g>
-    <g>${card(554, 232, 550, 360, 'dark')}${text(582, 272, 'CONTACT / COLLABORATION', 'overline on-dark-soft')}${text(582, 312, 'Open channels for the next layer.', 'sm on-dark')}${text(582, 338, 'Build, write, or partner around developer infrastructure.', 'body-sm on-dark-soft')}${linkTile(582, 368, 'GitHub', 'github.com/UltronTheAI', 'GH')}${linkTile(842, 368, 'Lioran Group', 'lioran.group', 'LG')}${linkTile(582, 440, 'LioranDB', 'liorandb.com', 'DB')}${linkTile(842, 440, 'Lioran Cloud', 'app.liorandb.com', 'LC')}${text(582, 554, 'OPEN-SOURCE COLLABORATION / INFRASTRUCTURE PARTNERSHIPS', 'code on-dark-soft')}</g>${button(96, 610, 158, 'SAY HELLO')}`;
-  return slide('ultron-connect', '05 / OPEN CHANNELS', 'Let\'s build together.', 'Real destinations, one open channel for the next layer.', content, 'Contact and collaboration links for GitHub, Lioran Group, LioranDB, Lioran Cloud, open source, and infrastructure partnerships.', extra);
+  const p = 'ultron-connect';
+
+  const portraitX = 96;
+  const portraitY = 232;
+  const portraitW = 410;
+  const portraitH = 360;
+
+  const extra = `
+    <clipPath id="${p}-portrait-clip">
+      <rect
+        x="${portraitX}"
+        y="${portraitY}"
+        width="${portraitW}"
+        height="${portraitH}"
+        rx="12"
+      />
+    </clipPath>
+  `;
+
+  const content = `
+    <g>
+      ${card(portraitX, portraitY, portraitW, portraitH)}
+
+      <image
+        x="${portraitX}"
+        y="${portraitY}"
+        width="${portraitW}"
+        height="${portraitH}"
+        preserveAspectRatio="xMidYMax meet"
+        clip-path="url(#${p}-portrait-clip)"
+        href="${image('pointing')}"
+        xlink:href="${image('pointing')}"
+      />
+    </g>
+
+    <g>
+      ${card(554, 232, 550, 360, 'dark')}
+
+      ${text(
+        582, 272,
+        'CONTACT / COLLABORATION',
+        'overline on-dark-soft'
+      )}
+
+      ${text(
+        582, 312,
+        'Open channels for the next layer.',
+        'sm on-dark'
+      )}
+
+      ${text(
+        582, 338,
+        'Build, write, or partner around developer infrastructure.',
+        'body-sm on-dark-soft'
+      )}
+
+      ${linkTile(
+        582, 368,
+        'GitHub',
+        'github.com/UltronTheAI',
+        'GH'
+      )}
+
+      ${linkTile(
+        842, 368,
+        'Lioran Group',
+        'lioran.group',
+        'LG'
+      )}
+
+      ${linkTile(
+        582, 440,
+        'LioranDB',
+        'liorandb.com',
+        'DB'
+      )}
+
+      ${linkTile(
+        842, 440,
+        'Lioran Cloud',
+        'app.liorandb.com',
+        'LC'
+      )}
+
+      ${text(
+        582, 554,
+        'OPEN-SOURCE COLLABORATION / INFRASTRUCTURE PARTNERSHIPS',
+        'code on-dark-soft'
+      )}
+    </g>
+
+    ${button(96, 610, 158, 'SAY HELLO')}
+  `;
+
+  return slide(
+    p,
+    '05 / OPEN CHANNELS',
+    "Let's build together.",
+    'Real destinations, one open channel for the next layer.',
+    content,
+    'Contact and collaboration links for GitHub, Lioran Group, LioranDB, Lioran Cloud, open source, and infrastructure partnerships.',
+    extra
+  );
 }
+
 
 const pages = [['hero.svg', hero, 'hero'], ['about-life.svg', about, 'about'], ['stack.svg', stack, 'stack'], ['id-dashboard.svg', profile, 'profile'], ['projects.svg', projects, 'projects'], ['connect.svg', connect, 'connect']];
 function standalone(contents, label) { return `<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(label)}"><title>${esc(label)}</title><desc>UltronTheAI engineering portfolio slide.</desc>${contents}</svg>\n`; }
