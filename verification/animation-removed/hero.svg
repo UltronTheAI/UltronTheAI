@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="ultron-hero-title ultron-hero-desc">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="ultron-hero-title ultron-hero-desc">
   
   <defs>
     <linearGradient id="ultron-hero-gradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#247bff"/><stop offset=".58" stop-color="#247bff"/><stop offset="1" stop-color="#ff354f"/></linearGradient>
@@ -22,10 +22,10 @@
   @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}.smil{display:none!important}}
 </style>
   
-  <rect width="1200" height="560" fill="#070b16"/>
-  <rect width="1200" height="560" fill="url(#ultron-hero-dots)" opacity=".55"/>
-  <path d="M0 536H1200" stroke="#253452" stroke-opacity=".7"/>
-  <path d="M40 36H300M900 524H1160" stroke="url(#ultron-hero-gradient)" stroke-width="2" opacity=".7"/>
+  <rect width="1200" height="620" fill="#070b16"/>
+  <rect width="1200" height="620" fill="url(#ultron-hero-dots)" opacity=".55"/>
+  <path d="M0 596H1200" stroke="#253452" stroke-opacity=".7"/>
+  <path d="M40 36H300M900 584H1160" stroke="url(#ultron-hero-gradient)" stroke-width="2" opacity=".7"/>
 
   <g class="reveal reveal-fade">
     <text x="78" y="78" class="mono tiny blue" clip-path="url(#ultron-hero-hello-clip)">HELLO, I BUILD THE HARD PARTS.</text>
@@ -50,8 +50,8 @@
     <text x="44" y="434" class="mono tiny muted">CHANDRAPUR, MAHARASHTRA · INDIA</text>
     <text x="44" y="459" class="mono tiny muted">LIORAN GROUP / LDS</text>
   </g>
-  <g transform="translate(78 510)" class="mono tiny muted"><circle cx="7" cy="-5" r="5" fill="#247bff"/><text x="22" y="0">SYSTEMS · DATA · CLOUD</text></g>
-  <g transform="translate(698 536)" class="mono tiny" aria-label="cycling roles">
+  <g transform="translate(78 578)" class="mono tiny muted"><circle cx="7" cy="-5" r="5" fill="#247bff"/><text x="22" y="0">SYSTEMS · DATA · CLOUD</text></g>
+  <g transform="translate(698 578)" class="mono tiny" aria-label="cycling roles">
     <text x="0" y="0" class="blue">SOFTWARE ENGINEER</text>
     <text x="0" y="0" class="blue" opacity="0">DATABASE ENGINEER</text>
     <text x="0" y="0" class="blue" opacity="0">FULL-STACK DEVELOPER</text>

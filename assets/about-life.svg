@@ -25,7 +25,7 @@
   <path d="M0 596H1200" stroke="#253452" stroke-opacity=".7"/>
   <path d="M40 36H300M900 584H1160" stroke="url(#ultron-about-gradient)" stroke-width="2" opacity=".7"/>
 
-  <text x="74" y="78" class="mono tiny red">01 / ABOUT THE BUILDER</text>
+  <text x="74" y="78" class="mono tiny red">01 / WHAT I BUILD</text>
   <text x="74" y="140" class="display title ink">Built close to the metal.</text>
   <text x="78" y="181" class="body muted">Systems thinking, product taste, and a bias for dependable primitives.</text>
   <g class="reveal reveal-up">

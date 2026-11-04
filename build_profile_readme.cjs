@@ -51,10 +51,10 @@ const end = (title, desc) => `\n  <title>${title}</title><desc>${desc}</desc>\n<
 function hero() {
   const prefix = 'ultron-hero';
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="${prefix}-title ${prefix}-desc">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="${prefix}-title ${prefix}-desc">
   ${defs(prefix, `<clipPath id="${prefix}-hello-clip"><rect x="78" y="58" width="410" height="25"><animate class="smil" attributeName="width" values="0;410" dur=".85s" begin="0s" fill="freeze"/></rect></clipPath><mask id="${prefix}-name-mask"><rect x="76" y="120" width="720" height="104" fill="black"/><rect x="76" y="120" width="720" height="104" fill="white"><animate class="smil" attributeName="y" values="330;120" dur="1.1s" begin="0s" fill="freeze"/></rect></mask>`)}
   <style>${commonStyle}</style>
-  ${bg(prefix, 560)}
+  ${bg(prefix, 620)}
   <g class="reveal reveal-fade">
     <text x="78" y="78" class="mono tiny blue" clip-path="url(#${prefix}-hello-clip)">HELLO, I BUILD THE HARD PARTS.</text>
     <rect x="78" y="94" width="42" height="3" fill="#ff354f"><animate class="smil" attributeName="x" values="78;494" dur=".85s" begin="0s" fill="freeze"/></rect>
@@ -78,8 +78,8 @@ function hero() {
     <text x="44" y="434" class="mono tiny muted">CHANDRAPUR, MAHARASHTRA · INDIA</text>
     <text x="44" y="459" class="mono tiny muted">LIORAN GROUP / LDS</text>
   </g>
-  <g transform="translate(78 510)" class="mono tiny muted"><circle cx="7" cy="-5" r="5" fill="#247bff"/><text x="22" y="0">SYSTEMS · DATA · CLOUD</text></g>
-  <g transform="translate(698 536)" class="mono tiny" aria-label="cycling roles">
+  <g transform="translate(78 578)" class="mono tiny muted"><circle cx="7" cy="-5" r="5" fill="#247bff"/><text x="22" y="0">SYSTEMS · DATA · CLOUD</text></g>
+  <g transform="translate(698 578)" class="mono tiny" aria-label="cycling roles">
     <text x="0" y="0" class="blue">SOFTWARE ENGINEER<animate class="smil" attributeName="opacity" values="1;1;0;0;0;1" keyTimes="0;.24;.25;.49;.5;1" dur="12s" repeatCount="indefinite"/></text>
     <text x="0" y="0" class="blue" opacity="0">DATABASE ENGINEER<animate class="smil" attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.24;.25;.49;.5;.99" dur="12s" repeatCount="indefinite"/></text>
     <text x="0" y="0" class="blue" opacity="0">FULL-STACK DEVELOPER<animate class="smil" attributeName="opacity" values="0;0;0;0;1;0" keyTimes="0;.49;.5;.74;.75;1" dur="12s" repeatCount="indefinite"/></text>
@@ -94,7 +94,7 @@ function aboutLife() {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="${prefix}-title ${prefix}-desc">
   ${defs(prefix)}<style>${commonStyle}</style>${bg(prefix, 620)}
-  <text x="74" y="78" class="mono tiny red">01 / ABOUT THE BUILDER</text>
+  <text x="74" y="78" class="mono tiny red">01 / WHAT I BUILD</text>
   <text x="74" y="140" class="display title ink">Built close to the metal.</text>
   <text x="78" y="181" class="body muted">Systems thinking, product taste, and a bias for dependable primitives.</text>
   <g class="reveal reveal-up">
@@ -131,7 +131,7 @@ function stack() {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="${prefix}-title ${prefix}-desc">
   ${defs(prefix)}<style>${commonStyle}</style>${bg(prefix, 620)}
-  <text x="74" y="78" class="mono tiny red">02 / THE TOOLCHAIN</text>
+  <text x="74" y="78" class="mono tiny red">02 / TECH STACK</text>
   <text x="74" y="140" class="display title ink">A stack with gravity.</text>
   <text x="78" y="181" class="body muted">Languages, runtimes, data stores, and protocols orbiting one idea: ship reliable systems.</text>
   <g transform="translate(0 16)">
@@ -149,6 +149,27 @@ function stack() {
     <text x="26" y="236" class="mono tiny muted">ICON LABELS FOLLOW OFFICIAL NAMES</text>
   </g>
   <g transform="translate(408 520)" class="mono tiny muted"><text x="0" y="0">WEB / API</text><text x="128" y="0">STORAGE</text><text x="256" y="0">OPERATIONS</text><text x="400" y="0">DISTRIBUTED SYSTEMS</text></g>
+  ${end(`${prefix}-title`, `${prefix}-desc`)}
+`;
+}
+
+function dashboardCompact() {
+  const prefix = 'ultron-id';
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="${prefix}-title ${prefix}-desc">
+  ${defs(prefix, `<clipPath id="${prefix}-portrait-clip"><rect x="28" y="164" width="190" height="170" rx="16"/></clipPath>`)}<style>${commonStyle}</style>${bg(prefix, 620)}
+  <text x="74" y="78" class="mono tiny red">03 / DEVELOPER PROFILE</text><text x="74" y="137" class="display title ink">The builder’s ID.</text><text x="78" y="178" class="body muted">Engineering identity, public work, and verified milestones.</text>
+  <g transform="translate(74 218)">
+    <rect width="1052" height="340" rx="24" fill="#101a2e" stroke="#3d537c" stroke-width="2"/><rect width="1052" height="7" rx="3.5" fill="#247bff"/><path d="M30 42H1022" stroke="#253452"/>
+    <text x="30" y="76" class="mono tiny blue">LIORAN GROUP / LDS</text><text x="30" y="112" class="display subtitle ink">SWARAJ PUPPALWAR</text><text x="30" y="140" class="mono small muted">FOUNDER &amp; CHIEF TECHNOLOGY OFFICER</text>
+    <rect x="28" y="164" width="190" height="170" rx="16" fill="#070b16" stroke="#253452"/><image x="28" y="164" width="190" height="170" preserveAspectRatio="xMidYMid slice" clip-path="url(#${prefix}-portrait-clip)" href="${img(idPng)}" xlink:href="${img(idPng)}"/>
+    <text x="250" y="178" class="mono tiny muted">ENGINEERING IDENTITY</text><text x="250" y="209" class="body ink">Database engineer</text><text x="250" y="238" class="body ink">Infrastructure builder</text><text x="250" y="267" class="body ink">Full-stack developer</text>
+    <path d="M548 164V320" stroke="#253452"/>
+    <text x="582" y="178" class="mono tiny muted">VERIFIED ACHIEVEMENTS</text><text x="582" y="209" class="body ink">3 newspaper features</text><text x="582" y="233" class="small muted">Nagpur Post · Navarashtra · Tarun Bharat</text><text x="582" y="258" class="mono tiny blue">23 MAY · 23 MAY · 29 MAY 2023</text>
+    <text x="582" y="284" class="mono tiny red">CYBER OLYMPIAD · STATE RANK 1</text><text x="582" y="309" class="mono tiny red">CREST CYBER OLYMPIAD · WESTERN REGION RANK 17</text>
+    <text x="250" y="331" class="mono tiny muted">PUBLIC CONTRIBUTIONS RANKING · CHECKED 04 NOV 2026</text>
+  </g>
+  <text x="76" y="580" class="mono tiny muted">FOUNDER · SOFTWARE ENGINEER · DATABASE ENGINEER · FULL-STACK DEVELOPER</text>
   ${end(`${prefix}-title`, `${prefix}-desc`)}
 `;
 }
@@ -175,13 +196,28 @@ function dashboard() {
 `;
 }
 
+function projects() {
+  const prefix = 'ultron-projects';
+  const card = (x, label, title, lines, url, color) => { const urls = Array.isArray(url) ? url : [url]; return `<g transform="translate(${x} 226)"><rect width="320" height="292" rx="22" class="card"/><rect width="320" height="5" rx="2.5" fill="${color}"/><text x="26" y="46" class="mono tiny" fill="${color}">${label}</text><text x="26" y="91" class="display subtitle ink">${title}</text>${lines.map((line, i) => `<text x="26" y="${137 + i * 28}" class="${i === 0 ? 'body ink' : 'small muted'}">${line}</text>`).join('')}<path d="M26 230H294" stroke="#253452"/>${urls.map((line, i) => `<text x="26" y="${255 + i * 19}" class="mono tiny muted">${line}</text>`).join('')}</g>`; };
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="${prefix}-title ${prefix}-desc">
+  ${defs(prefix)}<style>${commonStyle}</style>${bg(prefix, 620)}
+  <text x="74" y="78" class="mono tiny red">04 / SELECTED PROJECTS</text><text x="74" y="140" class="display title ink">Systems worth shipping.</text><text x="78" y="181" class="body muted">Databases, cloud services, and developer platforms built in public.</text>
+  ${card(74, 'RUST / DATABASE', 'LioranDB', ['Document database', 'Custom storage engine', 'WAL · indexing · concurrency'], 'liorandb.com', '#247bff')}
+  ${card(440, 'CLOUD / MANAGED DATA', 'Lioran Cloud', ['Managed LioranDB instances', 'Administration · deployment', 'app.liorandb.com'], 'LIORAN CLOUD SERVICES', '#ff354f')}
+  ${card(806, 'NEXT.JS / CONTENT', 'Post-Acle', ['AI-powered blogging platform', 'SEO optimized · Tailwind CSS', 'Built for publishing'], ['github.com/LioranGroupOfficial', '/PostAcle'], '#247bff')}
+  <text x="76" y="580" class="mono tiny muted">DATABASES · CLOUD · DEVELOPER PLATFORMS</text>
+  ${end(`${prefix}-title`, `${prefix}-desc`)}
+`;
+}
+
 function connect() {
   const prefix = 'ultron-connect';
   const card = (y, label, sub, glyph, color) => `<g transform="translate(614 ${y})" class="reveal reveal-right"><rect width="490" height="72" rx="20" class="card"/><circle cx="38" cy="36" r="22" fill="${color}" opacity=".17"/><text x="38" y="43" text-anchor="middle" class="mono subtitle" fill="${color}">${glyph}</text><text x="78" y="31" class="display subtitle ink">${label}</text><text x="78" y="54" class="mono tiny muted">${sub}</text><path d="M432 36h28m-8-8 8 8-8 8" stroke="${color}" stroke-width="2" fill="none"><animate class="smil" attributeName="transform" values="translate(0 0);translate(7 0);translate(0 0)" dur="1.8s" repeatCount="indefinite"/></path></g>`;
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="${prefix}-title ${prefix}-desc">
   ${defs(prefix)}<style>${commonStyle}</style>${bg(prefix, 620)}
-  <text x="74" y="78" class="mono tiny red">04 / OPEN CHANNELS</text><text x="74" y="140" class="display title ink">Let’s build the next layer.</text><text x="78" y="181" class="body muted">The links below are the real, supplied destinations. The image stays visual; GitHub links live in Markdown.</text>
+  <text x="74" y="78" class="mono tiny red">05 / OPEN CHANNELS</text><text x="74" y="140" class="display title ink">Let’s build together.</text><text x="78" y="181" class="body muted">Real destinations, one open channel for the next layer.</text>
   <g transform="translate(42 226)"><image x="0" y="0" width="520" height="360" preserveAspectRatio="xMidYMax meet" href="${img(pointingPng)}" xlink:href="${img(pointingPng)}"/><path d="M430 170h94" stroke="#247bff" stroke-width="2" stroke-dasharray="4 8"/><path d="M524 170l-12-8m12 8-12 8" stroke="#247bff" stroke-width="2" fill="none"/></g>
   ${card(230, 'GitHub', 'github.com/UltronTheAI', 'GH', '#f5f7ff')}${card(314, 'X / Twitter', '@PuppalwarSwaraj', 'X', '#247bff')}${card(398, 'Portfolio', 'swaraj.lioransolutions.com', '↗', '#ff354f')}${card(482, 'Lioran Group', 'lioran.group', 'LG', '#247b7f')}
   <text x="78" y="588" class="mono tiny muted">CHANDRAPUR → THE INTERNET · SAY HELLO</text>
@@ -193,7 +229,8 @@ const assets = {
   'hero.svg': hero(),
   'about-life.svg': aboutLife(),
   'stack.svg': stack(),
-  'id-dashboard.svg': dashboard(),
+  'id-dashboard.svg': dashboardCompact(),
+  'projects.svg': projects(),
   'connect.svg': connect(),
 };
 

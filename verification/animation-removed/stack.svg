@@ -25,7 +25,7 @@
   <path d="M0 596H1200" stroke="#253452" stroke-opacity=".7"/>
   <path d="M40 36H300M900 584H1160" stroke="url(#ultron-stack-gradient)" stroke-width="2" opacity=".7"/>
 
-  <text x="74" y="78" class="mono tiny red">02 / THE TOOLCHAIN</text>
+  <text x="74" y="78" class="mono tiny red">02 / TECH STACK</text>
   <text x="74" y="140" class="display title ink">A stack with gravity.</text>
   <text x="78" y="181" class="body muted">Languages, runtimes, data stores, and protocols orbiting one idea: ship reliable systems.</text>
   <g transform="translate(0 16)">
